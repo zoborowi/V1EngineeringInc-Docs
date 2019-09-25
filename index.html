@@ -35,10 +35,10 @@
       var is_top_frame = (window === window.parent);
         
         var pageToc = [
-          {title: "Welcome to MkDocs", url: "#_top", children: [
-              {title: "Bonus stuff", url: "#bonus-stuff" },
-              {title: "Commands", url: "#commands" },
-              {title: "Project layout", url: "#project-layout" },
+          {title: "V1 Engineering Documentation", url: "#_top", children: [
+              {title: "Note", url: "#note" },
+              {title: "Editing", url: "#editing" },
+              {title: "Next Steps", url: "#next-steps" },
           ]},
         ];
 
@@ -83,8 +83,6 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
     <a href="" class="wm-top-brand wm-top-link wm-vcenter">
       
-        <img class="wm-top-logo" src="./https://www.v1engineering.com/wp-content/uploads/2017/12/V1-Engineering-logo-260wide.png"/>
-      
       <div class="wm-top-title">
         V1 Engineering Inc Docs<br>
         
@@ -100,7 +98,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <ul class="wm-toctree">
         <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Index</a>
 </li>
-        <li class="wm-toc-li wm-toc-lev1 "><a href="about/" class="wm-article-link wm-toc-text">Foobar</a>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="mkdocs_info/" class="wm-article-link wm-toc-text">Editing mkdocs</a>
 </li>
         <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">MPCNC</span>
 </li>
@@ -173,7 +171,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </li>
 <li class="wm-toc-li-nested collapse">
   <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev3 "><a href="pg4.md" class="wm-article-link wm-toc-text">Step1</a>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pg4/" class="wm-article-link wm-toc-text">Step1</a>
 </li>
   </ul>
 </li>
@@ -201,12 +199,12 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="about/" class="btn btn-xs btn-default pull-right">
+      <a href="mkdocs_info/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="about/" class="btn btn-xs btn-link">
-        Foobar
+      <a href="mkdocs_info/" class="btn btn-xs btn-link">
+        Editing mkdocs
       </a>
     </div>
     
@@ -214,109 +212,22 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<ul>
-<li>
-<p>Pipeline figured out from .md files to webpage (github.io page).</p>
-</li>
-<li>
-<p>DONE Some kind of images posted, and also images from v1engineering.com.</p>
-<p><img alt="V1Engineering.com's logo" src="https://www.v1engineering.com/wp-content/uploads/2017/12/V1-Engineering-logo-260wide.png" title="This logo is linked from v1engineering.com" /></p>
-<p><img alt="images image" src="media/pic.png" title="This is linked here in this github" /></p>
-</li>
-<li>
-<p>DONE Image resizing.</p>
-<ul>
-<li>I found there are some unofficial syntaxes to get images to resize, but they don't seem to
-     work here. Maybe there's a python-markdown plugin? But that will bring it's own can of
-     worms. Just using an img tag seems to work though. <a href="https://gist.github.com/uupaa/f77d2bcf4dc7a294d109">More info</a></li>
-</ul>
-<p><img src="media/pic.png" width="400" height="320"/></p>
-<p><img src="media/pic.png" width="400"/></p>
-</li>
-<li>
-<p>DONE Get links working in the documents to sections and pages and v1engineering.com</p>
-<p><a href="https://www.v1engineering.com/forum/topic/community-documentation/">V1Engineering Forum Link</a></p>
-<p><a href="about/">About link</a></p>
-<p><a href="about/#nautae-laeva">About link subsection link</a></p>
-</li>
-<li>
-<p>Menu organization, how deep.</p>
-</li>
-</ul>
-<p>https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation</p>
-<p>This sort of works. I had to install a newer version of mkdocs (0.16 was too old).</p>
-<p>The organization is in mkdocs.yml, and nesting more than two is funky. Also, top levels can't be
-   pages, so it's really more like just two deep. Maybe another theme would help?</p>
-<ul>
-<li>
-<p>style/css/theme.</p>
-</li>
-<li>
-<p>DONE. CC-BY-SA info in the pages.</p>
-</li>
-</ul>
-<h2 id="bonus-stuff">Bonus stuff</h2>
-<ul>
-<li>
-<p>Embed videos</p>
-<p>Doesn't seem to work :(</p>
-<p>[[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]</p>
-<p><a href="https://www.youtube.com/watch?v=vq2jYFZVMDA">!embed</a></p>
-</li>
-<li>
-<p>Emojis?</p>
-<p>:smile:</p>
-</li>
-<li>
-<p>Tables</p>
-<p>This helps a lot: https://www.tablesgenerator.com/markdown_tables#</p>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th align="center">Are</th>
-<th align="right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 1 is</td>
-<td align="center">left-aligned</td>
-<td align="right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td align="center">centered</td>
-<td align="right">$12</td>
-</tr>
-<tr>
-<td>col 3 is</td>
-<td align="center">right-aligned</td>
-<td align="right">$1</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Favicon: https://www.mkdocs.org/#changing-the-favicon-icon</p>
-</li>
-</ul>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs gh-deploy</code> - Deploy the docs to github pages.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+    <h1 id="v1-engineering-documentation">V1 Engineering Documentation</h1>
+<p>This is the future home of the V1Engineering documentation (maybe).</p>
+<p>Please wait to move actual v1engineering.com documentation over. It would be a real pain to do a lot
+of that work and then find that this solution is not the right one in some way.</p>
+<p><a href="https://v1engineeringinc.github.io/V1EngineeringInc-Docs">This documentation is hosted on
+github.io</a></p>
+<p><a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs">The source code is on github</a></p>
+<h2 id="note">Note</h2>
+<p>Most of these pages are just filler to play with navigation. The actual documentation is still at
+<a href="https://www.v1engineering.com/assembly/">v1engineering.com</a></p>
+<h2 id="editing">Editing</h2>
+<p>I've put some info <a href="mkdocs_info/">here</a></p>
+<h2 id="next-steps">Next Steps</h2>
+<p>We need a guide on making simple edits, then we need a few people of different skill sets to try
+them out. If that all goes well, then we can decide on an initial layout and take volunteers to do
+the formatting to convert the existing documentation over here, or volunteer to write new sections.</p>
 
   <br>
     
@@ -329,12 +240,12 @@ docs/
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="about/" class="btn btn-xs btn-default pull-right">
+      <a href="mkdocs_info/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="about/" class="btn btn-xs btn-link">
-        Foobar
+      <a href="mkdocs_info/" class="btn btn-xs btn-link">
+        Editing mkdocs
       </a>
     </div>
     
@@ -351,5 +262,5 @@ docs/
 </html>
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-09-25 03:28:18
+Build Date UTC : 2019-09-25 15:48:25
 -->
