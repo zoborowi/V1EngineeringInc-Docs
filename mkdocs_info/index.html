@@ -372,27 +372,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-dependencies" class="md-nav__link">
-    Installing dependencies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
       
       
       
@@ -1194,27 +1173,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-dependencies" class="md-nav__link">
-    Installing dependencies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
       
       
       
@@ -1388,6 +1346,22 @@ and nesting more than two is funky. Also, top levels can&rsquo;t be pages, so it
 
 <p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/">https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/</a></p>
 <p>inlinehilite allows inline code syntax highlighting like this: <code class="codehilite"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span></code>.</p>
+<h1 id="local-mkdocs">Local mkdocs<a class="headerlink" href="#local-mkdocs" title="Permanent link">&para;</a></h1>
+<p>Running mkdocs locally is great if you&rsquo;re making a lot of edits, or you&rsquo;re trying to refine the
+style of the deployed website.</p>
+<p>It basically works like this:</p>
+<ol>
+<li>The source files are written in markdown, with a few extra pieces of syntax going to specialized
+markdown parts.</li>
+<li>mkdocs uses the mkdocs.yml file to configure itself for this project.</li>
+<li>mkdocs configures and runs our markdown files through python-markdown.</li>
+<li>If you&rsquo;re running <code>mkdocs serve</code>, then the html output is immediately served locally and you can
+get to it at <a href="http://localhost:8000">http://localhost:8000</a> .</li>
+<li>As soon as you change a file, the mkdocs serve will reload the page in your browser, which
+immediately shows the change. <em>Cool!</em>.</li>
+<li>When things are all working great, mkdocs will build the documentaton and deploy it to the
+github.io site.</li>
+</ol>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
