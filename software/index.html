@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#instruction-stub" tabindex="1" class="md-skip">
+      <a href="#getting-started" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -701,8 +701,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
+  <a href="#first-use" class="md-nav__link">
+    First Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-software" class="md-nav__link">
+    Control Software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-first-use" class="md-nav__link">
+    Step 1 – First Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-getting-dirty" class="md-nav__link">
+    Step 2 – Getting dirty
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-getting-creative" class="md-nav__link">
+    Step 3 – Getting Creative
   </a>
   
 </li>
@@ -965,8 +1007,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
+  <a href="#first-use" class="md-nav__link">
+    First Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-software" class="md-nav__link">
+    Control Software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-first-use" class="md-nav__link">
+    Step 1 – First Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-getting-dirty" class="md-nav__link">
+    Step 2 – Getting dirty
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-getting-creative" class="md-nav__link">
+    Step 3 – Getting Creative
   </a>
   
 </li>
@@ -990,25 +1074,72 @@
                   <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/tree/master/docs/software/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="instruction-stub">Instruction STUB<a class="headerlink" href="#instruction-stub" title="Permanent link">&para;</a></h1>
+                <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>These documents are not yet the official documents. Please go to v1engineering.com for the up to date and accurate
 instructions.</p>
 </div>
 <p><a href="https://www.v1engineering.com/assembly/software/">at v1engineering.com</a></p>
-<p>Click on the images to embiggen.</p>
-<h2 id="stub-step">Stub Step<a class="headerlink" href="#stub-step" title="Permanent link">&para;</a></h2>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg" width="400" /></a></div></p>
+<h2 id="first-use">First Use<a class="headerlink" href="#first-use" title="Permanent link">&para;</a></h2>
+<p>Install the <a href="https://www.arduino.cc/en/Main/Software">Arduino</a> software and its drivers before you plug in your control board. You might need
+its included drivers, so it is best to let them install.</p>
+<p><strong>MAC User?</strong> -IT should work as is but here is some <a href="https://www.v1engineering.com/forum/topic/cannot-connect-to-rampsarduino-maclinuxwindows/#post-11485">info</a> 
+if you find you are having issues you might need to change the firmware baud rate and perhaps a different driver.</p>
+<h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h2>
+<p>If you bought a system from me the firmware is pre-loaded and you do not need to make any changes.
+<a href="../electronics/marlin-firmware/">Marlin</a> is the firmware currently used and it is pre-flashed on the control board included in the
+kit (<a href="../electronics/marlin-firmware">download the pre-configured files here</a>). If you are building your own feel free to use any
+board/firmware you want.</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p><strong>Never plug or unplug anything into the control board while there is any power, usb or power
+plug!</strong></p>
+<p>It is best to start with <a href="http://www.repetier.com/">Repetier-Host</a> It is an easy program to use (do not use repetier server),
+just in case here is a <a href="repetier-host/">basic set up</a>.</p>
+<p>Move your gantry to the center of your build space and make sure the z axis is roughly centered in
+its travel. You never know which way it’s going to go!</p>
+<p>With all the motors plugged in, plug in the USB cable and the power to the control board and hit
+connect in the upper left corner of repetier, it should take a few seconds and turn green to
+indicate it is connected.</p>
+<p><img alt="Not Connected - Red" src="https://www.v1engineering.com/wp-content/uploads/2015/11/rrred.jpg" width="350" />
+<img alt="Connected - Green" src="https://www.v1engineering.com/wp-content/uploads/2015/11/rgreen.jpg" width="350" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are using a dual end stop firmware flashed board, you have to have the end stops
+properly connected first, Info. If you have a series flashed board no end stops are needed.</p>
+</div>
+<p>You can now use the control in the manual tab to move the machine. The arrows allow for .1, 1, 10, 50mm 
+movements. Start small 1 mm at a time. The arrows should move it in that direction.</p>
 <ul>
-<li>Bullet instruction</li>
+<li><strong>X positive</strong> (Right arrow) should move <strong>Right</strong>, X negative should move Left,</li>
+<li><strong>Y positive</strong> (up arrow) is back or <strong>away from you</strong>, Y negative is towards you.</li>
+<li><strong>Z positive</strong> (Z up arrow) moves the z axis <strong>up</strong>, meaning the tool away from the work surface.</li>
 </ul>
-<hr />
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
+<p>If it doesn’t move as expected hit disconnect, unplug the power and usb, any axis that is moving the
+wrong way simply <a href="reverse-motor/">flip the plug</a>. If one stepper is moving the wrong way
+power down and flip it’s plug. Power back up and test again.</p>
+<p><img alt="Repetier Controls" src="https://www.v1engineering.com/wp-content/uploads/2015/11/rcontrols.jpg" width="350" /></p>
+<h2 id="control-software">Control Software<a class="headerlink" href="#control-software" title="Permanent link">&para;</a></h2>
+<p>Now that your machine can talk to your computer you need to be able to control it. You can either use an
+<a href="https://vicious1-com.myshopify.com/collections/parts/products/full-graphic-smart-controller-big">lcd screen</a> 
+or control software. For the beginners software is usually easier to learn than the LCD screen.</p>
+<p>This can move the machine along any of the three axis and can also send gcode generated in any
+program (estlcam, slic3r, Image2Gcode, Fusion360, etc.).</p>
+<p><a href="http://www.repetier.com/">Repetier-Host</a> is an easy program to use, here is a <a href="repetier-host/">basic set
+up</a>. You can also use Pronterface, Matter Control, ESTLCAM, or many
+others. Again for the beginners, start with repetier-host (not server).</p>
+<h2 id="step-1-first-use">Step 1 – First Use<a class="headerlink" href="#step-1-first-use" title="Permanent link">&para;</a></h2>
+<p>Now the machine should be moving around and once you finally get bored of manually moving it around
+it is time to put it to work.</p>
+<p>Let’s start with <a href="http://www.estlcam.com/">ESTLCAM</a> I have put together a little walk through using
+Estlcam as a plotter. So strap on a <a href="https://www.thingiverse.com/thing:1612207">pen</a>, (or a “spindle” if you know what you’re doing).</p>
+<p>The infamous Crown…<strong>Follow the <a href="estlcam-basics/">Basic instructions</a></strong> on how to actually use the machine. Test code
+available at the bottom of that page. If you ask for help I will ask about your crown test.</p>
+<h2 id="step-2-getting-dirty">Step 2 – Getting dirty<a class="headerlink" href="#step-2-getting-dirty" title="Permanent link">&para;</a></h2>
+<p>Now the machine can draw pictures it is time to get it dirty. Hope you didn’t make a white one…</p>
+<p>When you are ready to try and cut something, here are some <a href="estlcam-2p5d/">Intermediate instructions</a>.</p>
+<h2 id="step-3-getting-creative">Step 3 – Getting Creative<a class="headerlink" href="#step-3-getting-creative" title="Permanent link">&para;</a></h2>
+<p><a href="../tools/index.md">This page</a> has all sorts of things to try.</p>
                 
                   
                 
