@@ -742,38 +742,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        v1pi
-      </label>
-    
     <a href="./" title="v1pi" class="md-nav__link md-nav__link--active">
       v1pi
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -961,22 +932,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -997,18 +952,31 @@
 instructions.</p>
 </div>
 <p><a href="https://www.v1engineering.com/dip-a-toe-in-the-pool-v1pi/">v1pi at v1engineering.com</a></p>
-<p>Click on the images to embiggen.</p>
-<h2 id="stub-step">Stub Step<a class="headerlink" href="#stub-step" title="Permanent link">&para;</a></h2>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
+<p><img alt="Landing Page" src="https://www.v1engineering.com/wp-content/uploads/2018/05/v1pi.png" /> </p>
+<p><a href="https://octoprint.org/">OctoPrint</a>, <a href="https://cnc.js.org/docs/">CNC.js</a>, Raspberry Pi, CNC control from your phone… any of those pique your interest? It
+has never been this easy to try them out. Jeffeb3 (El Heffe) has taken it to the next level of ease,
+<strong>v1pi</strong>.</p>
+<p>Previously we had Daniel Dunn’s guide,
+<a href="http://danielwdunn.com/mpcnc-with-cncjs-wireless-web-interface/">here</a>. Honestly I was intimidated
+even though Daniel laid out a very clear and detailed walk through.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/05/cncjs.png"><img alt="!CNC.js" src="https://www.v1engineering.com/wp-content/uploads/2018/05/cncjs.png" width="400" /></a></div></p>
+<p>Well Heffe made a pre-made image. It takes 2 steps, It worked for me first try. Load the imagine
+onto a MicroSD card, boot the Pi, done. Seriously. You even have options, If you have WiFi access
+near your machine you can connect to it, if not it will run as a hot spot and you can connect to it
+that way. You can move that machine from any device connected on that network, add a live cam (to
+show the world what you are doing, not to leave your machine alone…FIRE), run files, so much.
+Please at least drop into one of the links and give him a thanks, this is an insanely easy to use
+piece of work.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/05/octo.jpg"><img alt="!Octoprint" src="https://www.v1engineering.com/wp-content/uploads/2018/05/octo.jpg" width="400" /></a></div></p>
+<p>The <a href="https://www.v1engineering.com/forum/topic/v1pi-raspberry-pi-image-with-octoprint-and-cnc-js-and-wifi-hotspot/">forum thread</a>.</p>
+<p>Github link to the <a href="https://github.com/jeffeb3/v1pi">file and instructions</a>.</p>
+<p>The program let me load the image on a windows machine, <a href="https://etcher.io/">Etcher.io</a>.</p>
+<p>Heffe once again, you are amazing and I appreciate your hard work more than you could know.</p>
+<details open="open"><summary>CNC.js currently has a tiny issue</summary><p>There&rsquo;s an issue with a timeout failing, and the <code>ok</code> getting
+ missed. There is a solution to commenting out a line, and there’s a github issue for it. The
+ workaround is to send some other command in the terminal window, which will send another <code>ok</code>. I
+ just send <code>G1 X0</code>.</p>
+</details>
                 
                   
                 
