@@ -1317,35 +1317,42 @@ and is only capable of cutting light materials (foam, paper, plastic) and very t
 <p>Laser power, not as straight forward as you would think. Higher numbers in general mean thicker
 materials can be cut or etching can be done faster. Numbers are not everything! A laser has four
 things to consider when talking about it’s power; wattage, spot size, focal length, spectrum.</p>
-<p>Wattage – the overall power output of your laser (like a light bulb, energy per time). On most
+<dl>
+<dt>Wattage</dt>
+<dd>The overall power output of your laser (like a light bulb, energy per time). On most
 non-laser specific machines we are limited by speed. Okay stick with me, just like strapping on a
 chainsaw motor to the MPCNC stronger is not always better. Since we can only move so fast before we
 start to get motion degradation you need to size your laser accordingly. A strong laser moving
 slowly will have an extremely limited range of  grey levels. For example at the same speed a higher
 powered laser will have to use power 1-20 so you don’t start a fire (19 levels of grey), but a lower
 powered laser will be able to use power 1-255 (254 levels of grey) without starting a fire. Make
-sense?</p>
-<p>Spot size – How small of a spot the wattage is concentrated on. Spot size dictates the resolution of
+sense?</dd>
+<dt>Spot size</dt>
+<dd>How small of a spot the wattage is concentrated on. Spot size dictates the resolution of
 the image you can produce, think printer DPI (dots per inch). Another side effect of spot size can
 be ability to cut. A poorly focused laser’s power is too spread out to be effective, a finely
 focused laser cuts significantly better. For a diode this can vary 100-400 micron in diameter just
 by laser wattage. To be more clear, more powerful diode lasers can not be focused to as small of a
 point as lower powered lasers (the source is not truly a point, larger diodes equal larger initial
-“points”, and it is not actually a spot but a rectangular spot).</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/Focal-Length-1.gif"><img alt="!focal_length" src="https://www.v1engineering.com/wp-content/uploads/2019/01/Focal-Length-1.gif" width="400" /></a></div></p>
-<p>Focal length – This influences the shape of the laser cone (long and narrow or short and fat). The
+“points”, and it is not actually a spot but a rectangular spot).</dd>
+<dt>Focal length</dt>
+<dt><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/Focal-Length-1.gif"><img alt="!focal_length" src="https://www.v1engineering.com/wp-content/uploads/2019/01/Focal-Length-1.gif" width="400" /></a></div></dt>
+<dd>This influences the shape of the laser cone (long and narrow or short and fat). The
 focal length is dependent on the lens you use and should be a small range depending on the lens. If
 you have a choice, a longer focal length can aid in cutting ability (a thinner steeper beam/cone can
-cut deeper before power is lost to the edges of the material).</p>
-<p>Spectrum – The wavelength of the light it produces (diodes-UV to viable, CO2- mid-infrared).
+cut deeper before power is lost to the edges of the material).</dd>
+<dt>Spectrum</dt>
+<dd>The wavelength of the light it produces (diodes-UV to viable, CO2- mid-infrared).
 Materials react differently to every spectrum as do safety glasses. If you have a specific need do
-your research before buying.</p>
-<p>Duty cycle – One more thing on the topic of power, duty cycle or continuous time on. On the cheap
+your research before buying.</dd>
+<dt>Duty cycle</dt>
+<dd>One more thing on the topic of power, duty cycle or continuous time on. On the cheap
 import look out for sensational things like “15W $50!” somewhere in the description it could say
 “One second continuous operation time”. This means they are over driving the heck out of the laser,
 it will not last long, and at 1 second bursts it is not very useful. Guard your wallet from these
 Scammy Chumps. I just found another ad that says no more than 30min continuous, that might sound
-like a lot at first but you can do some really detailed things that take a few hours.</p>
+like a lot at first but you can do some really detailed things that take a few hours.</dd>
+</dl>
 <h3 id="air-assist">Air Assist<a class="headerlink" href="#air-assist" title="Permanent link">&para;</a></h3>
 <p>To get cleaner etching, deeper cuts, and to save your lens you need some sort of air assist. While
 using your laser your material will produce smoke. This smoke if not directed away will stick to the
@@ -1387,15 +1394,19 @@ the 12v fan pin to instead control a 5V pin. After that the same rules apply, us
 the laser on and M107 to turn the laser off. The Sxxx is the laser strength with a value between
 0-255, 255 being the most power.  (<a href="https://www.v1engineering.com/forum/topic/another-laser/#post-83368">Thanks Guffy</a>)</p>
 <hr />
-<p>Rambo=45</p>
-<p><img alt="rambo" src="https://www.v1engineering.com/wp-content/uploads/2017/04/IMG_20180626_1559002.jpg" width="400" /></p>
+<dl>
+<dt>Rambo=45</dt>
+<dd><img alt="rambo" src="https://www.v1engineering.com/wp-content/uploads/2017/04/IMG_20180626_1559002.jpg" width="400" /></dd>
+</dl>
 <hr />
 <p>Archim=53?</p>
 <hr />
 <p>MiniRambo=23</p>
 <hr />
-<p>Ramps=44</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/Leo44Pic.jpg"><img alt="!ramps" src="https://www.v1engineering.com/wp-content/uploads/2019/01/Leo44Pic.jpg" width="400" /></a></div></p>
+<dl>
+<dt>Ramps=44</dt>
+<dd><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/Leo44Pic.jpg"><img alt="!ramps" src="https://www.v1engineering.com/wp-content/uploads/2019/01/Leo44Pic.jpg" width="400" /></a></div></dd>
+</dl>
 <hr />
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
