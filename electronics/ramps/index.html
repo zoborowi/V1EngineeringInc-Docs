@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#instruction-stub" tabindex="1" class="md-skip">
+      <a href="#ramps-14-stack" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -643,8 +643,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
+  <a href="#jumpers" class="md-nav__link">
+    Jumpers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivers" class="md-nav__link">
+    Drivers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    Power
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stepper-driver-current" class="md-nav__link">
+    Stepper Driver Current
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issue" class="md-nav__link">
+    Common Issue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-extruder" class="md-nav__link">
+    Add an Extruder
   </a>
   
 </li>
@@ -967,8 +1009,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
+  <a href="#jumpers" class="md-nav__link">
+    Jumpers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivers" class="md-nav__link">
+    Drivers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    Power
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stepper-driver-current" class="md-nav__link">
+    Stepper Driver Current
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issue" class="md-nav__link">
+    Common Issue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-extruder" class="md-nav__link">
+    Add an Extruder
   </a>
   
 </li>
@@ -992,25 +1076,35 @@
                   <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/tree/master/docs/electronics/ramps.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="instruction-stub">Instruction STUB<a class="headerlink" href="#instruction-stub" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>These documents are not yet the official documents. Please go to v1engineering.com for the up to date and accurate
-instructions.</p>
-</div>
-<p><a href="https://www.v1engineering.com/ramps-wiring/">at v1engineering.com</a></p>
-<p>Click on the images to embiggen.</p>
-<h2 id="stub-step">Stub Step<a class="headerlink" href="#stub-step" title="Permanent link">&para;</a></h2>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
+                <p>Click on the images to embiggen.</p>
+<h1 id="ramps-14-stack">Ramps 1.4 Stack<a class="headerlink" href="#ramps-14-stack" title="Permanent link">&para;</a></h1>
+<p>If you bought this from V1 Engineering then this has already been done for you just plug in the steppers and go.
+Ramps 1.4 – Any control board can be used to control the Mostly Printed CNC, Here is how to set up a ramps stack.
+<a href="https://www.v1engineering.com/forum/topic/cannot-connect-to-rampsarduino-maclinuxwindows/#post-11485">Mac user?</a></p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_103915.jpg"><img alt="!RAMPS driver plugs" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_103915.jpg" width="400" /></a></div></p>
+<h2 id="jumpers">Jumpers<a class="headerlink" href="#jumpers" title="Permanent link">&para;</a></h2>
+<p>First step is make sure you have 3 jumpers under each stepper driver. This puts the ramps board into 32<sup>nd</sup> stepping when using the DRV8825 drivers (if you use a different driver pay attention to its orientation and step rate).</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/04/labeled.jpg"><img alt="!Labeled" src="https://www.v1engineering.com/wp-content/uploads/2015/04/labeled.jpg" width="400" /></a></div></p>
+<h2 id="drivers">Drivers<a class="headerlink" href="#drivers" title="Permanent link">&para;</a></h2>
+<p>Insert the drv8825 drivers into the board, with the small silver potentiometers facing the green power plug. Glue on the small heat sinks on to the large chips. T0 is for a thermistor, or if you are only milling the firmware does not require a resistor anymore.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_104243.jpg"><img alt="!wires" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_104243.jpg" width="400" /></a></div></p>
+<h2 id="power">Power<a class="headerlink" href="#power" title="Permanent link">&para;</a></h2>
+<p>Add 12V to the power port, and plug in the steppers. The Arduino barrel jack (the round plug) is not used.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20171008_12095401.jpg"><img alt="!Probe" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20171008_12095401.jpg" width="400" /> </a></div></p>
+<h2 id="stepper-driver-current">Stepper Driver Current<a class="headerlink" href="#stepper-driver-current" title="Permanent link">&para;</a></h2>
+<p>–Extremely Important– Adjust the potentiometers according to your stepper spec sheet (a good place to start is 0.7V or less).  For the DRV8825 the voltage is set between the potentiometers and the power ground.  Voltage at the pot =.9*(stepper current/2) the 90% is to cut down on the heat a bit. This needs to be done while the drivers are energized. The easiest way I have found is to move all 3 axis 1mm in repetier host and leave it connected while you adjust the POTS.</p>
+<p>The <a href="https://youtu.be/89BHS9hfSUk">pololu video</a> gives a very technical walk through on driver current.</p>
+<h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h2>
+<p>Have you flashed the marlin <a href="https://www.v1engineering.com/marlin-firmware/">firmware</a>?</p>
+<h2 id="common-issue">Common Issue<a class="headerlink" href="#common-issue" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.v1engineering.com/reversing-the-axis-direction/">Steppers moving the wrong direction?</a></p>
+<h2 id="add-an-extruder">Add an Extruder<a class="headerlink" href="#add-an-extruder" title="Permanent link">&para;</a></h2>
+<p>If you are Adding an extruder you need more power</p>
+<p><a href="https://www.v1engineering.com/import-extruder/">For example</a>.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_110317.jpg"><img alt="!more power" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_110317.jpg" width="400" /></a></div></p>
+<p>Power is needed to both sides of the power plug, either by a short jumper wire or another power supply depending on how much current you can supply. In this picture the bottom set, 5A, powers the board and steppers. The top set, 11A, handles the heaters, fans in the d8-10 ports.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/board1.jpg"><img alt="!extra driver" src="https://www.v1engineering.com/wp-content/uploads/2015/10/board1.jpg" width="400" /></a></div></p>
+<p>Plug in the extra driver for the extruder with its jumpers under it, and the extruder stepper. The blue and black is the hot end thermistor. Blue and white is the print fan, controlled by your GCode, polarity sensitive, D9. Orange and white is the extruder heater, D10. There is also an extra set of red and black wired to the power plug that controls the always on extruder fan, polarity sensitive.</p>
                 
                   
                 
