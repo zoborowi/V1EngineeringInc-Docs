@@ -881,9 +881,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
+  <a href="#laser-engraving-mirrors" class="md-nav__link">
+    Laser Engraving Mirrors
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-an-image" class="md-nav__link">
+    Choosing an Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resize-and-adjust" class="md-nav__link">
+    Resize and adjust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image2gcode" class="md-nav__link">
+    Image2GCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-code-sender" class="md-nav__link">
+    G Code Sender
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -965,9 +999,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#stub-step" class="md-nav__link">
-    Stub Step
+  <a href="#laser-engraving-mirrors" class="md-nav__link">
+    Laser Engraving Mirrors
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-an-image" class="md-nav__link">
+    Choosing an Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resize-and-adjust" class="md-nav__link">
+    Resize and adjust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image2gcode" class="md-nav__link">
+    Image2GCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-code-sender" class="md-nav__link">
+    G Code Sender
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -997,18 +1065,58 @@
 instructions.</p>
 </div>
 <p><a href="https://www.v1engineering.com/laser-engraving-mirrors/">at v1engineering.com</a></p>
-<p>Click on the images to embiggen.</p>
-<h2 id="stub-step">Stub Step<a class="headerlink" href="#stub-step" title="Permanent link">&para;</a></h2>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115308.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160823_115352.jpg" width="400" /></a></div></p>
-<ul>
-<li>Bullet instruction</li>
-</ul>
-<hr />
+<h2 id="laser-engraving-mirrors">Laser Engraving Mirrors<a class="headerlink" href="#laser-engraving-mirrors" title="Permanent link">&para;</a></h2>
+<p>Original by Jason | Nov 17, 2016 | Hardware &amp; Electronics, Software</p>
+<h3 id="choosing-an-image">Choosing an Image<a class="headerlink" href="#choosing-an-image" title="Permanent link">&para;</a></h3>
+<p>Grey scale images do not translate well on to mirrors because either the surface is reflective or it
+is not. So straight 2 color images with no gradients are best. Just plain old black and white. The
+higher the resolution the sharper the edges.</p>
+<h3 id="resize-and-adjust">Resize and adjust<a class="headerlink" href="#resize-and-adjust" title="Permanent link">&para;</a></h3>
+<p>Next is open the image in Photoshop (or any image editor Paint.net is a free alternative), then
+resize it match the size you need. It is best to set the pixel resolution in your image editor as
+well. I use 100 px/cm or 0.1mm. I find the best quality with my setup at that resolution. Typically,
+a higher resolution is recommended but I had unsatisfactory results. While in your editor you can
+also adjust your levels to make the whites as white as possible and the blacks as black as possible.</p>
+<h3 id="image2gcode">Image2GCode<a class="headerlink" href="#image2gcode" title="Permanent link">&para;</a></h3>
+<p>After you have your image sized and ready to go open up
+<a href="https://www.v1engineering.com/forum/topic/image2gcode-free-raster-image-laser-engraving-software-modified-for-mpcnc/">Image2GCode</a>
+and load your image. The linked version has been modified for the Mostly Printed CNC.</p>
+<p>Remember you are engraving the backside of the mirror so you have to flip your image horizontally so
+it appears the correct way on the front of the mirror. If you do not, it will be backwards and you
+will need to start over.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen1.jpg"><img alt="!screen1" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen1.jpg" /></a></div></p>
+<p>You can also Turn the gamma way down too this will help darken the blacks more if need be. You want
+the laser blasting as strongly as possible on the mirror.</p>
+<p>Next on the Laser profile tab you want to leave Min Power at <code>0</code> and change Max Power to <code>255</code> or
+select the Max radio button. No other changes required to the defaults here.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen2.jpg"><img alt="!screen2" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen2.jpg" /></a></div></p>
+<p>On the last and final GCODE tab there are a few changes I make here. In the Gcode header section I
+add the following code:</p>
+<div class="codehilite"><pre><span></span>G0 X0 Y0
+M201 X1000 Y1000
+M204 P1000 T1000
+</pre></div>
+
+<p>This code turns up the default MPCNC acceleration. You may need to tweak these settings for your
+machine, these work well for mine.</p>
+<p>Your feedrate may vary slightly depending on the finish of the mirror. A good starting point would
+be 1200 mm/min. Click the Use <code>S</code> Param radio button. Type <code>106 S</code>in the Laser Power on MCODE box
+and type <code>M107</code> in the Laser Power Off MCODE box.</p>
+<p>I like to use diagonal scanning for best quality. You can choose to engrave an edge line if you
+like or not by selecting the check box. Click Generate file, give your file a name and the GCODE
+will be output.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen3.jpg"><img alt="!screen3" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen3.jpg" /></a></div></p>
+<h3 id="g-code-sender">G Code Sender<a class="headerlink" href="#g-code-sender" title="Permanent link">&para;</a></h3>
+<p>Before running your file you should have already focused your laser to the height of the mirror
+surface.</p>
+<p>Now you can either load the G code onto an SD card and run it from your lcd or open Repetier Host.
+In repetier click -File, -Load then find your file. Setting your laser to the <code>0,0</code> point on your
+mirror and click print. Several hours later you should end up with something that resembles your
+file like this.</p>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2016/11/Jets-9x9-2.1.jpg"><img alt="!jets-9x9-2-1" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Jets-9x9-2.1.jpg" width="400" /></a></div></p>
+<p>(Sorry I did not have a picture handy of the exact file I used in this example.)</p>
+<p>Feel free to ask questions <a href="https://www.v1engineering.com/forum/topic/engraved-mirror-logos/">here</a>.</p>
+<p><strong>Check out all the work we do @ <a href="https://www.facebook.com/banjags3dprinting/">banjags3dprinting</a></strong></p>
                 
                   
                 
