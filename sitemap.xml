@@ -66,6 +66,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://docs.v1engineering.com/mp3dp/version1/</loc>
+     <lastmod>2019-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://docs.v1engineering.com/software/</loc>
      <lastmod>2019-11-13</lastmod>
      <changefreq>daily</changefreq>
