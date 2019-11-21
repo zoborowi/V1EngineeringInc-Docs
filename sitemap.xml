@@ -6,11 +6,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.v1engineering.com/mkdocs_info/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://docs.v1engineering.com/mpcnc/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
@@ -56,7 +51,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://docs.v1engineering.com/mpcnc/troubleshooting/</loc>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://docs.v1engineering.com/lowrider/</loc>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/lowrider/version1/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -71,27 +76,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.v1engineering.com/software/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.v1engineering.com/software/repetier-host/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.v1engineering.com/software/estlcam-basics/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.v1engineering.com/software/estlcam-2p5d/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.v1engineering.com/electronics/</loc>
+     <loc>https://docs.v1engineering.com/zenxy/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -111,17 +96,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.v1engineering.com/software/reverse-motor/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.v1engineering.com/software/</loc>
-     <lastmod>2019-11-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.v1engineering.com/electronics/marlin-firmware/</loc>
+     <loc>https://docs.v1engineering.com/electronics/v1pi/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -131,12 +106,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.v1engineering.com/electronics/v1pi/</loc>
+     <loc>https://docs.v1engineering.com/software/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.v1engineering.com/tools/milling-basics/</loc>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/software/estlcam-basics/</loc>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/software/estlcam-2p5d/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -161,12 +146,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.v1engineering.com/zenxy/</loc>
+     <loc>https://docs.v1engineering.com/software/reverse-motor/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.v1engineering.com/about/</loc>
+     <loc>https://docs.v1engineering.com/mkdocs_info/</loc>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/software/repetier-host/</loc>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/electronics/marlin-firmware/</loc>
      <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
