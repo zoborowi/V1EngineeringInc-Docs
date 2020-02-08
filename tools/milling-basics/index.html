@@ -1206,6 +1206,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../learn/platformio/" title="PlatformIO" class="md-nav__link">
+      PlatformIO
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1503,7 +1515,7 @@ get reliable numbers for your machine with the right settings though.</p>
 controller.</p>
 <h3 id="starting-gcode">Starting Gcode<a class="headerlink" href="#starting-gcode" title="Permanent link">&para;</a></h3>
 <p>The pause here is to allow you to remove the Z probe wires.</p>
-<div class="codehilite"><pre><span></span>G90 ; Absolute positioning, just in case
+<div class="codehilite"><pre><span></span><code>G90 ; Absolute positioning, just in case
 G92 X0 Y0 Z0 ; Set Current position to 0, all axes
 G00 Z5.0000 F500 ; Raise Z 5mm at 8.3mm/s to clear clamps and screws
 G28 X Y Z ; Home in order, w/zprobe
@@ -1511,7 +1523,7 @@ G92 Z0.15 ; Account for probe thickness (set your thickness)
 G00 Z5.0000 F500 ; Raise Z probe off off of surface
 M00 ; pause for LCD button press
 M03 S&lt;s&gt; ; PID, set spindle speed
-</pre></div>
+</code></pre></div>
 
 <h3 id="tool-change">Tool Change<a class="headerlink" href="#tool-change" title="Permanent link">&para;</a></h3>
 <p>The steppers are disabled so you can move the head to an area where you can more easily change the
@@ -1519,7 +1531,7 @@ tool, make sure you do not let your Z axis drop onto your work surface. If you n
 another pause before the steppers are disabled to make sure you are there to catch it. This first
 pause is to let you physically change the tool and install the Z probe. The second pause is to allow
 you to remove the Z probe.</p>
-<div class="codehilite"><pre><span></span>M05 ; PID, Stop spindle
+<div class="codehilite"><pre><span></span><code>M05 ; PID, Stop spindle
 G0 Z35 F500 ; Raise Z axis 35mm
 M84 ; Disable steppers
 M00 ; Wait for LCD button press
@@ -1529,14 +1541,14 @@ G92 Z0.15 ; Account for probe thickness (set your thickness)
 G00 Z5.0000 F500 ; Raise Z probe off off of surface
 M00 ; pause for LCD button press
 M03 S&lt;s&gt; ; PID, set spindle speed
-</pre></div>
+</code></pre></div>
 
 <h3 id="ending">Ending<a class="headerlink" href="#ending" title="Permanent link">&para;</a></h3>
 <p>Make sure you tune the final Z lift to your machine.</p>
-<div class="codehilite"><pre><span></span>M05 ; PID, Turn off spindle
+<div class="codehilite"><pre><span></span><code>M05 ; PID, Turn off spindle
 G0 Z30 ; Lift Z axis 30mm
 ; M84 ; Optionally turn off steppers.
-</pre></div>
+</code></pre></div>
 
 <p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/06/start.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/start.jpg" width="400" />
 </a></div><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/06/Change.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/Change.jpg" width="400" />

@@ -1111,6 +1111,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../learn/platformio/" title="PlatformIO" class="md-nav__link">
+      PlatformIO
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1291,32 +1303,32 @@ this extruder by default. I will put the info here for you adventurous types.</p
 <p><a href="../../electronics/marlin-firmware/">Pre-set Firmware</a></p>
 <p>All of these that I have gotten have used the marlin #11 thermistor, and at 32<sup>nd</sup> stepping I use 200
 steps for the e value.</p>
-<p><div class="codehilite"><pre><span></span><span class="cp">#define TEMP_SENSOR_0 11</span>
-</pre></div>
+<p><div class="codehilite"><pre><span></span><code><span class="cp">#define TEMP_SENSOR_0 11</span>
+</code></pre></div>
 and</p>
-<div class="codehilite"><pre><span></span><span class="cp">#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,4535.44,200}</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="cp">#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,4535.44,200}</span>
+</code></pre></div>
 
 <p>Even after running the PID auto tune I get a huge overshoot in temp so limiting the max current
 might help with this, I will update it when I get a chance to test it.</p>
-<div class="codehilite"><pre><span></span><span class="c1">// Comment the following line to disable PID and enable bang-bang.</span>
+<div class="codehilite"><pre><span></span><code><span class="c1">// Comment the following line to disable PID and enable bang-bang.</span>
 <span class="cp">#define PIDTEMP</span>
 <span class="cp">#define BANG_MAX 255 </span><span class="c1">// limits current to nozzle while in bang-bang mode; 255=full current</span>
 <span class="cp">#define PID_MAX BANG_MAX </span><span class="c1">// limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current</span>
 <span class="cp">#ifdef PIDTEMP</span>
-</pre></div>
+</code></pre></div>
 
 <h2 id="slicer-edits">Slicer edits<a class="headerlink" href="#slicer-edits" title="Permanent link">&para;</a></h2>
 <p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/08/cgcode.png"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2015/08/cgcode.png" width="400" /></a></div></p>
 <p>Delete the beginning gcode, you don’t want it to home.</p>
 <p>Change the end gcode to look like this</p>
-<div class="codehilite"><pre><span></span>G91
+<div class="codehilite"><pre><span></span><code>G91
 G1 E-5 ;retract
 G1 Z5 ;lift up 5mm
 G90
 M104 S0 ; turn off temperature
 M84 ; disable motors
-</pre></div>
+</code></pre></div>
 
 <h2 id="not-using-endstops">Not using endstops<a class="headerlink" href="#not-using-endstops" title="Permanent link">&para;</a></h2>
 <p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/08/position.png"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2015/08/position.png" width="400" /></a></div></p>

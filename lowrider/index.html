@@ -1162,6 +1162,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learn/platformio/" title="PlatformIO" class="md-nav__link">
+      PlatformIO
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1446,18 +1458,18 @@ should not drag across the surface if you move it. With the bit above the last p
 machine to go back to the starting position will return the machine to where you started it and then
 making sure the steppers do not turn off is a good idea as the LowRider will drop under it’s own
 weight. The last few lines of your gcode should look like this.</p>
-<div class="codehilite"><pre><span></span>G1 Z7 F400 (this is my clearance plane and is already in my gcode)
+<div class="codehilite"><pre><span></span><code>G1 Z7 F400 (this is my clearance plane and is already in my gcode)
 G1 X0 Y0 F2100 (I add this to have the machine drive its self back to the start)
-</pre></div>
+</code></pre></div>
 
 <p>At this point you can use the lcd to move the machine clear of your material and lower it, then
 power off.</p>
 <p>Or, if you leave a little room you can drive past your starting point and lower automatically.</p>
-<div class="codehilite"><pre><span></span>G1 Z7 F400 (already there)
+<div class="codehilite"><pre><span></span><code>G1 Z7 F400 (already there)
 G1 X-15 Y-15 F2100 (drive 15mm past your start)
 G1 Z0 F400 (Lower the machine)
 M84; Turn steppers off
-</pre></div>
+</code></pre></div>
                 
                   
                 

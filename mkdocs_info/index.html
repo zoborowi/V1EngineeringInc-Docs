@@ -1175,6 +1175,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learn/platformio/" title="PlatformIO" class="md-nav__link">
+      PlatformIO
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1348,14 +1360,14 @@ the v1 instructions.</p>
 </div>
 <p>If the image is on v1engineering.com, and it&rsquo;s the right size, then it can be placed here with
 markdown like this:</p>
-<div class="codehilite"><pre><span></span>![Backup Text](imageLocation &quot;Hover text&quot;)
-</pre></div>
+<div class="codehilite"><pre><span></span><code>![Backup Text](imageLocation &quot;Hover text&quot;)
+</code></pre></div>
 
 <p><img alt="V1Engineering.com's logo" src="https://www.v1engineering.com/wp-content/uploads/2017/12/V1-Engineering-logo-260wide.png" title="This logo is linked from v1engineering.com" /></p>
 <p>If the image is something you want to share, and it&rsquo;s the right size, then it can be added to the
 docs/img folder and linked like this:</p>
-<div class="codehilite"><pre><span></span>![Backup Text](img/filename.png &quot;Hover text&quot;)
-</pre></div>
+<div class="codehilite"><pre><span></span><code>![Backup Text](img/filename.png &quot;Hover text&quot;)
+</code></pre></div>
 
 <p><img alt="images image" src="../img/pic.png" title="This is linked here in this github" /></p>
 <h3 id="image-resizing">Image Resizing<a class="headerlink" href="#image-resizing" title="Permanent link">&para;</a></h3>
@@ -1364,8 +1376,8 @@ smaller version, to show the overview. To accomplish this, we want the images to
 original format, and then smaller in the documentation. Then, when the user clicks the image, they
 should get a bigger view.</p>
 <p>Using these features is done like this:</p>
-<div class="codehilite"><pre><span></span>![!Backup Text](imageLocation &quot;Hover text&quot;){: width=&quot;400&quot; }
-</pre></div>
+<div class="codehilite"><pre><span></span><code>![!Backup Text](imageLocation &quot;Hover text&quot;){: width=&quot;400&quot; }
+</code></pre></div>
 
 <p>Notice the extra <code>!</code> in the <code>[]</code> brackets. That makes this a link to the image. Notice also the
 <code>{: width="400" }</code>. That adds attributes to the image, and width limits the size, without changing
@@ -1423,12 +1435,12 @@ and nesting more than two is funky. Also, top levels can&rsquo;t be pages, so it
 </ul>
 <h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
 <p>This helps a lot: <a href="https://www.tablesgenerator.com/markdown_tables#">Table Generator</a></p>
-<div class="codehilite"><pre><span></span>| Tables      |      Are      |  Cool |
+<div class="codehilite"><pre><span></span><code>| Tables      |      Are      |  Cool |
 |-------------|:-------------:|------:|
 | col 1 is    |  left-aligned | $1600 |
 | col 2 is    |    centered   |   $12 |
 | column 3 is | right-aligned |    $1 |
-</pre></div>
+</code></pre></div>
 
 
 <table>
@@ -1478,8 +1490,8 @@ and nesting more than two is funky. Also, top levels can&rsquo;t be pages, so it
 <p>TODO: <a href="https://www.mkdocs.org/#changing-the-favicon-icon">https://www.mkdocs.org/#changing-the-favicon-icon</a></p>
 <h3 id="code-highlighting">Code Highlighting<a class="headerlink" href="#code-highlighting" title="Permanent link">&para;</a></h3>
 <p><a href="https://python-markdown.github.io/extensions/code_hilite/">https://python-markdown.github.io/extensions/code_hilite/</a></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-</pre></div>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</code></pre></div>
 
 <p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/">https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/</a></p>
 <p>inlinehilite allows inline code syntax highlighting like this: <code class="codehilite"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span></code>.</p>
@@ -1511,18 +1523,18 @@ github.io site.</li>
 <p>Since this no longer only requires mkdocs as a dependency, there is a requirements.txt.</p>
 <p>To make sure you have the requirements, and you&rsquo;re trying to build the docs on your computer, you
 can do this:</p>
-<div class="codehilite"><pre><span></span>pip install -r requirements.txt
-</pre></div>
+<div class="codehilite"><pre><span></span><code>pip install -r requirements.txt
+</code></pre></div>
 
 
 <p>I recommend doing this in a virtualenv environment, which will let you easily remove the things
 you&rsquo;ve installed if you&rsquo;ve made a mistake.</p>
 <h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>mkdocs.yml    # The configuration file.
+<div class="codehilite"><pre><span></span><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
-</pre></div>
+</code></pre></div>
                 
                   
                 
