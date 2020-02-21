@@ -161,6 +161,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://docs.v1engineering.com/learn/software_overview/</loc>
+     <lastmod>2020-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://docs.v1engineering.com/software/repetier-host/</loc>
      <lastmod>2020-02-21</lastmod>
      <changefreq>daily</changefreq>
@@ -172,6 +177,21 @@
     </url>
     <url>
      <loc>https://docs.v1engineering.com/learn/platformio/</loc>
+     <lastmod>2020-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/learn/gcode/</loc>
+     <lastmod>2020-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/learn/motion/</loc>
+     <lastmod>2020-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.v1engineering.com/learn/coordinates/</loc>
      <lastmod>2020-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
