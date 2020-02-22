@@ -38,7 +38,7 @@
     
     
       
-        <title>Software Overview - V1 Engineering Inc Docs</title>
+        <title>Software Workflow - V1 Engineering Inc Docs</title>
       
     
     
@@ -114,7 +114,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#software-overview" tabindex="1" class="md-skip">
+      <a href="#software-workflow" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -140,7 +140,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Software Overview
+                Software Workflow
               
             </span>
           
@@ -1025,11 +1025,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Software Overview
+        Software Workflow
       </label>
     
-    <a href="./" title="Software Overview" class="md-nav__link md-nav__link--active">
-      Software Overview
+    <a href="./" title="Software Workflow" class="md-nav__link md-nav__link--active">
+      Software Workflow
     </a>
     
       
@@ -1050,16 +1050,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cad-computer-assisted-design" class="md-nav__link">
-    CAD: Computer Assisted Design
+  <a href="#design" class="md-nav__link">
+    Design
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#functional-design" class="md-nav__link">
-    Functional Design
+  <a href="#functional-parts-design" class="md-nav__link">
+    Functional Parts Design
   </a>
   
 </li>
@@ -1077,8 +1077,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cam-computer-assisted-machining" class="md-nav__link">
-    CAM: Computer Assisted Machining
+  <a href="#toolpath-generationcam" class="md-nav__link">
+    Toolpath Generation/CAM
   </a>
   
 </li>
@@ -1091,8 +1091,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#controller" class="md-nav__link">
-    Controller
+  <a href="#controllerfirmware" class="md-nav__link">
+    Controller/Firmware
   </a>
   
 </li>
@@ -1220,16 +1220,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cad-computer-assisted-design" class="md-nav__link">
-    CAD: Computer Assisted Design
+  <a href="#design" class="md-nav__link">
+    Design
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#functional-design" class="md-nav__link">
-    Functional Design
+  <a href="#functional-parts-design" class="md-nav__link">
+    Functional Parts Design
   </a>
   
 </li>
@@ -1247,8 +1247,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cam-computer-assisted-machining" class="md-nav__link">
-    CAM: Computer Assisted Machining
+  <a href="#toolpath-generationcam" class="md-nav__link">
+    Toolpath Generation/CAM
   </a>
   
 </li>
@@ -1261,8 +1261,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#controller" class="md-nav__link">
-    Controller
+  <a href="#controllerfirmware" class="md-nav__link">
+    Controller/Firmware
   </a>
   
 </li>
@@ -1293,46 +1293,78 @@
                   <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/learn/software_overview.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="software-overview">Software Overview<a class="headerlink" href="#software-overview" title="Permanent link">&para;</a></h1>
-<p>Starting out in the CNC world can be very intimidating, even if you already know about 3D printing
-(which is a CNC machine, technically). Here, we will break down the different software components
-and tools, to give you a better understanding of some of the terminology, which gives you the
-language to find help. Also, we want you to have an overview of the area, so you can understand all
-of the parts, and how they work together.</p>
+                <h1 id="software-workflow">Software Workflow<a class="headerlink" href="#software-workflow" title="Permanent link">&para;</a></h1>
+<p>Starting out in the <a href="https://en.wikipedia.org/wiki/Numerical_control">CNC</a> world can be very intimidating, even if you already know about 3D printing (which is a CNC machine, technically).  However, when broken down into manageable pieces it&rsquo;s easy to digest.</p>
+<p>Here, we will describe the different steps in the CNC milling workflow process along with their associated software components/tools.  The goal is to provide you a better understanding of some of the steps and terminology, which in turn gives you the background to better seek help and explore possibilities.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This is the 1000ft (304m) overview.</p>
-<p>There are 4 parts: CAD, CAM, Sender, Controller</p>
-<p>TODO Insert a diagram showing the workflow.</p>
+<p>This is the 1000ft (304m) overview (we will explore each in more detail within the sections that follow).</p>
+<p>There are 4 components to the workflow and associated software as follows:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Step</th>
+<th>Software</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Design</td>
+<td>CAD (Computer Assisted Design) or Vector Graphics Editor</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Toolpath Generation</td>
+<td>CAM (Computer Assisted Machining)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>G-Code Sending</td>
+<td>Sender</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Milling</td>
+<td>Controller</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Software Workflow" src="../../img/software-workflow.png" /></p>
 <dl>
-<dt><a href="#cad-computer-assisted-design">CAD: Computer Assisted Design</a></dt>
-<dd>Before you do anything, you have to take your idea and get it into the computer. This can take
-many forms, but the output is either a 2D file (like a .DXF or .SVG) or sometimes (but not
+<dt><a href="#design">Design</a></dt>
+<dd>The first step is to make or get a design. If you are making one, then you will probably use a
+CAD program (for functional parts, like a gear) or a Vector Graphics Editor (for art, like a sign).
+The output of this step is typically either a 2D file (like a .DXF or .SVG) or sometimes (but not
 often) a 3D file (like a .STL).</dd>
-<dt><a href="#cam-computer-assisted-machining">CAM: Computer Assisted Machining</a></dt>
-<dd>This is the step where you take your design, and describe which lines to trace, which areas to
-cut out, and which parts to leave. CAM also is where you will define what kinds of bits you
-have, and how fast and deep you want to move them through the material. The output of this step
-is g-code (in a .gcode or .nc file).</dd>
+<dt><a href="#toolpath-generationcam">Toolpath Generation</a></dt>
+<dd>This is the step where you take your design, and describe which lines to engrave, which areas to
+cut out, and which parts to leave. It defines what &ldquo;paths&rdquo; your &ldquo;tool&rdquo; is going to take.  CAM also is where you will 
+define what kinds of milling bits you have, and how fast and deep you want to move them through the material. The output of
+this step is g-code (in a .gcode or .nc file). <a href="../gcode/">G-code</a> is the &ldquo;language&rdquo; of the instructions for your CNC.</dd>
 <dt><a href="#g-code-sender">G-code Sender</a></dt>
 <dd>The g-code is just a list of instructions that define where the tool should go. The software
-used to &ldquo;play&rdquo; these instructions is the g-code sender. There are many options for this step, so
-do what feels comfortable. The g-code sender needs to be well matched with your controller.</dd>
-<dt><a href="#controller">Controller</a></dt>
-<dd>A.k.a. &ldquo;Firmware&rdquo;
-The controller is responsible for taking g-code instructions and managing the precise movements
-of the motors. There are other jobs, but they are all related to this one function. In our CNC
-machines, the most common is Marlin, and the second is Grbl.</dd>
+used to &ldquo;play&rdquo; these instructions is the g-code sender and communicates with the controller. There are a number of options 
+for this software.  Most people have a personal preference along with it being well matched with your controller.</dd>
+<dt><a href="#controllerfirmware">Controller</a></dt>
+<dd>The controller is responsible for taking g-code instructions and managing the precise movements
+of the motors. There are other jobs, but they are all related to this one function. There is
+firmware (software on a chip) that facilitates this. In the CNC world there are many &ldquo;flavors&rdquo;
+of this firmware.  In our CNC machines, the most common flavors are Marlin and Grbl.</dd>
 </dl>
-<h2 id="cad-computer-assisted-design">CAD: Computer Assisted Design<a class="headerlink" href="#cad-computer-assisted-design" title="Permanent link">&para;</a></h2>
-<p>There are so many options for CAD. Also, CAD can take thousands of hours to master. So we can&rsquo;t go
-into too much detail here. Luckily, you don&rsquo;t have to be a master to get your hands dirty.</p>
-<p>There are two major ways to create designs for a CNC machine:</p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p>There are many options for CAD and Vector Graphics Editors. Either can take thousands of hours to
+master. So we can&rsquo;t go into too much detail here. Luckily, you don&rsquo;t have to be a master to get your
+hands dirty.</p>
+<p>There are two common methods of creating designs for a CNC machine:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Sometimes, you can find a design to cut already as a .DXF or a .SVG. If so, great! You can easily
-skip the CAD step.</p>
+<p>Sometimes, you can find a design that is already a .DXF or a .SVG. If so, great! You can easily
+skip the Design step. In fact, for signs, there are many SVG&rsquo;s on
+<a href="https://www.etsy.com/search?q=svg%20sign">Etsy</a> that are inexpensive to purchase.</p>
 </div>
-<h3 id="functional-design">Functional Design<a class="headerlink" href="#functional-design" title="Permanent link">&para;</a></h3>
+<h3 id="functional-parts-design">Functional Parts Design<a class="headerlink" href="#functional-parts-design" title="Permanent link">&para;</a></h3>
+<p><img alt="Software CAD" src="../../img/software-cad.png" /></p>
 <p>If you are making functional parts, then you want a CAD tool. The output you want is usually
 .DXF. Imagine you want to make a toolbox, you would draw out each side of the toolbox and export a
 .DXF for each face of the box. You care a lot about the size of each side, because it all has to fit
@@ -1345,26 +1377,29 @@ feel free to <a href="../..#editing-and-contributing">edit this document</a>.</p
 <li>SketchUp</li>
 <li>OpenSCAD</li>
 <li>LibreCAD</li>
+<li>TinkerCAD</li>
 </ul>
 <h3 id="art-design">Art Design<a class="headerlink" href="#art-design" title="Permanent link">&para;</a></h3>
+<p><img alt="Software VGE" src="../../img/software-vge.png" /></p>
 <p>If you want to carve out art, signs, lettering, or logos then you&rsquo;ll want to use .SVG files.
 These parts have important dimensions and measurements, but they are usually drawn in programs
-specializing in art. The most common programs are inkscape and Adobe Illustrator. In these programs,
+specializing in art. The most common programs are Inkscape and Adobe Illustrator. In these programs,
 you can very precisely adjust the shape to get an aesthetically pleasing design, or import another
 design and adjust it.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have a piece of art in a .jpg, .png, or .bmp format, you can&rsquo;t directly use that. To make
-it usable, you can use inkscape. Try searching for <a href="https://duckduckgo.com/?q=inkscape+trace+bitmap+tutorial">inkscape trace bitmap
+it usable, you can use Inkscape. Try searching for <a href="https://duckduckgo.com/?q=inkscape+trace+bitmap+tutorial">inkscape trace bitmap
 tutorial</a></p>
 </div>
-<h2 id="cam-computer-assisted-machining">CAM: Computer Assisted Machining<a class="headerlink" href="#cam-computer-assisted-machining" title="Permanent link">&para;</a></h2>
+<h2 id="toolpath-generationcam">Toolpath Generation/CAM<a class="headerlink" href="#toolpath-generationcam" title="Permanent link">&para;</a></h2>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/03/3Island.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/03/3Island.jpg" /></a></div></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you are familiar with 3D printing, this is similar to the slicer step (but not as automated).</p>
 </div>
-<p>Now that you have a design, you basically have just a bunch of shapes. You still haven&rsquo;t said which
-shapes need to be cut out, which shapes need to be traced, and which shapes need to be completely
+<p>Now that you have a design, you basically have just a bunch of shapes or objects. You still haven&rsquo;t said which
+shapes need to be cut out, which shapes need to be engraved or drilled, and which shapes need to be completely
 removed. In CAM, you will select the shapes and choose which operations you want to perform. For
 example, if you are cutting out letters, you will need to use CAM to cut out each letter. You will
 also need to tell it how far to cut. It doesn&rsquo;t know anything about the material, so if you&rsquo;re
@@ -1392,6 +1427,7 @@ first. Even if you decide to later use the Fusion 360 CAM, the skills learned wi
 be easier to learn, and will directly apply to any CAM software.</p>
 </div>
 <h2 id="g-code-sender">G-code Sender<a class="headerlink" href="#g-code-sender" title="Permanent link">&para;</a></h2>
+<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/05/eRep.png"><img alt="!eRep" src="https://www.v1engineering.com/wp-content/uploads/2015/05/eRep.png" /></a></div></p>
 <p>The term &ldquo;G-code Sender&rdquo; isn&rsquo;t a very technical term, because there are so many ways to &ldquo;play back&rdquo;
 a g-code file.</p>
 <p>A g-code file is just a list of instructions, with one instruction on each line. These need to be
@@ -1406,11 +1442,12 @@ printers because the start location is on the workpiece, not the machine).</p>
 card. You can put the file on the SD card, and set the whole thing up on the LCD, and play the file
 without bringing a computer into the shop.</p>
 <p>There are many other advanced ways to send gcode. You can hook up a raspberry pi, and use the <a href="../../electronics/v1pi/">v1pi
-image</a>. You can use CNC.js standalone on your computer, or use pronterface.</p>
-<h2 id="controller">Controller<a class="headerlink" href="#controller" title="Permanent link">&para;</a></h2>
-<p>The controller takes movement commands, and drives the motors. If you bought the controller from
+image</a>. You can use <a href="https://github.com/cncjs/cncjs/wiki/Electron-App">CNC.js</a> standalone on your computer, or use pronterface.</p>
+<h2 id="controllerfirmware">Controller/Firmware<a class="headerlink" href="#controllerfirmware" title="Permanent link">&para;</a></h2>
+<p><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/05/Marlin-Logo-GitHub.png" /></p>
+<p>The final step is to actually do the milling/cutting.  Obviously this is done by the tool at the end of the gantry, but it is facilitated by the controller.  The controller takes movement commands, and drives the motors. If you bought the controller from
 the V1Engineering shop, then it is running Marlin. Marlin is designed for 3D printing (and so are a
-lot of tools we use). Don&rsquo;t be surprised if you see something labelled &ldquo;print&rdquo; when you think it
+lot of tools we use). Don&rsquo;t be surprised if you see something labeled &ldquo;print&rdquo; when you think it
 should be &ldquo;cut&rdquo;.</p>
 <p>The V1Engineering Shop sells the controllers flashed and ready to use. If you want to update them,
 or you need to change the software for some reason, there are preconfigured versions of Marlin for
