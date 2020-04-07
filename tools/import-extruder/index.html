@@ -834,6 +834,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/Fengrave-vcarve-inlay/" title="F Engrave V-Carve" class="md-nav__link">
+      F Engrave V-Carve
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1363,15 +1375,15 @@ this extruder by default. I will put the info here for you adventurous types.</p
 <p><a href="../../electronics/marlin-firmware/">Pre-set Firmware</a></p>
 <p>All of these that I have gotten have used the marlin #11 thermistor, and at 32<sup>nd</sup> stepping I use 200
 steps for the e value.</p>
-<p><div class="codehilite"><pre><span></span><code><span class="cp">#define TEMP_SENSOR_0 11</span>
+<p><div class="highlight"><pre><span></span><code><span class="cp">#define TEMP_SENSOR_0 11</span>
 </code></pre></div>
 and</p>
-<div class="codehilite"><pre><span></span><code><span class="cp">#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,4535.44,200}</span>
+<div class="highlight"><pre><span></span><code><span class="cp">#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,4535.44,200}</span>
 </code></pre></div>
 
 <p>Even after running the PID auto tune I get a huge overshoot in temp so limiting the max current
 might help with this, I will update it when I get a chance to test it.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Comment the following line to disable PID and enable bang-bang.</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Comment the following line to disable PID and enable bang-bang.</span>
 <span class="cp">#define PIDTEMP</span>
 <span class="cp">#define BANG_MAX 255 </span><span class="c1">// limits current to nozzle while in bang-bang mode; 255=full current</span>
 <span class="cp">#define PID_MAX BANG_MAX </span><span class="c1">// limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current</span>
@@ -1382,7 +1394,7 @@ might help with this, I will update it when I get a chance to test it.</p>
 <p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/08/cgcode.png"><img alt="!picture" src="https://www.v1engineering.com/wp-content/uploads/2015/08/cgcode.png" width="400" /></a></div></p>
 <p>Delete the beginning gcode, you don’t want it to home.</p>
 <p>Change the end gcode to look like this</p>
-<div class="codehilite"><pre><span></span><code>G91
+<div class="highlight"><pre><span></span><code>G91
 G1 E-5 ;retract
 G1 Z5 ;lift up 5mm
 G90
@@ -1433,7 +1445,7 @@ the height during the skirt print to fine tune it.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../software/estlcam-2p5d/" title="EstlCAM Intermediate (2.5d)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../software/Fengrave-vcarve-inlay/" title="F Engrave V-Carve" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1442,7 +1454,7 @@ the height during the skirt print to fine tune it.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                EstlCAM Intermediate (2.5d)
+                F Engrave V-Carve
               </span>
             </div>
           </a>

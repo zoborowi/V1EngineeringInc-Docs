@@ -830,6 +830,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/Fengrave-vcarve-inlay/" title="F Engrave V-Carve" class="md-nav__link">
+      F Engrave V-Carve
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1332,7 +1344,7 @@ and <code>G01</code>.</p>
 <h2 id="g-code-feedrate">G-Code Feedrate<a class="headerlink" href="#g-code-feedrate" title="Permanent link">&para;</a></h2>
 <h3 id="example-g-code">Example G-Code<a class="headerlink" href="#example-g-code" title="Permanent link">&para;</a></h3>
 <p>Look at these commands (for more detail, look at the <a href="../gcode/">g-code tutorial</a>):</p>
-<div class="codehilite"><pre><span></span><code>G00 X0.00 Y0.00 Z0.00
+<div class="highlight"><pre><span></span><code>G00 X0.00 Y0.00 Z0.00
 G00 X10.00
 G01 Z-0.1 F300.00
 G01 X100.00 F600
@@ -1412,7 +1424,7 @@ CNC friendly G-Code Senders and CAM use <code>G00</code> to just move the machin
 used in a <code>G00</code> command.</strong></p>
 <p>If you don&rsquo;t want that behavior, and you want <code>G00</code> to just move as fast as possible, you can use this
 option in the Configuration_adv.h:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Enable and set a (default) feedrate for all G0 moves</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Enable and set a (default) feedrate for all G0 moves</span>
 <span class="c1">//#define G0_FEEDRATE 3000 // (mm/m)</span>
 <span class="cp">#ifdef G0_FEEDRATE</span>
     <span class="c1">//#define VARIABLE_G0_FEEDRATE // The G0 feedrate is set by F in G0 motion mode</span>

@@ -830,6 +830,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/Fengrave-vcarve-inlay/" title="F Engrave V-Carve" class="md-nav__link">
+      F Engrave V-Carve
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1537,7 +1549,7 @@ controller gives you.</p>
 <p>A <code>.gcode</code> file is just a list of individual commands, which will be processed one at a time. That&rsquo;s
 it! There is no magic involved. You can rename a .gcode file with a .txt extension and open it in a
 text editor (like wordpad). Here are some instructions you might see in a .gcode file:</p>
-<div class="codehilite"><pre><span></span><code>G00 X0.000 Y0.000 Z0.000 F300.00
+<div class="highlight"><pre><span></span><code>G00 X0.000 Y0.000 Z0.000 F300.00
 G01 Z-1.000 F300.00
 G01 X10.000 F600.00
 </code></pre></div>
@@ -1551,7 +1563,7 @@ be a coder to understand it. In fact, there are really just a few commands that 
 it doesn&rsquo;t take long at all to learn.</p>
 </details>
 <h3 id="first-g-code-command">First G-Code Command<a class="headerlink" href="#first-g-code-command" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>G01 X10.000 F600.00
+<div class="highlight"><pre><span></span><code>G01 X10.000 F600.00
 </code></pre></div>
 
 <p>This is a single G-Code command. It starts with the kind of command <code>G01</code> and then has two
@@ -1571,7 +1583,7 @@ this is 600mm/min, or 10mm/s.</dd>
 <p>So, put it all together and this tells the controller to move to the X=10mm mark, at 10mm/s.</p>
 <p>In a movement command, X, Y, and Z are all possible. So here is some g-code for moving in a square
 10mm on a side, at 10mm/s:
-<div class="codehilite"><pre><span></span><code>G01 X0.000  Y0.000  F600
+<div class="highlight"><pre><span></span><code>G01 X0.000  Y0.000  F600
 G01 X10.000 Y0.000  F600
 G01 X10.000 Y10.000 F600
 G01 X0.000  Y10.000 F600
@@ -1598,14 +1610,14 @@ anything you want in there.</p>
 <ol>
 <li>Anything after a semicolon will be a comment. Ex:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code>G01 X10.000 F600.00 ; This is a comment
+<div class="highlight"><pre><span></span><code>G01 X10.000 F600.00 ; This is a comment
 ; This is also a comment.
 </code></pre></div>
 
 <ol start="2">
 <li>Anything in parenthesis is a comment. Ex:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code>G01 X10.000 F600.00 ( This is a comment )
+<div class="highlight"><pre><span></span><code>G01 X10.000 F600.00 ( This is a comment )
 ( This is also a comment. )
 </code></pre></div>
 

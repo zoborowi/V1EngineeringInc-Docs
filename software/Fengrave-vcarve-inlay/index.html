@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://docs.v1engineering.com/tools/milling-basics/">
+        <link rel="canonical" href="https://docs.v1engineering.com/software/Fengrave-vcarve-inlay/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Milling Basics - V1 Engineering Inc Docs</title>
+        <title>F Engrave V-Carve - V1 Engineering Inc Docs</title>
       
     
     
@@ -114,7 +114,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#milling-basics" tabindex="1" class="md-skip">
+      <a href="#v-carve-inlay-process-using-f-engrave" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -140,7 +140,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Milling Basics
+                F Engrave V-Carve
               
             </span>
           
@@ -726,7 +726,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../software/" title="Setup" class="md-nav__link">
+    <a href="../" title="Setup" class="md-nav__link">
       Setup
     </a>
   </li>
@@ -804,6 +804,42 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../tools/milling-basics/" title="Milling Basics" class="md-nav__link">
+      Milling Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../estlcam-basics/" title="EstlCAM Setup" class="md-nav__link">
+      EstlCAM Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../estlcam-2p5d/" title="EstlCAM Intermediate (2.5d)" class="md-nav__link">
+      EstlCAM Intermediate (2.5d)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -815,11 +851,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Milling Basics
+        F Engrave V-Carve
       </label>
     
-    <a href="./" title="Milling Basics" class="md-nav__link md-nav__link--active">
-      Milling Basics
+    <a href="./" title="F Engrave V-Carve" class="md-nav__link md-nav__link--active">
+      F Engrave V-Carve
     </a>
     
       
@@ -833,72 +869,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-you-do-anything" class="md-nav__link">
-    Before You Do Anything
+  <a href="#f-engrave-preprocessing" class="md-nav__link">
+    F-Engrave Preprocessing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#baby-steps" class="md-nav__link">
-    Baby Steps
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for-the-impatient" class="md-nav__link">
-    For The Impatient
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-more-proper-introduction" class="md-nav__link">
-    A More Proper Introduction
+  <a href="#starting-f-engrave" class="md-nav__link">
+    Starting F-Engrave
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#islands" class="md-nav__link">
-    Islands
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#work-offsets" class="md-nav__link">
-    Work offsets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#finishing-pass" class="md-nav__link">
-    Finishing Pass
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#climb-vs-conventional-milling" class="md-nav__link">
-    Climb vs. Conventional Milling
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feeds-and-speeds-calculator" class="md-nav__link">
-    Feeds and Speeds Calculator
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stepover" class="md-nav__link">
-    Stepover
+  <a href="#f-engrave-settings" class="md-nav__link">
+    F-Engrave Settings
   </a>
   
 </li>
@@ -909,37 +896,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dual-endstop-tool-changes-z-probing" class="md-nav__link">
-    Dual EndStop Tool Changes, Z Probing
+  <a href="#post-processing-with-modfef" class="md-nav__link">
+    Post Processing with MODfef
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#starting-gcode" class="md-nav__link">
-    Starting Gcode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tool-change" class="md-nav__link">
-    Tool Change
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ending" class="md-nav__link">
-    Ending
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#depth-of-cut" class="md-nav__link">
-    Depth of Cut
+  <a href="#start-modfef-and-process-the-output-files-from-f-engrave" class="md-nav__link">
+    Start MODfef and process the output files from F-engrave
   </a>
   
 </li>
@@ -950,22 +916,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#post-processors" class="md-nav__link">
-    Post Processors
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-ones-we-have-working" class="md-nav__link">
-    The ones we have working
+  <a href="#carving" class="md-nav__link">
+    Carving
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up-and-assembly" class="md-nav__link">
+    Clean up and Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-information-and-references" class="md-nav__link">
+    Additional Information and References:
+  </a>
   
 </li>
       
@@ -977,42 +944,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../software/estlcam-basics/" title="EstlCAM Setup" class="md-nav__link">
-      EstlCAM Setup
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../software/estlcam-2p5d/" title="EstlCAM Intermediate (2.5d)" class="md-nav__link">
-      EstlCAM Intermediate (2.5d)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../software/Fengrave-vcarve-inlay/" title="F Engrave V-Carve" class="md-nav__link">
-      F Engrave V-Carve
-    </a>
   </li>
 
         
@@ -1046,7 +977,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../import-extruder/" title="Main" class="md-nav__link">
+    <a href="../../tools/import-extruder/" title="Main" class="md-nav__link">
       Main
     </a>
   </li>
@@ -1082,7 +1013,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lasers/" title="Main" class="md-nav__link">
+    <a href="../../tools/lasers/" title="Main" class="md-nav__link">
       Main
     </a>
   </li>
@@ -1094,7 +1025,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../laser-engraving-mirrors/" title="Engraving Mirrors" class="md-nav__link">
+    <a href="../../tools/laser-engraving-mirrors/" title="Engraving Mirrors" class="md-nav__link">
       Engraving Mirrors
     </a>
   </li>
@@ -1111,7 +1042,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../drag-knife/" title="Drag Knife/Vinyl" class="md-nav__link">
+    <a href="../../tools/drag-knife/" title="Drag Knife/Vinyl" class="md-nav__link">
       Drag Knife/Vinyl
     </a>
   </li>
@@ -1123,7 +1054,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../foam-needle-cutter/" title="Needle Cutter" class="md-nav__link">
+    <a href="../../tools/foam-needle-cutter/" title="Needle Cutter" class="md-nav__link">
       Needle Cutter
     </a>
   </li>
@@ -1159,7 +1090,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../software/reverse-motor/" title="Reversing a Stepper" class="md-nav__link">
+    <a href="../reverse-motor/" title="Reversing a Stepper" class="md-nav__link">
       Reversing a Stepper
     </a>
   </li>
@@ -1224,7 +1155,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../software/repetier-host/" title="Repetier-Host" class="md-nav__link">
+    <a href="../repetier-host/" title="Repetier-Host" class="md-nav__link">
       Repetier-Host
     </a>
   </li>
@@ -1316,72 +1247,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-you-do-anything" class="md-nav__link">
-    Before You Do Anything
+  <a href="#f-engrave-preprocessing" class="md-nav__link">
+    F-Engrave Preprocessing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#baby-steps" class="md-nav__link">
-    Baby Steps
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for-the-impatient" class="md-nav__link">
-    For The Impatient
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-more-proper-introduction" class="md-nav__link">
-    A More Proper Introduction
+  <a href="#starting-f-engrave" class="md-nav__link">
+    Starting F-Engrave
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#islands" class="md-nav__link">
-    Islands
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#work-offsets" class="md-nav__link">
-    Work offsets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#finishing-pass" class="md-nav__link">
-    Finishing Pass
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#climb-vs-conventional-milling" class="md-nav__link">
-    Climb vs. Conventional Milling
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feeds-and-speeds-calculator" class="md-nav__link">
-    Feeds and Speeds Calculator
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stepover" class="md-nav__link">
-    Stepover
+  <a href="#f-engrave-settings" class="md-nav__link">
+    F-Engrave Settings
   </a>
   
 </li>
@@ -1392,37 +1274,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dual-endstop-tool-changes-z-probing" class="md-nav__link">
-    Dual EndStop Tool Changes, Z Probing
+  <a href="#post-processing-with-modfef" class="md-nav__link">
+    Post Processing with MODfef
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#starting-gcode" class="md-nav__link">
-    Starting Gcode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tool-change" class="md-nav__link">
-    Tool Change
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ending" class="md-nav__link">
-    Ending
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#depth-of-cut" class="md-nav__link">
-    Depth of Cut
+  <a href="#start-modfef-and-process-the-output-files-from-f-engrave" class="md-nav__link">
+    Start MODfef and process the output files from F-engrave
   </a>
   
 </li>
@@ -1433,22 +1294,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#post-processors" class="md-nav__link">
-    Post Processors
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-ones-we-have-working" class="md-nav__link">
-    The ones we have working
+  <a href="#carving" class="md-nav__link">
+    Carving
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up-and-assembly" class="md-nav__link">
+    Clean up and Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-information-and-references" class="md-nav__link">
+    Additional Information and References:
+  </a>
   
 </li>
       
@@ -1468,209 +1330,130 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/tools/milling-basics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/software/Fengrave-vcarve-inlay.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="milling-basics">Milling Basics<a class="headerlink" href="#milling-basics" title="Permanent link">&para;</a></h1>
-<h2 id="before-you-do-anything">Before You Do Anything<a class="headerlink" href="#before-you-do-anything" title="Permanent link">&para;</a></h2>
-<p>The basics for milling are not…well…basic. This subject can get very deep and intimidating so I will
-try and present this in a tiered manner. Improving as we learn collectively and as the software
-(CAM) improves. I am no expert. I learn by reading and trial and error.</p>
-<p>Test cuts speak volumes and should be considered a requirement. You should have test cuts that are
-small but representative of your part. If you are doing a 3D sculpt isolate a small part and mill it
-out, if you are cutting out a part with a pocket and some holes make a small part with a pocket and
-a hole. These test cuts can save hours on the actual job, every time you do one I promise you will
-learn something.</p>
+                <h1 id="v-carve-inlay-process-using-f-engrave">V Carve Inlay Process Using F-engrave<a class="headerlink" href="#v-carve-inlay-process-using-f-engrave" title="Permanent link">&para;</a></h1>
+<p>These are instructions for combining the F-Engrave software with the MODfef script to create
+a V-Carve Inlay with an MPCNC.</p>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/SuHgjZDXi8k?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>This video shows the process. Press (f) to show the video full screen.</p>
+<h2 id="f-engrave-preprocessing">F-Engrave Preprocessing<a class="headerlink" href="#f-engrave-preprocessing" title="Permanent link">&para;</a></h2>
+<p><img src="/img/simplelogo.png" alt="V1 Engineering Logo" width="350" align="right"></p>
+<ol>
+<li>Select the picture you want to use for your inlay<ul>
+<li>It is best to use a dxf or bmp file</li>
+<li>It is better to use a black and white picture</li>
+<li>The detail in the picture will determine its suitability for inlay work</li>
+</ul>
+</li>
+<li>Prepare the picture for use with F-engrave<ul>
+<li>I use Inkscape or Gimp or plain old Windows Paint</li>
+<li>You may have to do some work on simplifying the picture or enhancing the details</li>
+</ul>
+</li>
+</ol>
+<h2 id="starting-f-engrave">Starting F-Engrave<a class="headerlink" href="#starting-f-engrave" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Start F-engrave and import your picture</p>
+<ul>
+<li>The picture will display, some of the imperfections may be purely the representation but others may cause your inlay part to have defects</li>
+<li>Make the necessary selections with F-engrave – see <a href="http://www.scorchworks.com/Fengrave/fengrave.html#documentation" title="Scorchworks F-Engrave instructions">Scorchworks instructions</a></li>
+<li>Use the save Gcode option (this will be the “MAIN” file)</li>
+<li>Save the Clean Gcode and the Vclean Gcode</li>
+<li>If there is nothing to Clean or Vclean F-engrave will complain that the clean up hasn’t been run.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="F-Engrave Screen" src="../../img/FengraveCapture1.jpg" width="650" /></p>
+<h3 id="f-engrave-settings">F-Engrave Settings<a class="headerlink" href="#f-engrave-settings" title="Permanent link">&para;</a></h3>
+<p><strong>Here are some working F-Engrave settings:</strong></p>
+<p><img alt="F-Engrave Screen" src="../../img/FengraveCapture2.jpg" width="750" /></p>
+<ul>
+<li>The first part that you are creating is the &ldquo;female&rdquo; part, this is pocket that will accept the inlay or &ldquo;male&rdquo; part.</li>
+<li>To create the &ldquo;male&rdquo; part you will need to mirror the image in F-Engrave, select Prismatic and Add Box on the V-carve settings.</li>
+<li>Then you will repeat the process of creating the gcode files for the &ldquo;male&rdquo; part. This may look odd but it will fit snugly into the &ldquo;female&rdquo; part.</li>
+</ul>
+<p><img alt="F-Engrave Screen" src="../../img/FengraveCapture4.jpg" width="750" /></p>
+<p><img alt="F-Engrave Screen" src="../../img/FengraveCapture5.jpg" width="750" /></p>
 <hr />
-<h2 id="baby-steps">Baby Steps<a class="headerlink" href="#baby-steps" title="Permanent link">&para;</a></h2>
-<p>You should have already done some plotting, as <a href="https://www.v1engineering.com/estlcam-basics/">shown
-here</a>. You should have a very clean drawing if you
-don’t you should not be milling yet. Make sure the pen picks up all the way (clearance plane), and
-the parts are the right size. This ensure your machine works correctly and you are familiar with the
-basics of CAM and how your machine moves.</p>
-<p>After plotting the next step in milling would be <a href="https://amzn.to/2fCJIvs">HD foam</a>, (I find it at
-the big box store “foamular” $5 for a &frac14; sheet), this material holds amazing tolerances, mills very
-well, and will not destroy your machine when you make a mistake. If you are new this should always
-be the material you make a first test cut in, then on to test cuts in the material you want to use.
-You can make test cuts on both sides and the $5 it costs will pay for is self many times over in
-saved bits and refined CAM settings (time &amp; accuracy).</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2017/09/IMG_20170921_101639.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2017/09/IMG_20170921_101639.jpg" width="400" /></a></div></p>
-<p>Some of the first cuts ever made on an MPCNC.</p>
-<h2 id="for-the-impatient">For The Impatient<a class="headerlink" href="#for-the-impatient" title="Permanent link">&para;</a></h2>
-<p>If you just want to get the machine dirty here is the generic recipe. This should work in every material, you can optimize later.</p>
+<h2 id="post-processing-with-modfef">Post Processing with MODfef<a class="headerlink" href="#post-processing-with-modfef" title="Permanent link">&para;</a></h2>
+<h3 id="start-modfef-and-process-the-output-files-from-f-engrave">Start MODfef and process the output files from F-engrave<a class="headerlink" href="#start-modfef-and-process-the-output-files-from-f-engrave" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select the MAIN file, the “VCLEAN” file and the “CLEAN” file</li>
+<li>You can also select a custom start file and end file (these are not produced by F-engrave)</li>
+<li>You can select the file extension for your gcode file</li>
+<li>You can enter a tool change line. The program will insert a pause here so you can change your cutter on the machine.</li>
+<li>You can enter the character that should be used for comments. F-engrave will enclose comments in parentheses () by default.</li>
+<li>You can choose if you want the files to be concatenated. If you select this it will make one file with a tool change.</li>
+<li>The output file will have the same name as the “MAIN” file but with your new extension.</li>
+<li>The concatenated file will contain the “START” file (if one is selected), then the “MAIN” file, then the “VCLEAN” file (if one is selected), then the tool change, then the “CLEAN” file (if one is selected), then the “END” file (if one is selected).</li>
+</ol>
+<p><img alt="MODfef Screen" src="../../img/FengraveCapture3.jpg" width="750" /></p>
+<hr />
+<h2 id="carving">Carving<a class="headerlink" href="#carving" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Load the MODfef processed gcode file into Octoprint (or your gcode streamer)
+<img alt="Octoprint Screen" src="../../img/FengraveCapture6.jpg" width="750" /></p>
+</li>
+<li>
+<p>Select appropriate wood for the inlay</p>
 <ul>
-<li><strong>Single flute &#8539;″</strong> <a href="https://vicious1-com.myshopify.com/collections/sharp-stuff/products/1-8-single-flute">upcut bit</a>.</li>
-<li>8mm/s <strong>Feed Rate</strong> (The speed at which you move through the material).</li>
-<li>3mm/s <strong>Plunge Rate</strong> (The speed at which you move vertically into the material).</li>
-<li>1mm <strong>Depth of Cut</strong> (The thickness of material your bit will be removing per pass).</li>
-<li>45% <strong>Step Over</strong> (The percentage of bit diameter that should be in contact with the material)</li>
-<li>Use the <strong>Peel</strong> pocketing strategy.</li>
-<li><strong>Always</strong> use a finishing pass of ≈10% of your tools diameter. The more dense the material the smaller the finishing pass.</li>
+<li>Choose contrasting wood for the male and female parts<ul>
+<li>The male part is wood that will be inlayed.</li>
+<li>The female part is the wood that will have the inlay glued into it.</li>
 </ul>
-<p>At this point you should be in HD foam, if that works out you can try some soft wood like pine.</p>
-<p>If that works at this point <strong>the only variable you should be changing is the depth of cut</strong>. You can
-vary this and it will increase the load on your machine in trade for more material removed per pass
-or decrease the load by taking shallower bites.</p>
-<p>Peel, Is usually the best pocketing strategy.</p>
-<p>When you get that out of your system come back and learn things a little more in depth.</p>
-<h2 id="a-more-proper-introduction">A More Proper Introduction<a class="headerlink" href="#a-more-proper-introduction" title="Permanent link">&para;</a></h2>
-<p>These are some of the first things you should understand when just getting started. I am going to
-collect and link all the great resources I think illustrate the point the best. Most of these
-pictures should link to an outside site for more information. If you disagree with any of the
-following information please let me know…politely.</p>
-<h3 id="islands">Islands<a class="headerlink" href="#islands" title="Permanent link">&para;</a></h3>
-<p>An island is that pesky little thing in the center of a cut, like the middle on an “O”, or the center of the logo. Super easy only takes 3 steps.</p>
-<dl>
-<dt>Using the <strong>Part</strong> tool select the inner feature.</dt>
-<dd><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/03/1Part.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/03/1Part.jpg" width="200" /></a></div></dd>
-<dt>Next is the <strong>Hole</strong> tool, select the outer feature.</dt>
-<dd><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/03/2hole.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/03/2hole.jpg" width="200" /></a></div></dd>
-<dt>Then in the Properties box select <strong>Island</strong>.</dt>
-<dd><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/03/3Island.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/03/3Island.jpg" width="200" /></a></div></dd>
-</dl>
-<h3 id="work-offsets">Work offsets<a class="headerlink" href="#work-offsets" title="Permanent link">&para;</a></h3>
-<p>A work offset is simply moving your origin. This is typically used when there are more than one
-operation in your job, multiple fixtures can be used, locating pins, or other locating methods. More
-typically for us to avoid Negative X and Y moves when using endstops.</p>
-<dl>
-<dt>Not Offset</dt>
-<dd><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2017/11/Negative.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Negative.jpg" width="200" /></a></div></dd>
-<dt>Offset (Good for Dual Endstops)</dt>
-<dd><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2017/11/good.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/good.jpg" width="200" /></a></div></dd>
-</dl>
-<h3 id="finishing-pass">Finishing Pass<a class="headerlink" href="#finishing-pass" title="Permanent link">&para;</a></h3>
-<p>A finishing pass allows you to complete your job faster with more accuracy. What?!</p>
-<p>By leaving a bit of material on your roughing cut you can then cut off a very small amount of material leaving you with a very accurate final cut with a better surface finish. This means you can rough out your part faster (high machine loads increase deflection) and the finishing skim cut (extremely low machine loads) will bring it to final dimension. All cuts should have this, most importantly slotting operations.</p>
-<ul>
-<li>Just select your finishing tool, usually the current tool you are using. Shown in the yellow box.</li>
-<li>Use a 5-25% tool diameter allowance. Shown in the yellow box.</li>
-<li>The finishing pass is show in the picture as the lighter red path.</li>
+</li>
 </ul>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/03/3Island.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/03/3Island.jpg" width="200" /></a></div></p>
-<h3 id="climb-vs-conventional-milling">Climb vs. Conventional Milling<a class="headerlink" href="#climb-vs-conventional-milling" title="Permanent link">&para;</a></h3>
-<p>For the most part you always want to Climb mill. The edge of the cutter starts with a large bite and ends small, reducing work hardening and heat retention.</p>
-<div class="admonition note">
-<p class="admonition-title">Conventional milling</p>
-<p><a href="http://www.harveyperformance.com/in-the-loupe/conventional-vs-climb-milling/"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/09/blog_conventional-climb-milling2.jpg" width="200" /></a></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Climb milling</p>
-<p><a href="http://www.harveyperformance.com/in-the-loupe/conventional-vs-climb-milling/"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/09/blog_conventional-climb-milling3.jpg" width="200" /></a></p>
-</div>
-<h3 id="feeds-and-speeds-calculator">Feeds and Speeds Calculator<a class="headerlink" href="#feeds-and-speeds-calculator" title="Permanent link">&para;</a></h3>
-<p>I can not stress this enough, these numbers are different for every build. Only use them as a guide
-to find the right settings for your build. You can make a few test cuts a quickly work out how to
-get reliable numbers for your machine with the right settings though.</p>
-<p><a href="https://fswizard.com/www/">https://fswizard.com/www/</a></p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/10/FZ-1080x783.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/10/FZ-1080x783.jpg" width="400" /></a></div></p>
-<h3 id="stepover">Stepover<a class="headerlink" href="#stepover" title="Permanent link">&para;</a></h3>
-<dl>
-<dt>Basic</dt>
-<dd>All things being equal, this is the amount of material your tool encounters in percentage of the tool diameter. The lower the percentage the lower the force on the machine, the more accurate the cut.</dd>
-<dt>Expanded</dt>
-<dd>A good thing to know is most flutes are not 50% of the diameter of the bit, usually less. Just typing in a percentage does not mean that is the actual chip load, Feedrate, RPM, and Depth of Cut all play a major part. All the numbers you enter are a fine balance of an equation giving you total chip load per tooth.</dd>
-<dt>Roughing</dt>
-<dd>is 50% or less, typically 45% depending on material density. More than 50% you will be both climb and conventional milling and should be avoided.</dd>
-<dt>Finishing</dt>
-<dd>is 20% or less depending on amount if detail and tolerances desired (I typically use 2-8% time vs. quality), ball endmills should use 10% or less to minimize scalloping.</dd>
-</dl>
-<div class="admonition note">
-<p class="admonition-title">50% stepover</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2017/09/50D.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2017/09/50D.jpg" width="200" /></a></div></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">25% stepover</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2017/09/25D.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2017/09/25D.jpg" width="200" /></a></div></p>
-</div>
-<h2 id="dual-endstop-tool-changes-z-probing">Dual EndStop Tool Changes, Z Probing<a class="headerlink" href="#dual-endstop-tool-changes-z-probing" title="Permanent link">&para;</a></h2>
-<p>For this method you will need the Dual EndStop firmware, an LCD, optionally a digital spindle speed
-controller.</p>
-<h3 id="starting-gcode">Starting Gcode<a class="headerlink" href="#starting-gcode" title="Permanent link">&para;</a></h3>
-<p>The pause here is to allow you to remove the Z probe wires.</p>
-<div class="highlight"><pre><span></span><code>G90 ; Absolute positioning, just in case
-G92 X0 Y0 Z0 ; Set Current position to 0, all axes
-G00 Z5.0000 F500 ; Raise Z 5mm at 8.3mm/s to clear clamps and screws
-G28 X Y Z ; Home in order, w/zprobe
-G92 Z0.15 ; Account for probe thickness (set your thickness)
-G00 Z5.0000 F500 ; Raise Z probe off off of surface
-M00 ; pause for LCD button press
-M03 S&lt;s&gt; ; PID, set spindle speed
-</code></pre></div>
-
-<h3 id="tool-change">Tool Change<a class="headerlink" href="#tool-change" title="Permanent link">&para;</a></h3>
-<p>The steppers are disabled so you can move the head to an area where you can more easily change the
-tool, make sure you do not let your Z axis drop onto your work surface. If you need you can insert
-another pause before the steppers are disabled to make sure you are there to catch it. This first
-pause is to let you physically change the tool and install the Z probe. The second pause is to allow
-you to remove the Z probe.</p>
-<div class="highlight"><pre><span></span><code>M05 ; PID, Stop spindle
-G0 Z35 F500 ; Raise Z axis 35mm
-M84 ; Disable steppers
-M00 ; Wait for LCD button press
-;Change tool: &lt;n&gt;
-G28 X Y Z ; Home in order, w/zprobe
-G92 Z0.15 ; Account for probe thickness (set your thickness)
-G00 Z5.0000 F500 ; Raise Z probe off off of surface
-M00 ; pause for LCD button press
-M03 S&lt;s&gt; ; PID, set spindle speed
-</code></pre></div>
-
-<h3 id="ending">Ending<a class="headerlink" href="#ending" title="Permanent link">&para;</a></h3>
-<p>Make sure you tune the final Z lift to your machine.</p>
-<div class="highlight"><pre><span></span><code>M05 ; PID, Turn off spindle
-G0 Z30 ; Lift Z axis 30mm
-; M84 ; Optionally turn off steppers.
-</code></pre></div>
-
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/06/start.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/start.jpg" width="400" />
-</a></div><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/06/Change.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/Change.jpg" width="400" />
-</a></div><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2018/06/End.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/End.jpg" width="400" /></a></div></p>
-<p>If you do not have a PID controller you do not have to remove or worry about the code. This is the
-basics, you can easily modify this.</p>
-<h3 id="depth-of-cut">Depth of Cut<a class="headerlink" href="#depth-of-cut" title="Permanent link">&para;</a></h3>
-<p>Equal steps – Depth of cut, DOC, Should be planned for. Making equal steps will produce the best
-results. Just because you can cut deeper doesn’t mean you should. Know the deepest you can cut your
-material and from there divide the cut equally. The only way to save time is less passes, if you can
-not save a pass make the step smaller.</p>
-<div class="admonition note">
-<p class="admonition-title">Equal Steps</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/Equal-steps.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2019/01/Equal-steps.jpg" width="400" /></a></div></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Pointless Steps</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/PointlessSteps.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2019/01/PointlessSteps.jpg" width="400" /></a></div></p>
-</div>
-<p>Through all – Through all cuts, cuts that are intended to go all the way through the material, should move past the bottom of your material. The amount past depends on the flatness of your build, all build have some sort of variance. A 0.5mm-4mm would be pretty typical. Factor this into your equal DOC from above.</p>
-<div class="admonition note">
-<p class="admonition-title">Through All</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/01/ThroughCuts.jpg"><img alt="!pic" src="https://www.v1engineering.com/wp-content/uploads/2019/01/ThroughCuts.jpg" width="400" /></a></div></p>
-</div>
-<h2 id="post-processors">Post Processors<a class="headerlink" href="#post-processors" title="Permanent link">&para;</a></h2>
-<p>When making Gcode from your CAM program it spits out raw coordinates, speeds, and a few other
-commands. A post processor simply formats in a way that your firmware will recognize it.</p>
-<p>For example, Marlin treat <code>G0</code> (rapid move) and <code>G1</code> (Work move) the same. Other machines set the
-<code>G0</code> speed in the firmware, Marlin does not. To over come this we Use a line in the post processor
-to set the actual speed in each line so it doesn’t matter. There are all sorts of things like this.
-All machines require a post processor.</p>
-<h3 id="the-ones-we-have-working">The ones we have working<a class="headerlink" href="#the-ones-we-have-working" title="Permanent link">&para;</a></h3>
-<p>Please share your links to other PP’s. I know there are more.</p>
-<dl>
-<dt>Estlcam</dt>
-<dd>Built in, Christian was happy to work with us to get this correct. <a href="../../software/estlcam-basics/">Here are the recommended
-settings</a></dd>
-<dt>Fusion360</dt>
-<dd>Guffy has really made what seems to be a feature complete PP here, <a href="https://github.com/guffy1234/mpcnc_posts_processor">Guffy’s
-GitHub</a>. <a href="https://www.youtube.com/watch?v=Do_C_NLH5sw">Fusion CAM
-intro</a>.</dd>
-</dl>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>(10/23/19) Do not use arcs unless you are using 417 or newer firmware.</p>
-</div>
-<dl>
-<dt>Vectric, Aspire, Vcarve</dt>
-<dd>What we have so far, <a href="https://www.v1engineering.com/forum/topic/z-slip-over-large-topographical-map/#post-51193">Here</a>. How to <a href="https://forum.v1engineering.com/t/vectric-aspire/12047/8?u=vicious1">install</a>.</dd>
-</dl>
+</li>
+<li>Set up the work piece for the female part, remember that your origin is set to the middle of the inlay.</li>
+<li>Set up the V cutter first.</li>
+<li>Cut the female part.</li>
+<li>If you have clean up files you will need to do a tool change, the system should just pause and allow you to complete that.</li>
+<li>Set up the flat end mill that you specified in F-Engrave and complete the &ldquo;female&rdquo; part.</li>
+<li>Once its complete, remove the &ldquo;female&rdquo; part and replace it with the &ldquo;male&rdquo; (inlay) wood.</li>
+<li>Set up the V cutter again and set your origin over the center of the wood.</li>
+<li>Cut the male part.</li>
+<li>Once more if you have clean files you may have a tool change. Its the same process that you completed with the &ldquo;female&rdquo; part.</li>
+</ol>
+<h2 id="clean-up-and-assembly">Clean up and Assembly<a class="headerlink" href="#clean-up-and-assembly" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Once its complete clean up both parts.<ul>
+<li>I use a scalpel to clean any edges or corners that need it.</li>
+<li>I also remove any burs that may be present.</li>
+<li>I dry fit them to see that the gap between the male and female parts are consistent.</li>
+<li>If it doesn’t look right using some color on the inlay protrusions during a dry fit can help to show where the parts are interfering.</li>
+</ul>
+</li>
+<li>Glue the parts together<ul>
+<li>I use regular wood glue and leave it to dry overnight</li>
+<li>It is important to clamp the parts evenly as you can influence the fit which will spoil the inlay effect.</li>
+</ul>
+</li>
+<li>Trim the excess from the inlay (male part)<ul>
+<li>I usually do this on the band saw but you can do it with any tool that will remove the excess wood without dislodging the inlay.</li>
+</ul>
+</li>
+<li>Sand the part down until the inlay is flush<ul>
+<li>There is normally quite a bit of inlay wood to be removed, some form of belt sander works very well here.</li>
+</ul>
+</li>
+<li>Finish the part with the appropriate finish<ul>
+<li>It depends on the type of wood you have chosen. Select a finish that will work with both the female wood and the male wood.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="additional-information-and-references">Additional Information and References:<a class="headerlink" href="#additional-information-and-references" title="Permanent link">&para;</a></h2>
+<p>F-Engrave - <a href="https://www.google.com" title="Scorchworks F-Engrave site">Website</a></p>
+<p>MODfef - <a href="https://www.jobbos.com/MODfef/MODfef2.zip" title="Download the zip file with for MODfef">Download</a></p>
+<p>Inkscape - <a href="https://www.inkscape.org/" title="Inkscape site">Website</a></p>
+<p>Gimp - <a href="https://www.gimp.org/" title="Gimp site">Website</a></p>
+<p>Octoprint - <a href="https://www.octoprint.org/" title="Octoprint site">Website</a></p>
+<p>MPCNC - <a href="https://www.v1engineering.com/" title="V1 Engineering site">Website</a></p>
                 
                   
                 
@@ -1691,7 +1474,7 @@ intro</a>.</dd>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../software/" title="Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../estlcam-2p5d/" title="EstlCAM Intermediate (2.5d)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1700,19 +1483,19 @@ intro</a>.</dd>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Setup
+                EstlCAM Intermediate (2.5d)
               </span>
             </div>
           </a>
         
         
-          <a href="../../software/estlcam-basics/" title="EstlCAM Setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../tools/import-extruder/" title="Main" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                EstlCAM Setup
+                Main
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

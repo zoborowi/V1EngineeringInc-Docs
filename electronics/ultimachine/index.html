@@ -1069,6 +1069,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../software/Fengrave-vcarve-inlay/" title="F Engrave V-Carve" class="md-nav__link">
+      F Engrave V-Carve
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1659,7 +1671,7 @@ you will need to designate it for a “servo”.</p>
 <h3 id="driver-math">Driver Math<a class="headerlink" href="#driver-math" title="Permanent link">&para;</a></h3>
 <p>These can now be set in
 <a href="https://github.com/Allted/Marlin/blob/MPCNC_MRambo_T8_16T_LCD/Marlin/Configuration_adv.h">Configuration_adv.h</a></p>
-<div class="codehilite"><pre><span></span><code><span class="cp">#define PWM_MOTOR_CURRENT {950, 950, 950} </span><span class="c1">//XY,Z,E</span>
+<div class="highlight"><pre><span></span><code><span class="cp">#define PWM_MOTOR_CURRENT {950, 950, 950} </span><span class="c1">//XY,Z,E</span>
 </code></pre></div>
 
 <h3 id="bonus">Bonus<a class="headerlink" href="#bonus" title="Permanent link">&para;</a></h3>
@@ -1717,7 +1729,7 @@ un-shrouded 1.4’s are on the way). This means some of the LCD cables will be b
 <dt><span><span class="MathJax_Preview">W_v = (V_{Ref} / 1.66) * 255</span><script type="math/tex">W_v = (V_{Ref} / 1.66) * 255</script></span></dt>
 <dd>The PWM value needed (if you are using a rambo stop here I believe))</dd>
 </dl>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Motor current PWM conversion, PWM value = MotorCurrentSetting * 255 / range</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Motor current PWM conversion, PWM value = MotorCurrentSetting * 255 / range</span>
 <span class="cp">#define MOTOR_CURRENT_PWM_RANGE 2000</span>
 <span class="cp">#define DEFAULT_PWM_MOTOR_CURRENT  {900, 900, 900}</span>
 </code></pre></div>
