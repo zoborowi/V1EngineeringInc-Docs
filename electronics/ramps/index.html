@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.4.2">
     
     
       
@@ -324,15 +324,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../mpcnc/calculator/" title="Calculator" class="md-nav__link">
+      Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4">
     
-    <label class="md-nav__link" for="nav-2-1-3">
+    <label class="md-nav__link" for="nav-2-1-4">
       Assembly
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-1-3">
+      <label class="md-nav__title" for="nav-2-1-4">
         Assembly
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -483,6 +495,18 @@
   <li class="md-nav__item">
     <a href="../../lowrider/" title="Assembly" class="md-nav__link">
       Assembly
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lowrider/calculator/" title="Calculator" class="md-nav__link">
+      Calculator
     </a>
   </li>
 
@@ -1298,16 +1322,16 @@
 <p>If you bought this from V1 Engineering then this has already been done for you just plug in the steppers and go.
 Ramps 1.4 – Any control board can be used to control the Mostly Printed CNC, Here is how to set up a ramps stack.
 <a href="https://www.v1engineering.com/forum/topic/cannot-connect-to-rampsarduino-maclinuxwindows/#post-11485">Mac user?</a></p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_103915.jpg"><img alt="!RAMPS driver plugs" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_103915.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="RAMPS driver plugs" href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_103915.jpg"><img alt="RAMPS driver plugs" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_103915.jpg" width="400" /></a></div></p>
 <h2 id="jumpers">Jumpers<a class="headerlink" href="#jumpers" title="Permanent link">&para;</a></h2>
 <p>First step is make sure you have 3 jumpers under each stepper driver. This puts the ramps board into 32<sup>nd</sup> stepping when using the DRV8825 drivers (if you use a different driver pay attention to its orientation and step rate).</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/04/labeled.jpg"><img alt="!Labeled" src="https://www.v1engineering.com/wp-content/uploads/2015/04/labeled.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="Labeled" href="https://www.v1engineering.com/wp-content/uploads/2015/04/labeled.jpg"><img alt="Labeled" src="https://www.v1engineering.com/wp-content/uploads/2015/04/labeled.jpg" width="400" /></a></div></p>
 <h2 id="drivers">Drivers<a class="headerlink" href="#drivers" title="Permanent link">&para;</a></h2>
 <p>Insert the drv8825 drivers into the board, with the small silver potentiometers facing the green power plug. Glue on the small heat sinks on to the large chips. T0 is for a thermistor, or if you are only milling the firmware does not require a resistor anymore.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_104243.jpg"><img alt="!wires" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_104243.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="wires" href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_104243.jpg"><img alt="wires" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_104243.jpg" width="400" /></a></div></p>
 <h2 id="power">Power<a class="headerlink" href="#power" title="Permanent link">&para;</a></h2>
 <p>Add 12V to the power port, and plug in the steppers. The Arduino barrel jack (the round plug) is not used.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20171008_12095401.jpg"><img alt="!Probe" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20171008_12095401.jpg" width="400" /> </a></div></p>
+<p><div class="lightgallery"><a data-sub-html="Probe" href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20171008_12095401.jpg"><img alt="Probe" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20171008_12095401.jpg" width="400" /> </a></div></p>
 <h2 id="stepper-driver-current">Stepper Driver Current<a class="headerlink" href="#stepper-driver-current" title="Permanent link">&para;</a></h2>
 <p>–Extremely Important– Adjust the potentiometers according to your stepper spec sheet (a good place to start is 0.7V or less).  For the DRV8825 the voltage is set between the potentiometers and the power ground.  Voltage at the pot =.9*(stepper current/2) the 90% is to cut down on the heat a bit. This needs to be done while the drivers are energized. The easiest way I have found is to move all 3 axis 1mm in repetier host and leave it connected while you adjust the POTS.</p>
 <p>This <a href="https://youtu.be/89BHS9hfSUk">pololu video</a> gives a very technical walk through on driver current.</p>
@@ -1320,9 +1344,9 @@ Ramps 1.4 – Any control board can be used to control the Mostly Printed CNC, H
 <h2 id="add-an-extruder">Add an Extruder<a class="headerlink" href="#add-an-extruder" title="Permanent link">&para;</a></h2>
 <p>If you are Adding an extruder you need more power</p>
 <p><a href="../../tools/import-extruder/">For example</a>.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_110317.jpg"><img alt="!more power" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_110317.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="more power" href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_110317.jpg"><img alt="more power" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151023_110317.jpg" width="400" /></a></div></p>
 <p>Power is needed to both sides of the power plug, either by a short jumper wire or another power supply depending on how much current you can supply. In this picture the bottom set, 5A, powers the board and steppers. The top set, 11A, handles the heaters, fans in the d8-10 ports.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2015/10/board1.jpg"><img alt="!extra driver" src="https://www.v1engineering.com/wp-content/uploads/2015/10/board1.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="extra driver" href="https://www.v1engineering.com/wp-content/uploads/2015/10/board1.jpg"><img alt="extra driver" src="https://www.v1engineering.com/wp-content/uploads/2015/10/board1.jpg" width="400" /></a></div></p>
 <p>Plug in the extra driver for the extruder with its jumpers under it, and the extruder stepper. The blue and black is the hot end thermistor. Blue and white is the print fan, controlled by your GCode, polarity sensitive, D9. Orange and white is the extruder heater, D10. There is also an extra set of red and black wired to the power plug that controls the always on extruder fan, polarity sensitive.</p>
                 
                   
@@ -1408,7 +1432,7 @@ Ramps 1.4 – Any control board can be used to control the Mostly Printed CNC, H
     
       <script src="../../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"1.1",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       

@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://docs.v1engineering.com/electronics/steppers/">
+        <link rel="canonical" href="https://docs.v1engineering.com/mpcnc/calculator/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Wiring The Steppers - V1 Engineering Inc Docs</title>
+        <title>Calculator - V1 Engineering Inc Docs</title>
       
     
     
@@ -114,7 +114,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#wiring-the-steppers" tabindex="1" class="md-skip">
+      <a href="#mpcnc-size-calculator" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -140,7 +140,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Wiring The Steppers
+                Calculator
               
             </span>
           
@@ -261,10 +261,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Build
@@ -280,10 +282,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       MPCNC
@@ -301,7 +305,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/" title="Basics" class="md-nav__link">
+    <a href="../" title="Basics" class="md-nav__link">
       Basics
     </a>
   </li>
@@ -313,7 +317,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/parts/" title="Parts" class="md-nav__link">
+    <a href="../parts/" title="Parts" class="md-nav__link">
       Parts
     </a>
   </li>
@@ -323,11 +327,124 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../mpcnc/calculator/" title="Calculator" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Calculator
+      </label>
+    
+    <a href="./" title="Calculator" class="md-nav__link md-nav__link--active">
       Calculator
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    Inputs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#units" class="md-nav__link">
+    Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool-choice" class="md-nav__link">
+    Tool Choice *
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#size-calculator" class="md-nav__link">
+    Size Calculator
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workspace" class="md-nav__link">
+    Workspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tube-lengths" class="md-nav__link">
+    Tube Lengths
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-dimensions" class="md-nav__link">
+    Material Dimensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-size" class="md-nav__link">
+    Table Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-machine-footprint" class="md-nav__link">
+    Total Machine Footprint
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -356,7 +473,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/table/" title="Table" class="md-nav__link">
+    <a href="../table/" title="Table" class="md-nav__link">
       Table
     </a>
   </li>
@@ -368,7 +485,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/conduit/" title="Conduit" class="md-nav__link">
+    <a href="../conduit/" title="Conduit" class="md-nav__link">
       Conduit
     </a>
   </li>
@@ -380,7 +497,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/base/" title="Corners, Rollers, Base" class="md-nav__link">
+    <a href="../base/" title="Corners, Rollers, Base" class="md-nav__link">
       Corners, Rollers, Base
     </a>
   </li>
@@ -392,7 +509,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/z-axis/" title="Z-Axis" class="md-nav__link">
+    <a href="../z-axis/" title="Z-Axis" class="md-nav__link">
       Z-Axis
     </a>
   </li>
@@ -404,7 +521,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/middle-assm/" title="Middle Assembly" class="md-nav__link">
+    <a href="../middle-assm/" title="Middle Assembly" class="md-nav__link">
       Middle Assembly
     </a>
   </li>
@@ -416,7 +533,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/gantry/" title="Gantry" class="md-nav__link">
+    <a href="../gantry/" title="Gantry" class="md-nav__link">
       Gantry
     </a>
   </li>
@@ -428,7 +545,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/final/" title="Final" class="md-nav__link">
+    <a href="../final/" title="Final" class="md-nav__link">
       Final
     </a>
   </li>
@@ -440,7 +557,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/belts/" title="Belts" class="md-nav__link">
+    <a href="../belts/" title="Belts" class="md-nav__link">
       Belts
     </a>
   </li>
@@ -457,7 +574,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mpcnc/troubleshooting/" title="Trouble Shooting" class="md-nav__link">
+    <a href="../troubleshooting/" title="Trouble Shooting" class="md-nav__link">
       Trouble Shooting
     </a>
   </li>
@@ -597,12 +714,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Control
@@ -639,7 +754,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ultimachine/" title="Ultimachine Boards" class="md-nav__link">
+    <a href="../../electronics/ultimachine/" title="Ultimachine Boards" class="md-nav__link">
       Ultimachine Boards
     </a>
   </li>
@@ -651,7 +766,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ramps/" title="Ramps" class="md-nav__link">
+    <a href="../../electronics/ramps/" title="Ramps" class="md-nav__link">
       Ramps
     </a>
   </li>
@@ -666,12 +781,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
     
     <label class="md-nav__link" for="nav-3-2">
       Steppers
@@ -687,69 +800,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Wiring The Steppers
-      </label>
-    
-    <a href="./" title="Wiring The Steppers" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../electronics/steppers/" title="Wiring The Steppers" class="md-nav__link">
       Wiring The Steppers
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-diy-way" class="md-nav__link">
-    The DIY way
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#series-do-it-this-way-" class="md-nav__link">
-    Series (do it this way)-
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parallel-dont-do-it-this-way" class="md-nav__link">
-    Parallel (don’t do it this way) –
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -783,7 +838,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../v1pi/" title="v1pi - Headless" class="md-nav__link">
+    <a href="../../electronics/v1pi/" title="v1pi - Headless" class="md-nav__link">
       v1pi - Headless
     </a>
   </li>
@@ -795,7 +850,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../dual-endstops/" title="Dual Endstops" class="md-nav__link">
+    <a href="../../electronics/dual-endstops/" title="Dual Endstops" class="md-nav__link">
       Dual Endstops
     </a>
   </li>
@@ -1148,7 +1203,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../marlin-firmware/" title="Firmware" class="md-nav__link">
+    <a href="../../electronics/marlin-firmware/" title="Firmware" class="md-nav__link">
       Firmware
     </a>
   </li>
@@ -1228,23 +1283,78 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-diy-way" class="md-nav__link">
-    The DIY way
+  <a href="#inputs" class="md-nav__link">
+    Inputs
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#series-do-it-this-way-" class="md-nav__link">
-    Series (do it this way)-
+  <a href="#units" class="md-nav__link">
+    Units
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#parallel-dont-do-it-this-way" class="md-nav__link">
-    Parallel (don’t do it this way) –
+  <a href="#model" class="md-nav__link">
+    Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool-choice" class="md-nav__link">
+    Tool Choice *
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#size-calculator" class="md-nav__link">
+    Size Calculator
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workspace" class="md-nav__link">
+    Workspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tube-lengths" class="md-nav__link">
+    Tube Lengths
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-dimensions" class="md-nav__link">
+    Material Dimensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-size" class="md-nav__link">
+    Table Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-machine-footprint" class="md-nav__link">
+    Total Machine Footprint
   </a>
   
 </li>
@@ -1270,43 +1380,399 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/electronics/steppers.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/mpcnc/calculator.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="wiring-the-steppers">Wiring the steppers<a class="headerlink" href="#wiring-the-steppers" title="Permanent link">&para;</a></h1>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151022_112457.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151022_112457.jpg" width="400" /></a></div></p>
-<p>Using <a href="https://vicious1-com.myshopify.com/collections/parts/products/wiring-kit-1">this wiring kit</a>,
-you really just need to plug in the motors, tape or otherwise secure the connection and go.</p>
-<p>There are now two wiring choices. I highly recommend  you start with the series wiring kit. The dual
-kit adds complexity with that complexity you gain accuracy and precision. More dual endstop
-information <a href="../dual-endstops/">here</a></p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/IMG_20180529_175849.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/IMG_20180529_175849.jpg" width="400" />
-</a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/05/IMG_20180529_1806062.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/05/IMG_20180529_1806062.jpg" width="400" /></a></div></p>
-<p><strong>Make sure to always secure the connections with tape.</strong></p>
-<p>If one of the steppers is going the wrong way, flip it’s plug over to reverse it. If they are both
-going the wrong way, <a href="../../software/reverse-motor/">flip them</a> at the board (is series wired of course).</p>
-<h2 id="the-diy-way">The DIY way<a class="headerlink" href="#the-diy-way" title="Permanent link">&para;</a></h2>
-<p>The stepper for the z axis just needs its wires extended. Usually you would just cut the plug and
-splice in some 4/24 shielded cable and be done with it.</p>
-<h3 id="series-do-it-this-way-">Series (do it this way)-<a class="headerlink" href="#series-do-it-this-way-" title="Permanent link">&para;</a></h3>
-<p>Same amp draw as a single stepper (heat), twice the power, slightly less top speed. We do not need
-to worry about top speed, delta’s maybe cnc’s, no. There are plenty of online resources to see how
-this is done, here is a quick sketch just in case you can’t find a clear one.</p>
-<p>RigidWiki
-<div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/07/image-4.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/07/image-4.jpg" width="400" />
-</a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2019/02/wiring.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2019/02/wiring.jpg" width="400" /></a></div></p>
-<p>Hand drawn diagram</p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160831_114146-e1492533409509.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160831_114146-e1492533409509.jpg" width="400" /></a></div></p>
-<p>Modified parallel harness</p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160829_150944.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2016/08/IMG_20160829_150944.jpg" width="400" /></a></div></p>
-<h3 id="parallel-dont-do-it-this-way">Parallel (don’t do it this way) –<a class="headerlink" href="#parallel-dont-do-it-this-way" title="Permanent link">&para;</a></h3>
-<p>Twice the amp draw as series (heat) less power, slightly higher top speed.</p>
-<p>The steppers for the X and Y axis are wired in parallel, with the far motor getting one coil wired in reverse.</p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151022_112559.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/10/IMG_20151022_112559.jpg" width="400" /></a></div></p>
-<p>In this picture the yellow and blue are a pair/coil, and the green and red are a pair/coil. So to reverse this stepper you would wire this blue to the other yellow, and this yellow to the other blue. Do not get caught up in my colors, the position on the plug tells you what 2 wires are pairs.</p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2015/09/STEPPER_display_large.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/09/STEPPER_display_large.jpg" width="400" />
-</a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2015/09/wiring.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/09/wiring.png" width="400" /></a></div></p>
-<p>To wire in parallel you connect all the like colors and plug it into the ramps board, then on the far stepper change on pair/coil.</p>
+                <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<h1 id="mpcnc-size-calculator">MPCNC Size Calculator<a class="headerlink" href="#mpcnc-size-calculator" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h2>
+<h4 id="units">Units<a class="headerlink" href="#units" title="Permanent link">&para;</a></h4>
+<p><input type="radio" onchange="to_mm()" name="units" value="mm" checked>Metric (mm)<br/>
+<input type="radio" onchange="to_inch()" name="units" value="inches">Imperial (inch)<br/></p>
+<h4 id="model">Model<a class="headerlink" href="#model" title="Permanent link">&para;</a></h4>
+<p><input type="radio" onchange="from_working()" name="model" value="Primo"> Primo<br/>
+<input type="radio" onchange="from_working()" name="model" value="Burly" checked> Burly<br/></p>
+<h4 id="tool-choice">Tool Choice *<a class="headerlink" href="#tool-choice" title="Permanent link">&para;</a></h4>
+<p><input type="radio" onchange="from_working()" name="tool" value="Pen" checked> Full range of motion (pen, laser, drag knife, etc)<br/>
+<input type="radio" onchange="from_working()" name="tool" value="DW660"> Dewalt DW660<br/>
+<input type="radio" onchange="from_working()" name="tool" value="55mm"> 52mm &amp; 55mm Spindle<br/></p>
+<div class="admonition note">
+<p class="admonition-title">* Tool Choice</p>
+<p>Larger tools may collide with the side rails and contstrain movement
+before the MPCNC reaches its full range of motion in x and y.
+Select your intended tool to account for this difference in the following dimensions:</p>
+</div>
+<hr />
+<h2 id="size-calculator">Size Calculator<a class="headerlink" href="#size-calculator" title="Permanent link">&para;</a></h2>
+<h4 id="workspace">Workspace<a class="headerlink" href="#workspace" title="Permanent link">&para;</a></h4>
+<p><!-- These "value"s are going to be overwritten by the reset_work() function below. -->
+<input class="calc" type="number" onchange="from_working()" name="xwork" value="300" size="6"><span class="units">mm</span> x<br/>
+<input class="calc" type="number" onchange="from_working()" name="ywork" value="300" size="6"><span class="units">mm</span> y<br/>
+<input class="calc" type="number" onchange="from_working()" name="zwork" value="82" size="6"><span class="units">mm</span> z<br/>
+<button class="reset" onclick="reset_work()">Reset</button></p>
+<h4 id="tube-lengths">Tube Lengths<a class="headerlink" href="#tube-lengths" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Length (<span class="units">mm</span>)</th>
+<th>Qty</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span name="xrails"     ></span></td>
+<td>2</td>
+<td>x rails, sides</td>
+</tr>
+<tr>
+<td><span name="xgantryrail"></span></td>
+<td>1</td>
+<td>x rail, gantry</td>
+</tr>
+<tr>
+<td><span name="yrails"     ></span></td>
+<td>2</td>
+<td>y rails, sides</td>
+</tr>
+<tr>
+<td><span name="ygantryrail"></span></td>
+<td>1</td>
+<td>y rail, gantry</td>
+</tr>
+<tr>
+<td><span name="zrails"     ></span></td>
+<td>2</td>
+<td>z rails</td>
+</tr>
+<tr>
+<td><span name="zlegs"      ></span></td>
+<td>4</td>
+<td>legs</td>
+</tr>
+<tr>
+<td><span name="rail_total" ></span></td>
+<td><strong>total needed</strong></td>
+<td>total tube length assuming 3mm kerf</td>
+</tr>
+</tbody>
+</table>
+<h4 id="material-dimensions">Material Dimensions<a class="headerlink" href="#material-dimensions" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Length (<span class="units">mm</span>)</th>
+<th>Qty</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span name="leadscrew" ></span></td>
+<td>1</td>
+<td>leadscrew length</td>
+</tr>
+<tr>
+<td><span name="xbelts"    ></span></td>
+<td>2</td>
+<td>belt length along x</td>
+</tr>
+<tr>
+<td><span name="ybelts"    ></span></td>
+<td>2</td>
+<td>belt length along y</td>
+</tr>
+<tr>
+<td><span name="belt_total"></span></td>
+<td><strong>total length</strong></td>
+<td>belts (all 4)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="table-size">Table Size<a class="headerlink" href="#table-size" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Length (<span class="units">mm</span>)</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span name="xtable"></span></td>
+<td>x table size (outer edges of feet)</td>
+</tr>
+<tr>
+<td><span name="ytable"></span></td>
+<td>y table size (outer edges of feet)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="total-machine-footprint">Total Machine Footprint<a class="headerlink" href="#total-machine-footprint" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Length (<span class="units">mm</span>)</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span name="xbound" ></span></td>
+<td>x</td>
+</tr>
+<tr>
+<td><span name="ybound" ></span></td>
+<td>y</td>
+</tr>
+<tr>
+<td><span name="zbound" ></span></td>
+<td>z</td>
+</tr>
+<tr>
+<td><span name="zbound2"></span></td>
+<td>clearance to remove z axis</td>
+</tr>
+</tbody>
+</table>
+<script>
+
+function get_unit_convert() {
+  // Get the currently chosen units.
+  var units = $("input[name=units]:checked").val();
+
+  // Get the multiplier.
+  var unit_convert = 1.0;
+  if (units == "mm") {
+    // We have mm selected.
+    unit_convert = 1.0;
+  } else if (units == "inches") {
+    // We have inches selected.
+    unit_convert = 1.0/25.4;
+  }
+  else {
+    alert("internal error: unrecognized units " + units);
+  }
+  return unit_convert;
+}
+
+function get_offsets() {
+
+  const unit_convert = get_unit_convert();
+
+  var burly = {};
+  burly.xrail_minus_work = 264 * unit_convert;
+  burly.xgantryrail_minus_work = 264 * unit_convert;
+  burly.yrail_minus_work = 264 * unit_convert;
+  burly.ygantryrail_minus_work = 264 * unit_convert;
+  burly.zrail_minus_work = 190 * unit_convert;
+  burly.zleg_minus_work = -13 * unit_convert;
+  burly.xtable_minus_rail = 20 * unit_convert;
+  burly.ytable_minus_rail = 20 * unit_convert;
+  burly.xbound_minus_rail = 30 * unit_convert;
+  burly.ybound_minus_rail = 30 * unit_convert;
+  burly.zbound_minus_rail_and_work = 50 * unit_convert;
+  burly.zleadscrew_minus_work = 76 * unit_convert;
+  burly.xbelt_minus_rail = 136 * unit_convert;
+  burly.ybelt_minus_rail = 136 * unit_convert;
+  burly.kerf = 3 * unit_convert;
+
+  var primo = {};
+  primo.xrail_minus_work = 304 * unit_convert;
+  primo.xgantryrail_minus_work = 249 * unit_convert;
+  primo.yrail_minus_work = 313 * unit_convert;
+  primo.ygantryrail_minus_work = 258 * unit_convert;
+  primo.zrail_minus_work = 190 * unit_convert;
+  primo.zleg_minus_work = -21 * unit_convert;
+  primo.xtable_minus_rail = 34 * unit_convert;
+  primo.ytable_minus_rail = 34 * unit_convert;
+  primo.xbound_minus_rail = 68 * unit_convert;
+  primo.ybound_minus_rail = 68 * unit_convert;
+  primo.zbound_minus_rail_and_work = 50 * unit_convert;
+  primo.zleadscrew_minus_work = 50 * unit_convert;
+  primo.xbelt_minus_rail = 50 * unit_convert;
+  primo.ybelt_minus_rail = 50 * unit_convert;
+  primo.kerf = 3 * unit_convert;
+
+  var tool = $("input[name=tool]:checked").val();
+  if (tool == "Pen") {
+    // don't clip the working space at all
+  }
+  else if (tool == "DW660") {
+    // working space clipped by this much (not necessarily the same between burly and primo
+    burly.xrail_minus_work = burly.xrail_minus_work + 10 * unit_convert;
+    burly.xgantryrail_minus_work = burly.xgantryrail_minus_work + 10 * unit_convert;
+    burly.yrail_minus_work = burly.xrail_minus_work + 8 * unit_convert;
+    burly.zrail_minus_work = burly.zrail_minus_work + 2.75 * unit_convert;
+    burly.zleg_minus_work = burly.zleg_minus_work + 2.75 * unit_convert;
+
+    primo.xrail_minus_work = primo.xrail_minus_work + 9 * unit_convert;
+    primo.xgantryrail_minus_work = primo.xgantryrail_minus_work + 9 * unit_convert;
+    primo.yrail_minus_work = primo.yrail_minus_work + 9 * unit_convert;
+    primo.ygantryrail_minus_work = primo.ygantryrail_minus_work + 9 * unit_convert;
+    primo.zrail_minus_work = primo.zrail_minus_work + 2.75 * unit_convert;
+    primo.zleg_minus_work = primo.zleg_minus_work + 2.75 * unit_convert;
+  }
+  else if (tool == "55mm") {
+    // working space clipped by this much (not necessarily the same between burly and primo
+    primo.xrail_minus_work = primo.xrail_minus_work + 3 * unit_convert;
+    primo.xgantryrail_minus_work = primo.xgantryrail_minus_work + 3 * unit_convert;
+    primo.yrail_minus_work = primo.yrail_minus_work + 3 * unit_convert;
+    primo.ygantryrail_minus_work = primo.ygantryrail_minus_work + 3 * unit_convert;
+    primo.zrail_minus_work = primo.zrail_minus_work + 2.5 * unit_convert;
+    primo.zleg_minus_work = primo.zleg_minus_work + 2.5 * unit_convert;
+  }
+  else {
+    alert("internal error: unrecognized tool " + tool);
+  }
+
+  var model = $("input[name=model]:checked").val();
+  if (model == "Primo") {
+    return primo;
+  }
+  else if (model == "Burly") {
+    return burly;
+  }
+  else {
+    alert("internal error: unrecognized model " + model);
+  }
+}
+
+function to_mm() {
+  // Find all the labels and change them to mm
+  $(".units").text("mm");
+
+  // Set the step attributes (you can also set other attributes here, like min, max, whatever)
+  $("input[name=xwork]").attr({
+    "step": 10.0
+  });
+  $("input[name=ywork]").attr({
+    "step": 10.0
+  });
+  $("input[name=zwork]").attr({
+    "step": 1
+  });
+
+  // Get the current values.
+  var xwork = parseFloat($("input[name=xwork]").val());
+  var ywork = parseFloat($("input[name=ywork]").val());
+  var zwork = parseFloat($("input[name=zwork]").val());
+
+  // Change the units.
+  // This Math.round(... * 10.0) / 10.0 is to round to the step.
+  $("input[name=xwork]").val(Math.round(xwork * 25.4 * 0.1) / 0.1);
+  $("input[name=ywork]").val(Math.round(ywork * 25.4 * 0.1) / 0.1);
+  $("input[name=zwork]").val(Math.round(zwork * 25.4));
+
+  // Recalculate the rest of the page.
+  from_working();
+}
+
+function to_inch() {
+  // Find all the labels and change them to inches
+  $(".units").text("inches");
+
+  // Set the step attributes (you can also set other attributes here, like min, max, whatever)
+  $("input[name=xwork]").attr({
+    "step": 0.25
+  });
+  $("input[name=ywork]").attr({
+    "step": 0.25
+  });
+  $("input[name=zwork]").attr({
+    "step": 0.25
+  });
+
+  // Get the current values.
+  var xwork = parseFloat($("input[name=xwork]").val());
+  var ywork = parseFloat($("input[name=ywork]").val());
+  var zwork = parseFloat($("input[name=zwork]").val());
+
+  // Change the units.
+  $("input[name=xwork]").val(clip(xwork / 25.4));
+  $("input[name=ywork]").val(clip(ywork / 25.4));
+  $("input[name=zwork]").val(clip(zwork / 25.4));
+
+  // Recalculate the rest of the page.
+  from_working();
+}
+
+function clip(value) {
+  return Math.round(value * 4) / 4; // Round to 0.25
+}
+
+function reset_work() {
+  const unit_convert = get_unit_convert();
+  $("input[name=xwork]").val(clip(300 * unit_convert));
+  $("input[name=ywork]").val(clip(300 * unit_convert));
+  $("input[name=zwork]").val(clip(81 * unit_convert));
+  from_working();
+}
+
+function from_working() {
+  var offsets = get_offsets();
+
+  var xwork = parseFloat($("input[name=xwork]").val());
+  var ywork = parseFloat($("input[name=ywork]").val());
+  var zwork = parseFloat($("input[name=zwork]").val());
+
+  var xrails = xwork + offsets.xrail_minus_work;
+  var xgantryrail = xwork + offsets.xgantryrail_minus_work;
+  var yrails = ywork + offsets.yrail_minus_work;
+  var ygantryrail = xwork + offsets.ygantryrail_minus_work;
+  var zrails = zwork + offsets.zrail_minus_work;
+  var zlegs = zwork + offsets.zleg_minus_work;
+  var rail_total = xrails*2 + xgantryrail + yrails*2 + ygantryrail + zrails*2 + zlegs*4 + 12*offsets.kerf;
+  var leadscrew = zwork + offsets.zleadscrew_minus_work;
+  var xbelts = xrails + offsets.xbelt_minus_rail;
+  var ybelts = yrails + offsets.ybelt_minus_rail;
+  var belt_total = 2*xbelts + 2*ybelts;
+
+  var xtable = xrails + offsets.xtable_minus_rail;
+  var ytable = yrails + offsets.ytable_minus_rail;
+  var xbound = xrails + offsets.xbound_minus_rail;
+  var ybound = yrails + offsets.ybound_minus_rail;
+  var zbound = zwork + zrails + 50;
+  var zbound2 = zrails*2;
+
+  ///$("input[name=xwork]").val(clip(xwork));
+  ///$("input[name=ywork]").val(clip(ywork));
+  ///$("input[name=zwork]").val(clip(zwork));
+
+  $("span[name=xrails]").text(clip(xrails));
+  $("span[name=xgantryrail]").text(clip(xgantryrail));
+  $("span[name=yrails]").text(clip(yrails));
+  $("span[name=ygantryrail]").text(clip(ygantryrail));
+  $("span[name=zrails]").text(clip(zrails));
+  $("span[name=zlegs]").text(clip(zlegs));
+  $("span[name=rail_total]").text(clip(rail_total));
+  $("span[name=leadscrew]").text(clip(leadscrew));
+  $("span[name=xbelts]").text(clip(xbelts));
+  $("span[name=ybelts]").text(clip(ybelts));
+  $("span[name=belt_total]").text(clip(belt_total));
+
+  $("span[name=xtable]").text(clip(xtable));
+  $("span[name=ytable]").text(clip(ytable));
+  $("span[name=xbound]").text(clip(xbound));
+  $("span[name=ybound]").text(clip(ybound));
+  $("span[name=zbound]").text(clip(zbound));
+  $("span[name=zbound2]").text(clip(zbound2));
+}
+
+// Set these up the first time.
+$(window).on('load', function(){
+  // Get back to mm
+  $("input[value=mm]").prop('checked', true);
+  $("input[value=inches]").prop('checked', false);
+
+  to_mm();
+
+  reset_work();
+});
+
+</script>
                 
                   
                 
@@ -1327,7 +1793,7 @@ this is done, here is a quick sketch just in case you can’t find a clear one.<
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ramps/" title="Ramps" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../parts/" title="Parts" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1336,19 +1802,19 @@ this is done, here is a quick sketch just in case you can’t find a clear one.<
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ramps
+                Parts
               </span>
             </div>
           </a>
         
         
-          <a href="../v1pi/" title="v1pi - Headless" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../table/" title="Table" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                v1pi - Headless
+                Table
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

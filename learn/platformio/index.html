@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.4.2">
     
     
       
@@ -324,15 +324,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../mpcnc/calculator/" title="Calculator" class="md-nav__link">
+      Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4">
     
-    <label class="md-nav__link" for="nav-2-1-3">
+    <label class="md-nav__link" for="nav-2-1-4">
       Assembly
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-1-3">
+      <label class="md-nav__title" for="nav-2-1-4">
         Assembly
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -483,6 +495,18 @@
   <li class="md-nav__item">
     <a href="../../lowrider/" title="Assembly" class="md-nav__link">
       Assembly
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lowrider/calculator/" title="Calculator" class="md-nav__link">
+      Calculator
     </a>
   </li>
 
@@ -1311,12 +1335,12 @@
 Install <a href="https://code.visualstudio.com/">VS Code</a> on your machine. Download the appropriate version from this link <a href="https://code.visualstudio.com/">VS Code</a>, and follow the prompts. This part should be fairly simple and staright forward. </p>
 <h3 id="install-2-platformio">Install 2 - PlatformIO<a class="headerlink" href="#install-2-platformio" title="Permanent link">&para;</a></h3>
 <p>PLatformIO is actually and &ldquo;Extension&rdquo; for VS Code. To install PlatformIO you click on the broken block icon on the left side of VSCODE shown here highlighted.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/Extension.jpg"><img alt="!VS Code Extension" src="https://www.v1engineering.com/wp-content/uploads/2019/12/Extension.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Extension" href="https://www.v1engineering.com/wp-content/uploads/2019/12/Extension.jpg"><img alt="VS Code Extension" src="https://www.v1engineering.com/wp-content/uploads/2019/12/Extension.jpg" width="400" /></a></div></p>
 <p>This will pop up a search window. Type in &ldquo;PlatformIO&rdquo;. It should be the first result, now just click the green install button.</p>
 <p>Now the difficult part....you have to wait for it to finish. It can take up to 15 minutes on an older machine.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/Still_installing.jpg"><img alt="!VS Code Waiting" src="https://www.v1engineering.com/wp-content/uploads/2019/12/Still_installing.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Waiting" href="https://www.v1engineering.com/wp-content/uploads/2019/12/Still_installing.jpg"><img alt="VS Code Waiting" src="https://www.v1engineering.com/wp-content/uploads/2019/12/Still_installing.jpg" width="400" /></a></div></p>
 <p>At the very bottom of the VS Code window you will see a purple bar and the installing icon and message, <em>don&rsquo;t touch anything</em> while it works. When it is done it will pop up a &ldquo;Reload Now&rdquo; button.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/restart.jpg"><img alt="!VS Code restart" src="https://www.v1engineering.com/wp-content/uploads/2019/12/restart.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code restart" href="https://www.v1engineering.com/wp-content/uploads/2019/12/restart.jpg"><img alt="VS Code restart" src="https://www.v1engineering.com/wp-content/uploads/2019/12/restart.jpg" width="400" /></a></div></p>
 <p>Congratulations you are done with the &ldquo;hard part&rdquo;!</p>
 <hr />
 <h2 id="using-platformio">Using PlatformIO<a class="headerlink" href="#using-platformio" title="Permanent link">&para;</a></h2>
@@ -1324,19 +1348,19 @@ Install <a href="https://code.visualstudio.com/">VS Code</a> on your machine. Do
 <h3 id="load-your-firmware">Load Your Firmware<a class="headerlink" href="#load-your-firmware" title="Permanent link">&para;</a></h3>
 <p>You should already have downloaded and <strong>Unzipped</strong> the firmware for your board. If you are unsure of that step have a look <a href="../../electronics/marlin-firmware/#using-github">here</a>.</p>
 <p>In the top left of the VS Code window select &ldquo;File&rdquo;, then &ldquo;Open Folder&rdquo;.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/open-folder.png"><img alt="!VS Code Open Folder" src="https://www.v1engineering.com/wp-content/uploads/2019/12/open-folder.png" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Open Folder" href="https://www.v1engineering.com/wp-content/uploads/2019/12/open-folder.png"><img alt="VS Code Open Folder" src="https://www.v1engineering.com/wp-content/uploads/2019/12/open-folder.png" width="400" /></a></div></p>
 <p>You can select the entire folder you have unzipped. If that is unclear - You need the entire folder that contains &ldquo;platformio.ini&rdquo; and the &ldquo;marlin&rdquo; folder. Here is a picture of what that looks like. The name will vary as the versions progress, bugfix 2.0.x is another common one.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-selected.jpg"><img alt="!VS Code Folder" src="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-selected.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Folder" href="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-selected.jpg"><img alt="VS Code Folder" src="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-selected.jpg" width="400" /></a></div></p>
 <p>One you open that folder it will show in the window and look very similar to the picture below. <strong>Notice</strong> at the very bottom, the blue banner shows a &ldquo;Index Rebuild&rdquo; icon let that finish before moving to the next step.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-open.jpg"><img alt="!VS Code Folder Open" src="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-open.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Folder Open" href="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-open.jpg"><img alt="VS Code Folder Open" src="https://www.v1engineering.com/wp-content/uploads/2019/12/folder-open.jpg" width="400" /></a></div></p>
 <h3 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
 <p>Hit the check mark to build (or compile) the firmware. Most items will say &ldquo;ignored&rdquo; as it only builds for the one specified board.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/build.png"><img alt="!VS Code Compile" src="https://www.v1engineering.com/wp-content/uploads/2019/12/build.png" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Compile" href="https://www.v1engineering.com/wp-content/uploads/2019/12/build.png"><img alt="VS Code Compile" src="https://www.v1engineering.com/wp-content/uploads/2019/12/build.png" width="400" /></a></div></p>
 <p>At this point you should get a message that says &ldquo;1 succeeded&rdquo;. If you do not the firmwre has build issues and they need to be resolved. </p>
 <p>The next step is to get it onto you board, or if you are sharing your firmware you can skip to the Compile step.</p>
 <p><strong>Flashing</strong> (most common, used with ramps, rambo, mini rambo)</p>
 <p>You do not need to select a com port as in Arduino, just plug in your board and it should be recognized even USB card based boards. Then and hit the right arrow (1) button and wait for it to transfer.</p>
-<p><div class="lightgallery"><a href="https://www.v1engineering.com/wp-content/uploads/2019/12/uploaded_done.png"><img alt="!VS Code Flash" src="https://www.v1engineering.com/wp-content/uploads/2019/12/uploaded_done.png" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="VS Code Flash" href="https://www.v1engineering.com/wp-content/uploads/2019/12/uploaded_done.png"><img alt="VS Code Flash" src="https://www.v1engineering.com/wp-content/uploads/2019/12/uploaded_done.png" width="400" /></a></div></p>
 <p>When you see (2) &ldquo;1 succeeded&rdquo;, and you are DONE and the board is ready to use!! If you do not see that there are board connection issues.</p>
 <p><strong>Compile to file</strong> (SKR boards)</p>
 <p>If you are trying to share your precompiled firmware, or load it to an SD card enabled board this step is actually already done. You simply need to locate the file that was created during the build. This file should be inside a folder in the previously mentioned Marlin folder that was unzipped, then in a folder titled &ldquo;.pio&rdquo;, then build, then a folder named after your board type. Example &ldquo;Marlin/.pio/build/rambo/firmware.hex&rdquo;</p>
@@ -1424,7 +1448,7 @@ Install <a href="https://code.visualstudio.com/">VS Code</a> on your machine. Do
     
       <script src="../../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"1.1",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
