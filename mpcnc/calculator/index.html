@@ -356,6 +356,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#sizing" class="md-nav__link">
+    Sizing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#inputs" class="md-nav__link">
     Inputs
   </a>
@@ -434,13 +441,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagrams" class="md-nav__link">
-    Diagrams
-  </a>
   
 </li>
       
@@ -1386,6 +1386,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#sizing" class="md-nav__link">
+    Sizing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#inputs" class="md-nav__link">
     Inputs
   </a>
@@ -1467,13 +1474,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#diagrams" class="md-nav__link">
-    Diagrams
-  </a>
-  
-</li>
-      
       
       
       
@@ -1497,6 +1497,11 @@
 
 <h1 id="mpcnc-size-calculator">MPCNC Size Calculator<a class="headerlink" href="#mpcnc-size-calculator" title="Permanent link">&para;</a></h1>
 <hr />
+<h2 id="sizing">Sizing<a class="headerlink" href="#sizing" title="Permanent link">&para;</a></h2>
+<p>When choosing what size to make your machine we refer to the build area. This is the area your tool can reach. Smaller machines are more rigid. The more rigid the machine the easier more forgiving they are to use (larger acceptable feeds and speeds window). The more rigid also means they are faster and more accurate. Every Millimeter counts but the Z axis has the largest effect on rigidity. For a Primo MPCNC 81mm is the shortest and I <strong>highly</strong> reccomend that. More sizing details on <a href="https://www.v1engineering.com/assembly/machine-size/">this page</a>.</p>
+<p><div class="lightgallery"><a data-sub-html="MPCNC ISO Diagram" href="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram.jpg"><img alt="MPCNC ISO Diagram" src="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram.jpg" width="400" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="MPCNC Side Diagram" href="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram-1.jpg"><img alt="MPCNC Side Diagram" src="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram-1.jpg" width="400" /></a></div></p>
+<hr />
 <h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h2>
 <h4 id="units">Units<a class="headerlink" href="#units" title="Permanent link">&para;</a></h4>
 <p><input type="radio" onchange="to_mm()" name="units" value="mm" checked>Metric (mm)<br/>
@@ -1510,7 +1515,7 @@
 <input type="radio" onchange="from_working()" name="tool" value="55mm"> 52mm &amp; 55mm Spindle<br/></p>
 <div class="admonition note">
 <p class="admonition-title">* Tool Choice</p>
-<p>Larger tools may collide with the side rails and contstrain movement
+<p>Larger tools may collide with the side rails and restrict movement
 before the MPCNC reaches its full range of motion in x and y.
 Select your intended tool to account for this difference in the following dimensions:</p>
 </div>
@@ -1883,10 +1888,6 @@ $(window).on('load', function(){
 });
 
 </script>
-
-<h2 id="diagrams">Diagrams<a class="headerlink" href="#diagrams" title="Permanent link">&para;</a></h2>
-<p><div class="lightgallery"><a data-sub-html="MPCNC ISO Diagram" href="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram.jpg"><img alt="MPCNC ISO Diagram" src="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram.jpg" width="400" /></a></div></p>
-<p><div class="lightgallery"><a data-sub-html="MPCNC Side Diagram" href="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram-1.jpg"><img alt="MPCNC Side Diagram" src="https://www.v1engineering.com/wp-content/uploads/2020/06/Primo-Calc-diagram-1.jpg" width="400" /></a></div></p>
                 
                   
                 
