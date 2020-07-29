@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://docs.v1engineering.com/tools/laser-engraving-mirrors/">
+        <link rel="canonical" href="https://docs.v1engineering.com/electronics/skrpro/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Engraving Mirrors - V1 Engineering Documentation</title>
+        <title>SKR Pro - V1 Engineering Documentation</title>
       
     
     
@@ -114,7 +114,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#instruction-stub" tabindex="1" class="md-skip">
+      <a href="#skr-pro-v11-v12" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -140,7 +140,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Engraving Mirrors
+                SKR Pro
               
             </span>
           
@@ -741,10 +741,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Control
@@ -760,10 +762,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
     <label class="md-nav__link" for="nav-3-1">
       Some Control Board Options
@@ -781,7 +785,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/ultimachine/" title="Ultimachine Boards" class="md-nav__link">
+    <a href="../ultimachine/" title="Ultimachine Boards" class="md-nav__link">
       Ultimachine Boards
     </a>
   </li>
@@ -793,7 +797,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/ramps/" title="Ramps" class="md-nav__link">
+    <a href="../ramps/" title="Ramps" class="md-nav__link">
       Ramps
     </a>
   </li>
@@ -803,11 +807,172 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../electronics/skrpro/" title="SKR Pro" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        SKR Pro
+      </label>
+    
+    <a href="./" title="SKR Pro" class="md-nav__link md-nav__link--active">
       SKR Pro
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2209-drivers" class="md-nav__link">
+    2209 Drivers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-sensorless-pin" class="md-nav__link">
+    Disable Sensorless Pin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uart" class="md-nav__link">
+    UART
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring-steppers" class="md-nav__link">
+    Wiring Steppers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    Series
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-end-stops-extruders0" class="md-nav__link">
+    Dual End Stops (EXTRUDERS=0)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-end-stops-extruders1" class="md-nav__link">
+    Dual End Stops (EXTRUDERS=1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reversing-a-stepper" class="md-nav__link">
+    Reversing a stepper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-tft35-v3-e3" class="md-nav__link">
+    Screen TFT35 V3 E3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#touch-plate" class="md-nav__link">
+    Touch plate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dual-end-stops-end-stops" class="md-nav__link">
+    Dual End Stops, End Stops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skr-bin" class="md-nav__link">
+    SKR Bin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tft-files" class="md-nav__link">
+    TFT Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compile-your-own-source" class="md-nav__link">
+    Compile your own (source)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -841,7 +1006,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/steppers/" title="Wiring The Steppers" class="md-nav__link">
+    <a href="../steppers/" title="Wiring The Steppers" class="md-nav__link">
       Wiring The Steppers
     </a>
   </li>
@@ -877,7 +1042,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/v1pi/" title="v1pi - Headless" class="md-nav__link">
+    <a href="../v1pi/" title="v1pi - Headless" class="md-nav__link">
       v1pi - Headless
     </a>
   </li>
@@ -889,7 +1054,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/dual-endstops/" title="Dual Endstops" class="md-nav__link">
+    <a href="../dual-endstops/" title="Dual Endstops" class="md-nav__link">
       Dual Endstops
     </a>
   </li>
@@ -921,12 +1086,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Use
@@ -942,12 +1105,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
     
     <label class="md-nav__link" for="nav-4-1">
       Tools
@@ -984,7 +1145,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../milling-basics/" title="Milling Basics" class="md-nav__link">
+    <a href="../../tools/milling-basics/" title="Milling Basics" class="md-nav__link">
       Milling Basics
     </a>
   </li>
@@ -1056,7 +1217,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../import-extruder/" title="Main" class="md-nav__link">
+    <a href="../../tools/import-extruder/" title="Main" class="md-nav__link">
       Main
     </a>
   </li>
@@ -1071,12 +1232,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-3" type="checkbox" id="nav-4-1-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-3" type="checkbox" id="nav-4-1-3">
     
     <label class="md-nav__link" for="nav-4-1-3">
       Lasers
@@ -1094,7 +1253,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lasers/" title="Main" class="md-nav__link">
+    <a href="../../tools/lasers/" title="Main" class="md-nav__link">
       Main
     </a>
   </li>
@@ -1104,83 +1263,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Engraving Mirrors
-      </label>
-    
-    <a href="./" title="Engraving Mirrors" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../tools/laser-engraving-mirrors/" title="Engraving Mirrors" class="md-nav__link">
       Engraving Mirrors
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#laser-engraving-mirrors" class="md-nav__link">
-    Laser Engraving Mirrors
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#choosing-an-image" class="md-nav__link">
-    Choosing an Image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#resize-and-adjust" class="md-nav__link">
-    Resize and adjust
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#image2gcode" class="md-nav__link">
-    Image2GCode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#g-code-sender" class="md-nav__link">
-    G Code Sender
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1195,7 +1282,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../drag-knife/" title="Drag Knife/Vinyl" class="md-nav__link">
+    <a href="../../tools/drag-knife/" title="Drag Knife/Vinyl" class="md-nav__link">
       Drag Knife/Vinyl
     </a>
   </li>
@@ -1207,7 +1294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../foam-needle-cutter/" title="Needle Cutter" class="md-nav__link">
+    <a href="../../tools/foam-needle-cutter/" title="Needle Cutter" class="md-nav__link">
       Needle Cutter
     </a>
   </li>
@@ -1320,7 +1407,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/marlin-firmware/" title="Firmware" class="md-nav__link">
+    <a href="../marlin-firmware/" title="Firmware" class="md-nav__link">
       Firmware
     </a>
   </li>
@@ -1400,43 +1487,132 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#laser-engraving-mirrors" class="md-nav__link">
-    Laser Engraving Mirrors
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2209-drivers" class="md-nav__link">
+    2209 Drivers
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#choosing-an-image" class="md-nav__link">
-    Choosing an Image
+  <a href="#disable-sensorless-pin" class="md-nav__link">
+    Disable Sensorless Pin
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resize-and-adjust" class="md-nav__link">
-    Resize and adjust
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#image2gcode" class="md-nav__link">
-    Image2GCode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#g-code-sender" class="md-nav__link">
-    G Code Sender
+  <a href="#uart" class="md-nav__link">
+    UART
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring-steppers" class="md-nav__link">
+    Wiring Steppers
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    Series
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-end-stops-extruders0" class="md-nav__link">
+    Dual End Stops (EXTRUDERS=0)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-end-stops-extruders1" class="md-nav__link">
+    Dual End Stops (EXTRUDERS=1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reversing-a-stepper" class="md-nav__link">
+    Reversing a stepper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-tft35-v3-e3" class="md-nav__link">
+    Screen TFT35 V3 E3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#touch-plate" class="md-nav__link">
+    Touch plate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dual-end-stops-end-stops" class="md-nav__link">
+    Dual End Stops, End Stops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skr-bin" class="md-nav__link">
+    SKR Bin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tft-files" class="md-nav__link">
+    TFT Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compile-your-own-source" class="md-nav__link">
+    Compile your own (source)
+  </a>
   
 </li>
       
@@ -1456,62 +1632,95 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/tools/laser-engraving-mirrors.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/electronics/skrpro.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="instruction-stub">Instruction STUB<a class="headerlink" href="#instruction-stub" title="Permanent link">&para;</a></h1>
-<h2 id="laser-engraving-mirrors">Laser Engraving Mirrors<a class="headerlink" href="#laser-engraving-mirrors" title="Permanent link">&para;</a></h2>
-<p>Original by Jason | Nov 17, 2016 | Hardware &amp; Electronics, Software</p>
-<h3 id="choosing-an-image">Choosing an Image<a class="headerlink" href="#choosing-an-image" title="Permanent link">&para;</a></h3>
-<p>Grey scale images do not translate well on to mirrors because either the surface is reflective or it
-is not. So straight 2 color images with no gradients are best. Just plain old black and white. The
-higher the resolution the sharper the edges.</p>
-<h3 id="resize-and-adjust">Resize and adjust<a class="headerlink" href="#resize-and-adjust" title="Permanent link">&para;</a></h3>
-<p>Next is open the image in Photoshop (or any image editor Paint.net is a free alternative), then
-resize it match the size you need. It is best to set the pixel resolution in your image editor as
-well. I use 100 px/cm or 0.1mm. I find the best quality with my setup at that resolution. Typically,
-a higher resolution is recommended but I had unsatisfactory results. While in your editor you can
-also adjust your levels to make the whites as white as possible and the blacks as black as possible.</p>
-<h3 id="image2gcode">Image2GCode<a class="headerlink" href="#image2gcode" title="Permanent link">&para;</a></h3>
-<p>After you have your image sized and ready to go open up
-<a href="https://www.v1engineering.com/forum/topic/image2gcode-free-raster-image-laser-engraving-software-modified-for-mpcnc/">Image2GCode</a>
-and load your image. The linked version has been modified for the Mostly Printed CNC.</p>
-<p>Remember you are engraving the backside of the mirror so you have to flip your image horizontally so
-it appears the correct way on the front of the mirror. If you do not, it will be backwards and you
-will need to start over.</p>
-<p><div class="lightgallery"><a data-sub-html="screen1" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen1.jpg"><img alt="screen1" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen1.jpg" /></a></div></p>
-<p>You can also Turn the gamma way down too this will help darken the blacks more if need be. You want
-the laser blasting as strongly as possible on the mirror.</p>
-<p>Next on the Laser profile tab you want to leave Min Power at <code>0</code> and change Max Power to <code>255</code> or
-select the Max radio button. No other changes required to the defaults here.</p>
-<p><div class="lightgallery"><a data-sub-html="screen2" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen2.jpg"><img alt="screen2" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen2.jpg" /></a></div></p>
-<p>On the last and final GCODE tab there are a few changes I make here. In the Gcode header section I
-add the following code:</p>
-<div class="highlight"><pre><span></span><code>G0 X0 Y0
-M201 X1000 Y1000
-M204 P1000 T1000
-</code></pre></div>
-
-<p>This code turns up the default MPCNC acceleration. You may need to tweak these settings for your
-machine, these work well for mine.</p>
-<p>Your feedrate may vary slightly depending on the finish of the mirror. A good starting point would
-be 1200 mm/min. Click the Use <code>S</code> Param radio button. Type <code>106 S</code>in the Laser Power on MCODE box
-and type <code>M107</code> in the Laser Power Off MCODE box.</p>
-<p>I like to use diagonal scanning for best quality. You can choose to engrave an edge line if you
-like or not by selecting the check box. Click Generate file, give your file a name and the GCODE
-will be output.</p>
-<p><div class="lightgallery"><a data-sub-html="screen3" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen3.jpg"><img alt="screen3" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen3.jpg" /></a></div></p>
-<h3 id="g-code-sender">G Code Sender<a class="headerlink" href="#g-code-sender" title="Permanent link">&para;</a></h3>
-<p>Before running your file you should have already focused your laser to the height of the mirror
-surface.</p>
-<p>Now you can either load the G code onto an SD card and run it from your lcd or open Repetier Host.
-In repetier click -File, -Load then find your file. Setting your laser to the <code>0,0</code> point on your
-mirror and click print. Several hours later you should end up with something that resembles your
-file like this.</p>
-<p><div class="lightgallery"><a data-sub-html="jets-9x9-2-1" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Jets-9x9-2.1.jpg"><img alt="jets-9x9-2-1" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Jets-9x9-2.1.jpg" width="400" /></a></div></p>
-<p>(Sorry I did not have a picture handy of the exact file I used in this example.)</p>
-<p>Feel free to ask questions <a href="https://www.v1engineering.com/forum/topic/engraved-mirror-logos/">here</a>.</p>
-<p><strong>Check out all the work we do @ <a href="https://www.facebook.com/banjags3dprinting/">banjags3dprinting</a></strong></p>
+                <h1 id="skr-pro-v11-v12">SKR Pro V1.1 &amp; V1.2<a class="headerlink" href="#skr-pro-v11-v12" title="Permanent link">&para;</a></h1>
+<h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">&para;</a></h2>
+<p>The SKR Pro is a 32bit 6 driver board with 6 easily controllable ports running at 12-24V. Beyond the
+basics there are loads of extra pins, options for two different power supplies at two different
+voltages, WiFi Ports, future expansion port for USB, and the Trinamic TMC series of drivers are all
+pre wired into the board so there are no extra wires needed.</p>
+<p><strong>Want to Buy one?</strong></p>
+<p><a href="https://shop.v1engineering.com/collections/parts/products/skr-pro1-2-6x-2209-drivers-tft35-e3-v3">SKR Pro Bundle is available here in the shop.</a></p>
+<p>There are many options involved here. To offer the best experience for most users and I have settled
+on the TMC2209 drivers, and the TFT35 V3 E3 screen.</p>
+<p><div class="lightgallery"><a data-sub-html="SKR Bundle" href="https://www.v1engineering.com/wp-content/uploads/2020/07/srkbundle.jpg"><img alt="SKR Bundle" src="https://www.v1engineering.com/wp-content/uploads/2020/07/srkbundle.jpg" width="400" /></a></div></p>
+<h2 id="2209-drivers">2209 Drivers<a class="headerlink" href="#2209-drivers" title="Permanent link">&para;</a></h2>
+<p>The Trinamic 2209 V1.2 drivers offer UART communication for dynamic control, 2A RMS with a 2.8A
+peak. We will be operating far under these values. The Trinamic drivers have many advanced features.
+For a CNC Machine, the main features we use are digital current control and dynamically lowering the
+hold current so we can also keep stepper and driver heat down while operating at slightly higher
+than usual stepper power!</p>
+<h3 id="disable-sensorless-pin">Disable Sensorless Pin<a class="headerlink" href="#disable-sensorless-pin" title="Permanent link">&para;</a></h3>
+<p>Sensorless homing is not currently as accurate as mechanical end stops. All the pre-compiled
+firmware has this disabled so you will need to bend the pins out of the way.</p>
+<p><div class="lightgallery"><a data-sub-html="2209 bend" href="https://www.v1engineering.com/wp-content/uploads/2020/07/sensorles-bend.jpg"><img alt="2209 bend" src="https://www.v1engineering.com/wp-content/uploads/2020/07/sensorles-bend.jpg" width="400" /></a></div></p>
+<p>Bend this pin on each driver to allow mechanical switches to be used on the SKR board.</p>
+<h3 id="uart">UART<a class="headerlink" href="#uart" title="Permanent link">&para;</a></h3>
+<p>For the firmware to be able to control the current and receive feedback from each driver the board
+needs to be set for UART communication. To do this you remove the 4 jumpers from each port and place
+one jumper on the black (UART) pins. <strong>There is no need to monkey with the tiny potentiometers!</strong></p>
+<p><div class="lightgallery"><a data-sub-html="Highlighted uart pins" href="https://www.v1engineering.com/wp-content/uploads/2020/07/uart2-Arrows.jpg"><img alt="Highlighted uart pins" src="https://www.v1engineering.com/wp-content/uploads/2020/07/uart2-Arrows.jpg" width="400" /></a></div></p>
+<p>The completed board looks like this. Notice there are no jumpers under the drivers.</p>
+<p><div class="lightgallery"><a data-sub-html="Uart pins" href="https://www.v1engineering.com/wp-content/uploads/2020/07/Uart-scaled.jpg"><img alt="Uart pins" src="https://www.v1engineering.com/wp-content/uploads/2020/07/Uart-scaled.jpg" width="400" /></a></div></p>
+<p>At this point you can add the heat sinks being careful not to short any of the pins and only stick
+them to the copper pads on the top.</p>
+<h2 id="wiring-steppers">Wiring Steppers<a class="headerlink" href="#wiring-steppers" title="Permanent link">&para;</a></h2>
+<p>We have a few options for how the steppers get connected to this board. Here are the three most
+common ways we might use it.</p>
+<h3 id="series">Series<a class="headerlink" href="#series" title="Permanent link">&para;</a></h3>
+<p>The standard LowRider and MPCNC options are to use series wiring. This combines two steppers on the
+same driver. This increases the voltage demand and not the current. We have an abundance of
+available voltage. The board is labeled and we will be using X, Y, and Z.</p>
+<p><div class="lightgallery"><a data-sub-html="Series" href="https://www.v1engineering.com/wp-content/uploads/2020/07/Series-skr-labels-scaled.jpg"><img alt="Series" src="https://www.v1engineering.com/wp-content/uploads/2020/07/Series-skr-labels-scaled.jpg" width="400" /></a></div></p>
+<h3 id="dual-end-stops-extruders0">Dual End Stops (EXTRUDERS=0)<a class="headerlink" href="#dual-end-stops-extruders0" title="Permanent link">&para;</a></h3>
+<p>If the firmware is set for EXTRUDERS=0 then E0 becomes X1 and E1 becomes Y2. (or LR would be E0=Y2
+E1=Z2)</p>
+<p><div class="lightgallery"><a data-sub-html="dual 0" href="https://www.v1engineering.com/wp-content/uploads/2020/07/dual2-scaled.jpg"><img alt="dual 0" src="https://www.v1engineering.com/wp-content/uploads/2020/07/dual2-scaled.jpg" width="400" /></a></div></p>
+<h3 id="dual-end-stops-extruders1">Dual End Stops (EXTRUDERS=1)<a class="headerlink" href="#dual-end-stops-extruders1" title="Permanent link">&para;</a></h3>
+<p>For EXTRUDERS=1 E0 is used and then E1 becomes X1 and E2 become Y2. (or LR would be E1=Y2 and E2=Z2)</p>
+<p><div class="lightgallery"><a data-sub-html="dual 1" href="https://www.v1engineering.com/wp-content/uploads/2020/07/Dual-Ex-1-scaled.jpg"><img alt="dual 1" src="https://www.v1engineering.com/wp-content/uploads/2020/07/Dual-Ex-1-scaled.jpg" width="400" /></a></div></p>
+<h3 id="reversing-a-stepper">Reversing a stepper<a class="headerlink" href="#reversing-a-stepper" title="Permanent link">&para;</a></h3>
+<p>If your stepper is moving the wrong way you can power down and flip the plug over to change the
+direction of rotation. If you are using the series wiring harness flipping the board end changes
+both stepper, or changing one stepper in the chain reverse that one only.</p>
+<p><div class="lightgallery"><a data-sub-html="flip 1" href="https://www.v1engineering.com/wp-content/uploads/2020/07/flip1-scaled.jpg"><img alt="flip 1" src="https://www.v1engineering.com/wp-content/uploads/2020/07/flip1-scaled.jpg" width="400" />
+</a></div><div class="lightgallery"><a data-sub-html="flip 2" href="https://www.v1engineering.com/wp-content/uploads/2020/07/flip2-scaled.jpg"><img alt="flip 2" src="https://www.v1engineering.com/wp-content/uploads/2020/07/flip2-scaled.jpg" width="400" /></a></div></p>
+<h2 id="screen-tft35-v3-e3">Screen TFT35 V3 E3<a class="headerlink" href="#screen-tft35-v3-e3" title="Permanent link">&para;</a></h2>
+<p>This screen was chosen because it had a knob (great for dirty environments). We can use it from both
+Touchscreen mode and Classic mode, simultaneously. <strong>Switching between modes is as easy as pressing
+the knob in for 3 seconds.</strong></p>
+<p><div class="lightgallery"><a data-sub-html="screen" href="https://www.v1engineering.com/wp-content/uploads/2020/07/lcd-touch-Labels-scaled.jpg"><img alt="screen" src="https://www.v1engineering.com/wp-content/uploads/2020/07/lcd-touch-Labels-scaled.jpg" width="400" /></a></div></p>
+<p>You do not need to use both, pay attention to the direction the wires are facing when connecting
+them.</p>
+<h2 id="touch-plate">Touch plate<a class="headerlink" href="#touch-plate" title="Permanent link">&para;</a></h2>
+<p>All the V1 firmware is ready for a touch plate. Easy as plugging into the Z min port.</p>
+<p><div class="lightgallery"><a data-sub-html="Probe" href="https://www.v1engineering.com/wp-content/uploads/2020/07/Z-probe-scaled.jpg"><img alt="Probe" src="https://www.v1engineering.com/wp-content/uploads/2020/07/Z-probe-scaled.jpg" width="400" /></a></div></p>
+<h2 id="dual-end-stops-end-stops">Dual End Stops, End Stops<a class="headerlink" href="#dual-end-stops-end-stops" title="Permanent link">&para;</a></h2>
+<p>If you are running the dual endstop firmware you will need to have your endstops wired in Normally
+Closed (NC). You will plug into the Signal and Ground pins, <strong>Do not use the + pins.</strong></p>
+<p><div class="lightgallery"><a data-sub-html="endstops" href="https://www.v1engineering.com/wp-content/uploads/2020/07/endstops-scaled.jpg"><img alt="endstops" src="https://www.v1engineering.com/wp-content/uploads/2020/07/endstops-scaled.jpg" width="400" /></a></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not use the + (positive) pins or you will ruin your SKR Pro board.</p>
+</div>
+<h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h2>
+<p>The SKR Pro and TFT screen both can use a bin file to re-flash the firmware. This is as simple as
+placing some files directly on the memory card and rebooting them.</p>
+<h3 id="skr-bin">SKR Bin<a class="headerlink" href="#skr-bin" title="Permanent link">&para;</a></h3>
+<p>Links needed.</p>
+<h3 id="tft-files">TFT Files<a class="headerlink" href="#tft-files" title="Permanent link">&para;</a></h3>
+<p>Links and screenshot needed.</p>
+<h2 id="compile-your-own-source">Compile your own (source)<a class="headerlink" href="#compile-your-own-source" title="Permanent link">&para;</a></h2>
+<p>If you want to make any changes you will need to compile form the source files using Platform.io.
+Here is a basic walk through, <a href="../../learn/platformio/">Platformio Docs</a>.</p>
+<p>The V1 Engineering version of the SKR Pro firmware can be found on
+<a href="https://github.com/Allted/Marlin">github</a>, there are two versions, series and MPCNC dual endstop.</p>
+<p>The V1 Engineering generic version of the TFT firmware is in this <a href="https://github.com/V1EngineeringInc/BIGTREETECH-TouchScreenFirmware">github
+repo</a></p>
+<p>Jeffeb3 updated Loki&rsquo;s version of the TFT and this firmware is amazing and setup very well for the
+TFT, <a href="https://github.com/jeffeb3/BIGTREETECH-TouchScreenFirmware/tree/loki">Heffe&rsquo;s Github</a></p>
                 
                   
                 
@@ -1532,7 +1741,7 @@ file like this.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../lasers/" title="Main" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ramps/" title="Ramps" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1541,19 +1750,19 @@ file like this.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Main
+                Ramps
               </span>
             </div>
           </a>
         
         
-          <a href="../drag-knife/" title="Drag Knife/Vinyl" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../steppers/" title="Wiring The Steppers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Drag Knife/Vinyl
+                Wiring The Steppers
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
