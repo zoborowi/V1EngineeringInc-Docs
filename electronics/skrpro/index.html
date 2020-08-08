@@ -951,6 +951,19 @@
     TFT Files
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tft-touch-reset" class="md-nav__link">
+    TFT Touch reset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1602,6 +1615,19 @@
     TFT Files
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tft-touch-reset" class="md-nav__link">
+    TFT Touch reset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1709,17 +1735,28 @@ Closed (NC). You will plug into the Signal and Ground pins, <strong>Do not use t
 <p>The SKR Pro and TFT screen both can use a bin file to re-flash the firmware. This is as simple as
 placing some files directly on the memory card and rebooting them.</p>
 <h3 id="skr-bin">SKR Bin<a class="headerlink" href="#skr-bin" title="Permanent link">&para;</a></h3>
-<p>You have three options for the exact configuration as sold in the V1 store.</p>
+<p>You have three options of firmware for the exact board, driver, screen package as sold in the V1 store.</p>
 <ul>
 <li>V1CNC_SkrPro_2209-<em>*</em><em>*</em> Ready for series wiring on any CNC build.</li>
 <li>V1CNC_SkrPro_Dual_2209-<em>*</em><em>*</em> Ready for dual end stops on an MPCNC (X &amp; Y axes).</li>
 <li>V1CNC_SkrPro_DualLR_2209-<em>*</em><em>*</em> Ready for dual end stops on a LowRider CNC (Y &amp; Z axes).</li>
 </ul>
+<p>When you unzip the file you have a .bin file. Rename to FIRMWARE.bin, and save it to the MicroSD for the SKR Pro board. Insert the MicroSD back into the control board reset and the board will flash a few green LED&rsquo;s for a second or two. The board now has new firmware (seriously that easy). </p>
+<p><div class="lightgallery"><a data-sub-html="SKR file" href="https://www.v1engineering.com/wp-content/uploads/2020/08/SKR_Bin.jpg"><img alt="SKR file" src="https://www.v1engineering.com/wp-content/uploads/2020/08/SKR_Bin.jpg" width="400" /></a></div></p>
+<p>The file will change extensions when a successful flash happens.</p>
 <p>Current release bin files, <a href="https://github.com/V1EngineeringInc/MarlinBuilder/releases">V1 Engineering pre-configured firmware</a>.</p>
-<p>When you unzip the file you have a .bin file. Rename to FIRMWARE.bin, and save it to the MicroSD for the SKR Pro board. Insert the MicroSD back into the control board reset and the board will flash a few green LED&rsquo;s for a second or two. The board now has new firmware (seriously that easy). You also have the option to get the full Marlin source and edit and compile yourself using <a href="../../learn/platformio/">Platformio Docs</a>.</p>
+<p>You also have the option to get the full Marlin source and edit and compile yourself using <a href="../../learn/platformio/">Platformio Docs</a>.</p>
 <h3 id="tft-files">TFT Files<a class="headerlink" href="#tft-files" title="Permanent link">&para;</a></h3>
-<p>Links and screenshot needed.</p>
+<p>Flashing the screen takes a .bin file, the config file, and usually the TFT35 folder (unzipped) on the root of the screens SD card.</p>
+<p>You can get these file from the link at the end of this section below.</p>
+<p>BIGTREE_TFT35_V3.0_E3.<em>*</em>*.bin
+config.ini
+TFT35 (folder) you do not need the folder present for minor updates it is just for graphics and languages.</p>
+<p><div class="lightgallery"><a data-sub-html="TFT files" href="https://www.v1engineering.com/wp-content/uploads/2020/08/TFT35_bin.jpg"><img alt="TFT files" src="https://www.v1engineering.com/wp-content/uploads/2020/08/TFT35_bin.jpg" width="400" /></a></div></p>
+<p>Now reset the screen (or board) and watch the screen update itself. You can double check and the files will have a new extension after a successful flash.</p>
 <p>The V1 Engineering CNC version of the TFT firmware is in this <a href="https://github.com/V1EngineeringInc/BIGTREETECH-TouchScreenFirmware/releases/tag/V1-Vx.x.26">release</a></p>
+<h4 id="tft-touch-reset">TFT Touch reset<a class="headerlink" href="#tft-touch-reset" title="Permanent link">&para;</a></h4>
+<p>If you somehow mess up the touch calibration placing and empty reset.txt file on the card and resetting will trigger a re-calibration.</p>
 <h2 id="compile-your-own-source">Compile your own (source)<a class="headerlink" href="#compile-your-own-source" title="Permanent link">&para;</a></h2>
 <p>If you want to make any changes you will need to compile form the source files using Platform.io.
 Here is a basic walk through, <a href="../../learn/platformio/">Platformio Docs</a>.</p>
