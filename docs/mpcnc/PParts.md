@@ -1,7 +1,7 @@
 # MPCNC Primo Parts
 
 ## Printed Parts Sizes
-There are 3 different sets of printed parts C-23.5mm, F-25mm, or J-25.4mm (1 inch). The measurement is for the **Outside Diameter** of the conduit/rails/tubing. Please measure your rails before printing! 23.5mm fits ¾″ EMT conduit in the US. Anywhere else you must physically measure first. Some things are sold as Inside Dimension (ID) (conduit), or Outside Dimension (OD) (tubing).
+There are 3 different sets of printed parts C-23.5mm (**Not yet released**, check [Here for more information](https://www.v1engineering.com/mpcnc-primo-is-live/)), F-25mm, or J-25.4mm (1 inch). The measurement is for the **Outside Diameter** of the conduit/rails/tubing. Please measure your rails before printing! 23.5mm fits ¾″ EMT conduit in the US. Anywhere else you must physically measure first. Some things are sold as Inside Dimension (ID) (conduit), or Outside Dimension (OD) (tubing).
 
 Hardware store steel EMT conduit works well and is inexpensive; an upgrade would be .065” (max is 0.120") wall thickness stainless steel tubing or DOM. Stainless steel tubing is more rigid and smooth, but also much more expensive, Dom is less expensive than Stainless but requires some coating to prevent rust.
 
