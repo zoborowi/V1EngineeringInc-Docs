@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://docs.v1engineering.com/tools/laser-engraving-mirrors/">
+        <link rel="canonical" href="https://docs.v1engineering.com/electronics/dual-lr/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Engraving Mirrors - V1 Engineering Documentation</title>
+        <title>Dual Endstops Low Rider - V1 Engineering Documentation</title>
       
     
     
@@ -114,7 +114,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#instruction-stub" tabindex="1" class="md-skip">
+      <a href="#dual-endstops-on-a-low-rider" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -140,7 +140,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Engraving Mirrors
+                Dual Endstops Low Rider
               
             </span>
           
@@ -741,10 +741,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Control
@@ -781,7 +783,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/ultimachine/" title="Ultimachine Boards" class="md-nav__link">
+    <a href="../ultimachine/" title="Ultimachine Boards" class="md-nav__link">
       Ultimachine Boards
     </a>
   </li>
@@ -793,7 +795,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/ramps/" title="Ramps" class="md-nav__link">
+    <a href="../ramps/" title="Ramps" class="md-nav__link">
       Ramps
     </a>
   </li>
@@ -805,7 +807,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/skrpro/" title="SKR Pro" class="md-nav__link">
+    <a href="../skrpro/" title="SKR Pro" class="md-nav__link">
       SKR Pro
     </a>
   </li>
@@ -841,7 +843,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/steppers/" title="Wiring The Steppers" class="md-nav__link">
+    <a href="../steppers/" title="Wiring The Steppers" class="md-nav__link">
       Wiring The Steppers
     </a>
   </li>
@@ -856,10 +858,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
     
     <label class="md-nav__link" for="nav-3-3">
       Some Advanced Options
@@ -877,7 +881,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/v1pi/" title="v1pi - Headless" class="md-nav__link">
+    <a href="../v1pi/" title="v1pi - Headless" class="md-nav__link">
       v1pi - Headless
     </a>
   </li>
@@ -889,7 +893,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/dual-endstops/" title="Dual Endstops" class="md-nav__link">
+    <a href="../dual-endstops/" title="Dual Endstops" class="md-nav__link">
       Dual Endstops
     </a>
   </li>
@@ -899,11 +903,138 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../electronics/dual-lr/" title="Dual Endstops Low Rider" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Dual Endstops Low Rider
+      </label>
+    
+    <a href="./" title="Dual Endstops Low Rider" class="md-nav__link md-nav__link--active">
       Dual Endstops Low Rider
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#do-i-need-this" class="md-nav__link">
+    Do I need this?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-do-i-need-to-do-this" class="md-nav__link">
+    What do I need to do this?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring" class="md-nav__link">
+    Wiring
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motor-drivers" class="md-nav__link">
+    Motor Drivers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endstops" class="md-nav__link">
+    Endstops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z-probe" class="md-nav__link">
+    Z probe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wiring-for-rambo" class="md-nav__link">
+    Wiring for Rambo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skr-pro" class="md-nav__link">
+    Skr Pro
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motors" class="md-nav__link">
+    Motors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endstops_1" class="md-nav__link">
+    Endstops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homingprobing" class="md-nav__link">
+    Homing/Probing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -933,12 +1064,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Use
@@ -954,12 +1083,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
     
     <label class="md-nav__link" for="nav-4-1">
       Tools
@@ -996,7 +1123,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../milling-basics/" title="Milling Basics" class="md-nav__link">
+    <a href="../../tools/milling-basics/" title="Milling Basics" class="md-nav__link">
       Milling Basics
     </a>
   </li>
@@ -1068,7 +1195,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../import-extruder/" title="Main" class="md-nav__link">
+    <a href="../../tools/import-extruder/" title="Main" class="md-nav__link">
       Main
     </a>
   </li>
@@ -1083,12 +1210,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-3" type="checkbox" id="nav-4-1-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-3" type="checkbox" id="nav-4-1-3">
     
     <label class="md-nav__link" for="nav-4-1-3">
       Lasers
@@ -1106,7 +1231,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lasers/" title="Main" class="md-nav__link">
+    <a href="../../tools/lasers/" title="Main" class="md-nav__link">
       Main
     </a>
   </li>
@@ -1116,83 +1241,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Engraving Mirrors
-      </label>
-    
-    <a href="./" title="Engraving Mirrors" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../tools/laser-engraving-mirrors/" title="Engraving Mirrors" class="md-nav__link">
       Engraving Mirrors
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#laser-engraving-mirrors" class="md-nav__link">
-    Laser Engraving Mirrors
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#choosing-an-image" class="md-nav__link">
-    Choosing an Image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#resize-and-adjust" class="md-nav__link">
-    Resize and adjust
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#image2gcode" class="md-nav__link">
-    Image2GCode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#g-code-sender" class="md-nav__link">
-    G Code Sender
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1207,7 +1260,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../drag-knife/" title="Drag Knife/Vinyl" class="md-nav__link">
+    <a href="../../tools/drag-knife/" title="Drag Knife/Vinyl" class="md-nav__link">
       Drag Knife/Vinyl
     </a>
   </li>
@@ -1219,7 +1272,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../foam-needle-cutter/" title="Needle Cutter" class="md-nav__link">
+    <a href="../../tools/foam-needle-cutter/" title="Needle Cutter" class="md-nav__link">
       Needle Cutter
     </a>
   </li>
@@ -1332,7 +1385,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../electronics/marlin-firmware/" title="Firmware" class="md-nav__link">
+    <a href="../marlin-firmware/" title="Firmware" class="md-nav__link">
       Firmware
     </a>
   </li>
@@ -1412,37 +1465,92 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#laser-engraving-mirrors" class="md-nav__link">
-    Laser Engraving Mirrors
+  <a href="#do-i-need-this" class="md-nav__link">
+    Do I need this?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-do-i-need-to-do-this" class="md-nav__link">
+    What do I need to do this?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring" class="md-nav__link">
+    Wiring
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#choosing-an-image" class="md-nav__link">
-    Choosing an Image
+  <a href="#motor-drivers" class="md-nav__link">
+    Motor Drivers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resize-and-adjust" class="md-nav__link">
-    Resize and adjust
+  <a href="#endstops" class="md-nav__link">
+    Endstops
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#image2gcode" class="md-nav__link">
-    Image2GCode
+  <a href="#z-probe" class="md-nav__link">
+    Z probe
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#g-code-sender" class="md-nav__link">
-    G Code Sender
+  <a href="#wiring-for-rambo" class="md-nav__link">
+    Wiring for Rambo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skr-pro" class="md-nav__link">
+    Skr Pro
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motors" class="md-nav__link">
+    Motors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endstops_1" class="md-nav__link">
+    Endstops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homingprobing" class="md-nav__link">
+    Homing/Probing
   </a>
   
 </li>
@@ -1468,62 +1576,245 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/tools/laser-engraving-mirrors.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/V1EngineeringInc/V1EngineeringInc-Docs/edit/master/docs/electronics/dual-lr.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="instruction-stub">Instruction STUB<a class="headerlink" href="#instruction-stub" title="Permanent link">&para;</a></h1>
-<h2 id="laser-engraving-mirrors">Laser Engraving Mirrors<a class="headerlink" href="#laser-engraving-mirrors" title="Permanent link">&para;</a></h2>
-<p>Original by Jason | Nov 17, 2016 | Hardware &amp; Electronics, Software</p>
-<h3 id="choosing-an-image">Choosing an Image<a class="headerlink" href="#choosing-an-image" title="Permanent link">&para;</a></h3>
-<p>Grey scale images do not translate well on to mirrors because either the surface is reflective or it
-is not. So straight 2 color images with no gradients are best. Just plain old black and white. The
-higher the resolution the sharper the edges.</p>
-<h3 id="resize-and-adjust">Resize and adjust<a class="headerlink" href="#resize-and-adjust" title="Permanent link">&para;</a></h3>
-<p>Next is open the image in Photoshop (or any image editor Paint.net is a free alternative), then
-resize it match the size you need. It is best to set the pixel resolution in your image editor as
-well. I use 100 px/cm or 0.1mm. I find the best quality with my setup at that resolution. Typically,
-a higher resolution is recommended but I had unsatisfactory results. While in your editor you can
-also adjust your levels to make the whites as white as possible and the blacks as black as possible.</p>
-<h3 id="image2gcode">Image2GCode<a class="headerlink" href="#image2gcode" title="Permanent link">&para;</a></h3>
-<p>After you have your image sized and ready to go open up
-<a href="https://www.v1engineering.com/forum/topic/image2gcode-free-raster-image-laser-engraving-software-modified-for-mpcnc/">Image2GCode</a>
-and load your image. The linked version has been modified for the Mostly Printed CNC.</p>
-<p>Remember you are engraving the backside of the mirror so you have to flip your image horizontally so
-it appears the correct way on the front of the mirror. If you do not, it will be backwards and you
-will need to start over.</p>
-<p><div class="lightgallery"><a data-sub-html="screen1" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen1.jpg"><img alt="screen1" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen1.jpg" /></a></div></p>
-<p>You can also Turn the gamma way down too this will help darken the blacks more if need be. You want
-the laser blasting as strongly as possible on the mirror.</p>
-<p>Next on the Laser profile tab you want to leave Min Power at <code>0</code> and change Max Power to <code>255</code> or
-select the Max radio button. No other changes required to the defaults here.</p>
-<p><div class="lightgallery"><a data-sub-html="screen2" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen2.jpg"><img alt="screen2" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen2.jpg" /></a></div></p>
-<p>On the last and final GCODE tab there are a few changes I make here. In the Gcode header section I
-add the following code:</p>
-<div class="highlight"><pre><span></span><code>G0 X0 Y0
-M201 X1000 Y1000
-M204 P1000 T1000
+                <h1 id="dual-endstops-on-a-low-rider">Dual Endstops on a Low Rider<a class="headerlink" href="#dual-endstops-on-a-low-rider" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This is a WIP. Please ask questions in the <a href="https://forums.v1engineering.com">forums</a> if this
+doesn&rsquo;t make sense. There are some very helpful people who would like you to succeed, and this
+document won&rsquo;t do that for everyone.</p>
+<p>Also, feel free to edit this document with improvements. There is a little pencil in the upper
+right, and we review each change before publishing it.</p>
+</div>
+<p>There are 5 motors on a Low Rider. One on each Z axis, one on the router plate, and two on the other
+axis.</p>
+<p>This article is about the wiring needed to set up the Low Rider so that each motor has its own
+driver, and each driver has it&rsquo;s own endstop, while also allowing the Z probe for fine carving
+operations.</p>
+<h2 id="do-i-need-this">Do I need this?<a class="headerlink" href="#do-i-need-this" title="Permanent link">&para;</a></h2>
+<p>First off. You should realize that there are hundreds of Low Riders wired with the series wiring.
+In many ways, series wiring is simpler. Endstops aren&rsquo;t needed at all, really.</p>
+<p>Here are some things you may not know about series wiring and endstops:</p>
+<ul>
+<li>Series wiring provides the same amount of power to each motor.</li>
+<li>Endstops aren&rsquo;t needed in CNC. The origin is determined by the workpiece (unlike in 3D printing).</li>
+<li>In series or dual endstop configurations, the mirrored motors move exactly in lock step after
+     homing.</li>
+<li>Homing isn&rsquo;t needed in CNC. You can just define where the origin is.</li>
+<li>If you start the machine square and keep the motors engaged, the machine will stay square.
+     Getting a 5 foot gantry square isn&rsquo;t that difficult. The large size makes it easier than on an
+     MPCNC.</li>
+</ul>
+<p>Here are the advantages of a Dual Endstop configuration:</p>
+<ol>
+<li>Auto squaring. If you home a dual endstop machine, each motor will move until it reaches it&rsquo;s own
+endstop. Because of this, you can start the machine out of square, home, and be confident the
+machine will stay square.</li>
+<li>If you have your work set up in a known location, you can split the work into multiple files, and
+continue the next day after homing.</li>
+<li>You can home to move the gantry up all the way, giving you room to work.</li>
+</ol>
+<h2 id="what-do-i-need-to-do-this">What do I need to do this?<a class="headerlink" href="#what-do-i-need-to-do-this" title="Permanent link">&para;</a></h2>
+<ol>
+<li>A control board with at least 5 drivers. The Full sized Rambo has 5. The Skr Pro has 6. These two
+boards have configurations preconfigured in the MarlinBuilder.</li>
+<li>If you&rsquo;re using a board with removable drivers, you need to have 5 drivers. For example, on the
+Skr Pro, you could use series wiring with 3 drivers, but this needs 5.</li>
+<li>A wire for each motor.</li>
+<li>And endstop for each motor. These should be the dumb switches with 3 pins (C, NC, NO). Not the
+ones with the little circuit board attached. Those only cause trouble.</li>
+<li>The Y axis needs to be the belt and wheel axis. The X axis needs to be the belt and tube axis. If
+you have this reversed, then you will need to edit the preconfigured firmware.</li>
+<li>A computer you can control it with, or at least the TFT screen is really helpful. This is an
+advanced setup, and it requires some specific testing that can&rsquo;t be done over the LCD Rep Rap Full
+Discount Display.</li>
+</ol>
+<h2 id="wiring">Wiring<a class="headerlink" href="#wiring" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These instructions are for the preconfigured firmware from MarlinBuilder. They assume you have
+2xY and 1xX motors.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Rambo and SKR users</p>
+<p>Read these instructions, but also read specific instructions for the
+<a href="../ultimachine#rambo-13-14">Rambo</a> and <a href="../skrpro/">Skr Pro</a>
+boards.</p>
+</div>
+<p>Here is where we are trying to get to:</p>
+<table>
+<thead>
+<tr>
+<th>Motor</th>
+<th>Driver</th>
+<th>Endstop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>X</td>
+<td>Xmin</td>
+</tr>
+<tr>
+<td>Y1</td>
+<td>Y</td>
+<td>Ymin</td>
+</tr>
+<tr>
+<td>Y2</td>
+<td>E0</td>
+<td>Ymax</td>
+</tr>
+<tr>
+<td>Z1</td>
+<td>Z</td>
+<td>Zmax</td>
+</tr>
+<tr>
+<td>Z2</td>
+<td><strong>E1</strong></td>
+<td><strong>Xmax</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Pay special attention to the Z2. This is a bit different.
+Pay special attention to the Z1 endstop, this is in the Zmax port.</p>
+</div>
+<h4 id="motor-drivers">Motor Drivers<a class="headerlink" href="#motor-drivers" title="Permanent link">&para;</a></h4>
+<p>The motors should be wired directly to the board. Most steppers come wired AABB, meaning the first
+two wires are one coil, and the next two wires are the second coil. Since there are 5 drivers, each
+motor goes straight to a single driver.</p>
+<p>There are two motor ports on the Z driver. Don&rsquo;t use the second, and leave it blank.</p>
+<p>( A picture here sure would be nice ).</p>
+<p>The Second Y motor goes to the E0 port and the second Z motor goes to the E1 port.</p>
+<h4 id="endstops">Endstops<a class="headerlink" href="#endstops" title="Permanent link">&para;</a></h4>
+<p>Match up each endstop with the appropriate motor. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>All endstops should be wired between the Ground (-) and the Signal (s). Don&rsquo;t use the Positive
+(+). All the endstops should also be wired to the Common (C) and Normally Closed (NC) connectors
+on the switches.</p>
+</div>
+<p>The X endstop goes in the Xmin port, and needs to be mounted on the negative X axis.</p>
+<p>The Y1 endstop goes in the Ymin port, needs to be on the negative Y side, and needs to be on the
+side with the motor that is plugged into the Y port.</p>
+<p>The Y2 endstop goes in the Ymax port, needs to be on the negative Y side, and needs to be on the
+side with the motor that is plugged into the <strong>E0</strong> port.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Z homes up. Why? so we can still use a Z min probe to probe the workpiece.
+Be very careful though, if you home up and miss the endstops, you will take apart your low
+rider. Not cool.</p>
+</div>
+<p>The Z1 endstop goes in the Zmax port, needs to be on the positive Z side, and needs to be on the
+side with the motor that is plugged into the Z port.</p>
+<p>The Z2 endstop goes in the <strong>Xmax</strong> (that is X, not Z) port, needs to be on the positive Z side, and
+needs to be on the side with the motor that is plugged into the <strong>E1</strong> port.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Be sure you <a href="#testing">test</a> the endstops with M119 and confirm the direction of all motors before trying to
+home anything.</p>
+</div>
+<h4 id="z-probe">Z probe<a class="headerlink" href="#z-probe" title="Permanent link">&para;</a></h4>
+<p>The Z probe will help you measure the top of the workpiece you are about to make a mess with. This
+isn&rsquo;t needed in most cases, because you can just jog the machine to the top and set the Z=0 with
+<code>G92 Z0</code>. But it can be really helpful for tool changes, and it can take out some of the guess work
+of carving.</p>
+<p>The wiring of the Z probe is the same as with an MPCNC or a serial wiring Low Rider.</p>
+<p>The touch plate connects to the Ground (-) pin on Zmin.</p>
+<p>The Signal pin (s) of the Zmin connects to the bit. You can use an alligator clip, or a magnet to connect the
+bit electrically.</p>
+<p>When the bit touches the plate, it looks like a closed switch, and it should trigger Marlin to stop
+the Z axis. </p>
+<p><strong>Test the functionality of the plate before probing. Use M119 and make sure it reports zmin_probe
+is <code>open</code> when the bit isn&rsquo;t touching the plate, and <code>TRIGGERED</code> when the bit is touching the
+plate.</strong></p>
+<p>The normal &ldquo;Home Z&rdquo; will lift the gantry, and not probe down. To probe down, you need to use a
+different command. That is <code>G38.2 Z0</code>. This command will search downward for the touch plate with
+the bit. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you miss, it may stretch out the couplers, causing damage.</p>
+</div>
+<p>Example gcode script for probe:</p>
+<div class="highlight"><pre><span></span><code>M0 Attach probe ; Remind the user to attach the probe
+G38.2 Z0 ; Home down for the touchplate
+G92 Z0.5 ; Sets the offset for the touchplate, if the touchplate is 0.5mm thick
+G1 Z10 F300 ; lifts the Z out of the way
+M0 Remove probe ; Remind the user to remove the probe
 </code></pre></div>
 
-<p>This code turns up the default MPCNC acceleration. You may need to tweak these settings for your
-machine, these work well for mine.</p>
-<p>Your feedrate may vary slightly depending on the finish of the mirror. A good starting point would
-be 1200 mm/min. Click the Use <code>S</code> Param radio button. Type <code>106 S</code>in the Laser Power on MCODE box
-and type <code>M107</code> in the Laser Power Off MCODE box.</p>
-<p>I like to use diagonal scanning for best quality. You can choose to engrave an edge line if you
-like or not by selecting the check box. Click Generate file, give your file a name and the GCODE
-will be output.</p>
-<p><div class="lightgallery"><a data-sub-html="screen3" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen3.jpg"><img alt="screen3" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Screen3.jpg" /></a></div></p>
-<h3 id="g-code-sender">G Code Sender<a class="headerlink" href="#g-code-sender" title="Permanent link">&para;</a></h3>
-<p>Before running your file you should have already focused your laser to the height of the mirror
-surface.</p>
-<p>Now you can either load the G code onto an SD card and run it from your lcd or open Repetier Host.
-In repetier click -File, -Load then find your file. Setting your laser to the <code>0,0</code> point on your
-mirror and click print. Several hours later you should end up with something that resembles your
-file like this.</p>
-<p><div class="lightgallery"><a data-sub-html="jets-9x9-2-1" href="https://www.v1engineering.com/wp-content/uploads/2016/11/Jets-9x9-2.1.jpg"><img alt="jets-9x9-2-1" src="https://www.v1engineering.com/wp-content/uploads/2016/11/Jets-9x9-2.1.jpg" width="400" /></a></div></p>
-<p>(Sorry I did not have a picture handy of the exact file I used in this example.)</p>
-<p>Feel free to ask questions <a href="https://www.v1engineering.com/forum/topic/engraved-mirror-logos/">here</a>.</p>
-<p><strong>Check out all the work we do @ <a href="https://www.facebook.com/banjags3dprinting/">banjags3dprinting</a></strong></p>
+<h3 id="wiring-for-rambo">Wiring for Rambo<a class="headerlink" href="#wiring-for-rambo" title="Permanent link">&para;</a></h3>
+<p>(A picture or two would be really nice)</p>
+<p>Pay attention to the endstop pin definitions. They flip direction for the max ports.</p>
+<h3 id="skr-pro">Skr Pro<a class="headerlink" href="#skr-pro" title="Permanent link">&para;</a></h3>
+<p>(A picture or two would be really nice)</p>
+<p>The endstops are connected through the board to the sensorless homing pins on the TMC2209s.
+Currently, you need to bend, cut, or desolder the sensorless homing endstop pin.</p>
+<p>The second Z port comes with two little jumpers. Those need to remain installed.</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>Don&rsquo;t go crazy and expect everything to be set up correctly right away. There are a lot of places
+where a wire can get loose, or something could be wrong with the configuration (we do our best, but
+mistakes happen). Build up confidence in the different parts one step at a time, and you will end up
+with smaller areas to search for problems.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For simplicity, I am going to assume you are doing this checkout with a computer attached to the
+USB port, and have it connected using Repetier Host.</p>
+</div>
+<p>If you get in trouble, don&rsquo;t get frustrated, these instructions aren&rsquo;t perfect. Go ask for help in
+the <a href="https://forums.v1engineering.com">forums</a>.</p>
+<h3 id="motors">Motors<a class="headerlink" href="#motors" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Check the motors are moving the right way, and the mirrored motors are moving together.
+  - For the preconfigured Dual LR files, the Y axis is the axis on wheels and the X axis is the axis
+      on tubes/bearings.
+  - Higher Z values should raise the gantry up.
+  - Higher Z values should move to the right.
+  - Higher Y values should move away from you.
+  - You may have to change which side of the table you stand on to make that true. When using CAM,
+      understand that this is the side of the table you have to imagine standing on.</p>
+</li>
+<li>
+<p>Check the distance the motors move. If you command a 10mm movement, it should move 10mm. If it
+moves 20mm, or 5mm, there is a problem. If it is 10.1mm, worry about it later, that passed this
+test.</p>
+</li>
+<li>
+<p>Run the test crown pattern. Post the result to the forums, and some pics of you machine. You
+should really consider taking a break and making a mess. This machine is in great shape now, and it
+can easily handle making a coaster to help you with the next steps.</p>
+</li>
+</ol>
+<h3 id="endstops_1">Endstops<a class="headerlink" href="#endstops_1" title="Permanent link">&para;</a></h3>
+<p>Before doing any homing, you want to make sure the motors are working. You already drew the crown,
+right?</p>
+<p>Here&rsquo;s how you check your endstops:</p>
+<ol>
+<li>Send M119 (Send GCode, and then look at the console for the response).</li>
+<li>The correct endstop should show &ldquo;open&rdquo; when the switch isn&rsquo;t pressed and &ldquo;TRIGGERED&rdquo; when it is
+pressed. Pay attention to match the correct motor to the correct endstop. Check the table above for
+the correct order.</li>
+<li>The Z probe should show &ldquo;open&rdquo; when the bit isn&rsquo;t touching the plate, and &ldquo;TRIGGERED&rdquo; when the
+bit is touching the plate. Be sure to test on the actual router, in the same situation you&rsquo;ll use
+for setting up a job (as best you can). Sometimes just having the router plugged into AC can affect
+the probe.</li>
+<li>Double check that reducing the X and Y cause the machine to go towards the endstops.</li>
+<li>Double check that increasing the Z causes the machine to go towards the endstops.</li>
+</ol>
+<h3 id="homingprobing">Homing/Probing<a class="headerlink" href="#homingprobing" title="Permanent link">&para;</a></h3>
+<p>OK. One you&rsquo;re ready to try your first home.</p>
+<p>To Home X, you can press the Home X button or send <code>G28 X</code> in the Send Gcode.</p>
+<p>You can do the same with Y and Z. </p>
+<p>To test the probe, get the plate, the bit, and everything ready and send G38.2 Z0. The bit should go
+down, and feel free to touch it early. If something goes wrong, you&rsquo;re going to want to pull the
+power immediately. You can stretch the Z couplers if it plows into the table.</p>
                 
                   
                 
@@ -1544,7 +1835,7 @@ file like this.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../lasers/" title="Main" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dual-endstops/" title="Dual Endstops" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1553,19 +1844,19 @@ file like this.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Main
+                Dual Endstops
               </span>
             </div>
           </a>
         
         
-          <a href="../drag-knife/" title="Drag Knife/Vinyl" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../software/" title="Setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Drag Knife/Vinyl
+                Setup
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
