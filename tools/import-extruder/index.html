@@ -1572,7 +1572,6 @@ steps for the e value.</p>
 and</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,4535.44,200}</span>
 </code></pre></div>
-
 <p>Even after running the PID auto tune I get a huge overshoot in temp so limiting the max current
 might help with this, I will update it when I get a chance to test it.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Comment the following line to disable PID and enable bang-bang.</span>
@@ -1581,7 +1580,6 @@ might help with this, I will update it when I get a chance to test it.</p>
 <span class="cp">#define PID_MAX BANG_MAX </span><span class="c1">// limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current</span>
 <span class="cp">#ifdef PIDTEMP</span>
 </code></pre></div>
-
 <h2 id="slicer-edits">Slicer edits<a class="headerlink" href="#slicer-edits" title="Permanent link">&para;</a></h2>
 <p><div class="lightgallery"><a data-sub-html="picture" href="https://www.v1engineering.com/wp-content/uploads/2015/08/cgcode.png"><img alt="picture" src="https://www.v1engineering.com/wp-content/uploads/2015/08/cgcode.png" width="400" /></a></div></p>
 <p>Delete the beginning gcode, you don’t want it to home.</p>
@@ -1593,7 +1591,6 @@ G90
 M104 S0 ; turn off temperature
 M84 ; disable motors
 </code></pre></div>
-
 <h2 id="not-using-endstops">Not using endstops<a class="headerlink" href="#not-using-endstops" title="Permanent link">&para;</a></h2>
 <p><div class="lightgallery"><a data-sub-html="picture" href="https://www.v1engineering.com/wp-content/uploads/2015/08/position.png"><img alt="picture" src="https://www.v1engineering.com/wp-content/uploads/2015/08/position.png" width="400" /></a></div></p>
 <p>Position you parts on the lower corner (0,0,0), before you slice them. This will start your prints
@@ -1602,7 +1599,6 @@ start. When the print begins it should lift up the correct amount and print. You
 the height during the skirt print to fine tune it.</p>
 <p>That’s it print away. The printed parts I am shipping are starting to get printed on this cnc, and they look amazing.</p>
 <iframe width="480" height="270" src="https://www.youtube.com/embed/nVKHlX3NaTA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <h2 id="recommended-beginning-slic3r-settings">Recommended beginning slic3r settings.<a class="headerlink" href="#recommended-beginning-slic3r-settings" title="Permanent link">&para;</a></h2>
 <p><div class="lightgallery"><a data-sub-html="slicer1" href="https://www.v1engineering.com/wp-content/uploads/2015/10/sl1.png"><img alt="slicer1" src="https://www.v1engineering.com/wp-content/uploads/2015/10/sl1.png" width="400" />
 </a></div><div class="lightgallery"><a data-sub-html="slicer2" href="https://www.v1engineering.com/wp-content/uploads/2015/10/sl2.png"><img alt="slicer2" src="https://www.v1engineering.com/wp-content/uploads/2015/10/sl2.png" width="400" />

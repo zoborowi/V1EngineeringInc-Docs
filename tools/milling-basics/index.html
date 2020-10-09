@@ -1788,7 +1788,6 @@ G00 Z5.0000 F500 ; Raise Z probe off off of surface
 M00 ; pause for LCD button press
 M03 S&lt;s&gt; ; PID, set spindle speed
 </code></pre></div>
-
 <h3 id="tool-change">Tool Change<a class="headerlink" href="#tool-change" title="Permanent link">&para;</a></h3>
 <p>The steppers are disabled so you can move the head to an area where you can more easily change the
 tool, make sure you do not let your Z axis drop onto your work surface. If you need you can insert
@@ -1806,14 +1805,12 @@ G00 Z5.0000 F500 ; Raise Z probe off off of surface
 M00 ; pause for LCD button press
 M03 S&lt;s&gt; ; PID, set spindle speed
 </code></pre></div>
-
 <h3 id="ending">Ending<a class="headerlink" href="#ending" title="Permanent link">&para;</a></h3>
 <p>Make sure you tune the final Z lift to your machine.</p>
 <div class="highlight"><pre><span></span><code>M05 ; PID, Turn off spindle
 G0 Z30 ; Lift Z axis 30mm
 ; M84 ; Optionally turn off steppers.
 </code></pre></div>
-
 <p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/06/start.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/start.jpg" width="400" />
 </a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/06/Change.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/Change.jpg" width="400" />
 </a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/06/End.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/06/End.jpg" width="400" /></a></div></p>
@@ -1855,6 +1852,10 @@ settings</a></dd>
 GitHub</a>. <a href="https://www.youtube.com/watch?v=Do_C_NLH5sw">Fusion CAM
 intro</a>.</dd>
 </dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Fusion&rsquo;s free plan no longer supports more than one speed, so the feedrate for XY turn into very fast Z movements. More details in the forum <a href="https://forum.v1engineering.com/t/problem-with-fusion-and-z-feedrate/21487">here</a></p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>(10/23/19) Do not use arcs unless you are using 417 or newer firmware.</p>

@@ -1542,7 +1542,6 @@ G01 Z-0.1 F300.00
 G01 X100.00 F600
 G01 Y100.00
 </code></pre></div>
-
 <p>At first, it looks fine. But there is a problem. The first two commands don&rsquo;t have a feedrate
 defined. So whatever speed the last command was at, is what is going to be used.</p>
 <p>At the 3<sup>rd</sup> line, we finally set a feedrate. On the 4<sup>th</sup>, it is changed to something new, and on the
@@ -1622,7 +1621,6 @@ option in the Configuration_adv.h:</p>
     <span class="c1">//#define VARIABLE_G0_FEEDRATE // The G0 feedrate is set by F in G0 motion mode</span>
 <span class="cp">#endif</span>
 </code></pre></div>
-
 <p>If you define <code>G0_FEEDRATE</code>, then that will always get used for <code>G0</code> commands (and still be subject to
 the max speeds and accelerations).</p>
 <p>If you define that and <code>VARIABLE_G0_FEEDRATE</code>, then any feedrate defined on a <code>G0</code> command will stick

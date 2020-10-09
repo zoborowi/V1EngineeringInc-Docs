@@ -1745,7 +1745,6 @@ text editor (like wordpad). Here are some instructions you might see in a .gcode
 G01 Z-1.000 F300.00
 G01 X10.000 F600.00
 </code></pre></div>
-
 <p>Each of these lines is one single command. They are read in by the controller one at a time.</p>
 <p>If you typed in each of these commands into a console, the machine would work the same as if you
 played them from a G-Code sender (except, you couldn&rsquo;t go as fast).</p>
@@ -1757,7 +1756,6 @@ it doesn&rsquo;t take long at all to learn.</p>
 <h3 id="first-g-code-command">First G-Code Command<a class="headerlink" href="#first-g-code-command" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>G01 X10.000 F600.00
 </code></pre></div>
-
 <p>This is a single G-Code command. It starts with the kind of command <code>G01</code> and then has two
 parameters <code>X10.000</code> and <code>F600.00</code>.</p>
 <dl>
@@ -1805,14 +1803,12 @@ anything you want in there.</p>
 <div class="highlight"><pre><span></span><code>G01 X10.000 F600.00 ; This is a comment
 ; This is also a comment.
 </code></pre></div>
-
 <ol start="2">
 <li>Anything in parenthesis is a comment. Ex:</li>
 </ol>
 <div class="highlight"><pre><span></span><code>G01 X10.000 F600.00 ( This is a comment )
 ( This is also a comment. )
 </code></pre></div>
-
 <h3 id="g1-vs-g01">G1 vs. G01<a class="headerlink" href="#g1-vs-g01" title="Permanent link">&para;</a></h3>
 <p><code>G1</code> is the same as <code>G01</code>. Marlin will ignore the extra 0. This is true for most commands.</p>
 <h3 id="m-codes">M-codes<a class="headerlink" href="#m-codes" title="Permanent link">&para;</a></h3>
