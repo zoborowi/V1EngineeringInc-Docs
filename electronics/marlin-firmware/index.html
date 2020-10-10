@@ -1298,6 +1298,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#programming-the-control-board" class="md-nav__link">
+    Programming the Control Board
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#using-github" class="md-nav__link">
     Using GitHub
   </a>
@@ -1484,6 +1498,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#programming-the-control-board" class="md-nav__link">
+    Programming the Control Board
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#using-github" class="md-nav__link">
     Using GitHub
   </a>
@@ -1591,31 +1619,32 @@
                 
                 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>If you bought a bundle or electronics board from V1Enginering.com, this is already done.</strong></p>
+<p><strong>If you bought a bundle or electronics board from V1Enginering.com, this is usually already done.</strong></p>
 </div>
 <h1 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h1>
-<p>Firmware is the program or software “embedded/burned” into the electronics board, this is what
-translates the gcode into motion in the stepper motors.</p>
+<p>Firmware is the program or software “embedded/burned/flashed” into the electronics board, this is what
+translates the gcode into motion in the stepper motors. There are many types of firmware we mainly use Marlin.</p>
 <h2 id="marlin">Marlin<a class="headerlink" href="#marlin" title="Permanent link">&para;</a></h2>
 <p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2015/05/Marlin-Logo-GitHub.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/05/Marlin-Logo-GitHub.png" /></a></div></p>
 <p>The boards sold here are using the <a href="https://github.com/MarlinFirmware/Marlin">Marlin</a> Firmware, only
 minor changes needed to run any machine. Again, if you bought your electronics from here this has
-already been done for you no need to continue on.</p>
+already been done for you initially, you can use this document to change or update your control board.</p>
 <p>The firmware is what makes this all possible and was the key for me to quickly make all sorts of
 robots. For a while now <a href="https://www.patreon.com/thinkyhead/posts">Scott – “ThinkyHead”</a> has been the ring leader for all the great developers
 working on the Marlin project. He is not the only one but has been a huge factor in getting the
-firmware to the place it is now. If you can drop a dollar or more his way to keep this project
-advancing click the link above.</p>
+firmware to the place it is now. </p>
 <details><summary>Dual Endstops &amp; Auto squaring</summary><p>This is an advanced feature and the information will be kept separately for the time being,
-<a href="../electronics/dual-endstops">Here</a>.</p>
+<a href="../electronics/dual-endstops">HERE</a>.</p>
 </details>
 <h3 id="github-firmware">GitHub Firmware<a class="headerlink" href="#github-firmware" title="Permanent link">&para;</a></h3>
-<p>If you like to be more up to date with the Newest Marlin features, I have all my most recent updates here.</p>
-<p><a href="https://github.com/Allted/Marlin/tree/CHOOSE_VERSION">Github pre-configured.</a></p>
-<p><strong>Right now flashing Marlin 2.0 requires the <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE 1.8.9 or
-higher</a> and follow the
-directions <a href="#how-to-flash">below</a>. You can now use <a href="../../learn/platformio/">PlatformIO</a> as well</strong></p>
-<h3 id="using-github">Using GitHub<a class="headerlink" href="#using-github" title="Permanent link">&para;</a></h3>
+<p>The newest &ldquo;stable&rdquo; release we have been working on are found at the link below. These files are preconfigured for various control boards and machine configurations.</p>
+<p><a href="https://github.com/V1EngineeringInc/MarlinBuilder/releases">Github pre-configured firmware repository.</a></p>
+<p>If you want bleeding edge, you can head to the &ldquo;actions&rdquo; tab and see all nightly marlin bugfix builds along with pull request builds testing new features or settings. </p>
+<h3 id="programming-the-control-board">Programming the Control Board<a class="headerlink" href="#programming-the-control-board" title="Permanent link">&para;</a></h3>
+<p>Right now flashing (programming / burning) your control board with Marlin 2.0 requires using <a href="../../learn/platformio/">PlatformIO</a> This has proven to be easier than the Arduino IDE we used to use for most people.</p>
+<h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<p>Depending on what type of control board you use you might have other firmware options. Many firmware versions are fairly board specific though. There could be a long list here, instead may we suggest having a look in the forums to see what others have tried out and if it might be a better option for your specific use case.</p>
+<details><summary>Archived Arduino IDE instructions</summary><h3 id="using-github">Using GitHub<a class="headerlink" href="#using-github" title="Permanent link">&para;</a></h3>
 <p>You will find this on the <a href="https://github.com/Allted/Marlin">V1 Engineering Marlin GitHub</a> page. </p>
 <table>
 <thead>
@@ -1695,7 +1724,7 @@ bought…..one of these days…</p>
 <li>Sketch-Include Library-Manage Libraries
 <div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2016/12/u81.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2016/12/u81.png" width="400" /></a></div></li>
 <li>Type “U8glib” in the search box, hit enter, select U8glib, select the number with the highest
-    version, Install. This has never been easier.
+version, Install. This has never been easier.
 <div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2016/12/u82.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2016/12/u82.png" width="400" /></a></div></li>
 <li>File- Preferences
 <div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2016/12/ram1.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2016/12/ram1.png" width="200" /></a></div></li>
@@ -1771,6 +1800,7 @@ bought…..one of these days…</p>
 <li>The bottom of the window will say “done uploading” when it is finished done
 <div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2015/12/done-e1487436522248.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2015/12/done-e1487436522248.png" width="400" /></a></div></li>
 </ul>
+</details>
                 
                   
                 
