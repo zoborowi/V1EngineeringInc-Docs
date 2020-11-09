@@ -13,7 +13,11 @@ I will write this from a Windows perspective, as far as I know it will look very
 The first step is to install Microsoft Visual Studio Code. This is **cross platform** and it is a very simple, yet powerful tool. I have used this for a while as my text editor for programming / coding. Previously I tried Atom and Notepad++, this has been more intuitive for me.
 Install [VS Code](https://code.visualstudio.com/) on your machine. Download the appropriate version from this link [VS Code](https://code.visualstudio.com/), and follow the prompts. This part should be fairly simple and staright forward. 
 
-### Install 2 - PlatformIO
+### Install 2 - python
+
+If not already installed on your machine you will want to install the latest version of python. (https://www.python.org/)
+
+### Install 3 - PlatformIO
 
 PLatformIO is actually and "Extension" for VS Code. To install PlatformIO you click on the broken block icon on the left side of VSCODE shown here highlighted.
 
@@ -49,7 +53,7 @@ You can select the entire folder you have unzipped. If that is unclear - You nee
 
 ![!VS Code Folder](https://www.v1engineering.com/wp-content/uploads/2019/12/folder-selected.jpg){: width="400"}
 
-One you open that folder it will show in the window and look very similar to the picture below. **Notice** at the very bottom, the blue banner shows a "Index Rebuild" icon let that finish before moving to the next step.
+Once you open that folder it will show in the window and look very similar to the picture below. **Notice** at the very bottom, the blue banner shows a "Index Rebuild" icon let that finish before moving to the next step.
 
 ![!VS Code Folder Open](https://www.v1engineering.com/wp-content/uploads/2019/12/folder-open.jpg){: width="400"}
 
